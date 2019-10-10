@@ -1,0 +1,37 @@
+<story path="stories/Test.story" title="MES">
+<scenario keyword="Scenario:" title="1 Connect to process engine">
+<step outcome="successful">Given that fulfilment process prepare-batch has been deployed into the process engine <parameter>http://192.168.7.147:8080</parameter></step>
+<step outcome="successful">When a user triggers execution of the prepare-batch daily process processurl <parameter>/engine-rest/process-definition/key/prepare-batch</parameter></step>
+<step outcome="successful">Then the process should successfully complete <parameter>200</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="2 Connect start process check">
+<step outcome="successful">Given that  process batch-start-new has been deployed into the process engine <parameter>http://192.168.7.147:8080</parameter></step>
+<step outcome="successful">When a user triggers execution of the batch-start-new daily process processurl <parameter>/engine-rest/process-definition/key/prepare-batch/start</parameter></step>
+<step outcome="successful">Then the process-start-new should successfully complete <parameter>200</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="3 Validate batch file with status &apos;New&apos; is being picked for execution">
+<step outcome="successful">Given that  process validate-new has been deployed into the process engine <parameter>http://192.168.7.147:8080</parameter></step>
+<step outcome="successful">When a user triggers execution of the validate-new daily process processurl <parameter>/engine-rest/process-definition/key/prepare-batch/start</parameter></step>
+<step outcome="successful">Then the validate-new should successfully complete <parameter>200</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="4 Validate batch file with status &apos;Rerun&apos; is being picked for execution">
+<step outcome="successful">Given that  process validate-rerun has been deployed into the process engine <parameter>http://192.168.7.147:8080</parameter></step>
+<step outcome="successful">When a user triggers execution of the validate-rerun daily process processurl <parameter>/engine-rest/process-definition/key/prepare-batch/start</parameter></step>
+<step outcome="successful">Then the validate-rerun should successfully complete <parameter>200</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="5 Validate batch file with status &apos;Picked&apos; is not picked for execution">
+<step outcome="successful">Given that  process validate-picked has been deployed into the process engine <parameter>http://192.168.7.147:8080</parameter></step>
+<step outcome="successful">When a user triggers execution of the validate-picked daily process processurl <parameter>/engine-rest/process-definition/key/prepare-batch/start</parameter></step>
+<step outcome="successful">Then the validate-picked should successfully complete <parameter>200</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="6 Validate if an execution instance has been created for a picked batch">
+<step outcome="successful">Given that  process instance-picked has been deployed into the process engine <parameter>http://192.168.7.147:8080</parameter></step>
+<step outcome="successful">When a user triggers execution of the instance-picked daily process processurl <parameter>/engine-rest/process-definition/key/prepare-batch/start</parameter></step>
+<step outcome="successful">Then the instance-picked should successfully complete <parameter>200</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="7 Connect process status change">
+<step outcome="successful">Given that  process batch-status has been deployed into the process engine <parameter>http://192.168.7.147:8080</parameter></step>
+<step outcome="successful">When a user triggers execution of the batch-status daily process processurl <parameter>/engine-rest/history/process-instance</parameter></step>
+<step outcome="successful">Then the batch-status should successfully complete <parameter>200</parameter></step>
+</scenario>
+</story>

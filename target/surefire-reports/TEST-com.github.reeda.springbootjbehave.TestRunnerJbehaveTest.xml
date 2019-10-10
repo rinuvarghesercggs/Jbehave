@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.github.reeda.springbootjbehave.TestRunnerJbehaveTest" time="4.511" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\bin"/>
+    <property name="java.vm.version" value="25.201-b09"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Jithin.TID056\Downloads\Jbehave\Jbehave"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.rmi.server.randomIDs" value="true"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Jithin.TID056\Downloads\Jbehave\Jbehave"/>
+    <property name="java.runtime.version" value="1.8.0_201-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\JITHIN~1.TID\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\Copy data\workspace-spring-tool-suite1\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf697979070888031909.tmp"/>
+    <property name="jansi.force" value="true"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jdk1.8.0_201/bin/../jre/bin/server;C:/Program Files/Java/jdk1.8.0_201/bin/../jre/bin;C:/Program Files/Java/jdk1.8.0_201/bin/../jre/lib/amd64;C:\Program Files (x86)\RSA SecurID Token Common;C:\Program Files\RSA SecurID Token Common;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Program Files\apache-maven-3.6.1;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Windows\System32;C:\Program Files\RSA SecurID Token Common\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;D:\JithinsSpace\sts4;;."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Jithin.TID056"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Jithin"/>
+    <property name="java.class.path" value="D:\JithinsSpace\sts4\plugins\org.eclipse.m2e.maven.runtime_1.12.0.20190628-1133\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_201\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B test -Dstyle.color=always"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_201"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_201\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_201\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_201\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Users\Jithin.TID056\Downloads\Jbehave\Jbehave\EMBEDDED"/>
+    <property name="style.color" value="always"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="run" classname="com.github.reeda.springbootjbehave.TestRunnerJbehaveTest" time="4.511">
+    <error message="Failures in running stories: ReportsCount[stories=2,storiesNotAllowed=0,storiesPending=0,scenarios=3,scenariosFailed=3,scenariosNotAllowed=0,scenariosPending=0,stepsFailed=3]" type="org.jbehave.core.embedder.Embedder$RunningStoriesFailed">org.jbehave.core.embedder.Embedder$RunningStoriesFailed: Failures in running stories: ReportsCount[stories=2,storiesNotAllowed=0,storiesPending=0,scenarios=3,scenariosFailed=3,scenariosNotAllowed=0,scenariosPending=0,stepsFailed=3]
+	at org.jbehave.core.embedder.Embedder$ThrowingRunningStoriesFailed.handleFailures(Embedder.java:557)
+	at org.jbehave.core.embedder.Embedder.handleFailures(Embedder.java:279)
+	at org.jbehave.core.embedder.Embedder.generateReportsView(Embedder.java:266)
+	at org.jbehave.core.embedder.Embedder.generateReportsView(Embedder.java:247)
+	at org.jbehave.core.embedder.Embedder.runStoriesAsPaths(Embedder.java:223)
+	at org.jbehave.core.junit.JUnitStories.run(JUnitStories.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:254)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+</error>
+    <system-out><![CDATA[22:37:14.797 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.823 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:37:14.830 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:37:14.840 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+22:37:14.861 [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@185d8b6 declaringClass = 'com.github.reeda.springbootjbehave.TestRunnerJbehaveTest', classes = '{class com.github.reeda.springbootjbehave.ApplicationToTest}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+22:37:14.867 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]: class path resource [com/github/reeda/springbootjbehave/TestRunnerJbehaveTest-context.xml] does not exist
+22:37:14.868 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]: class path resource [com/github/reeda/springbootjbehave/TestRunnerJbehaveTestContext.groovy] does not exist
+22:37:14.868 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:37:14.871 [main] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.875 [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]: using defaults.
+22:37:14.882 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:37:14.887 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+22:37:14.888 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+22:37:14.889 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+22:37:14.890 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1d29cf23, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5f282abb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@167fdd33]
+22:37:14.893 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.894 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.896 [main] DEBUG o.s.t.c.j.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.897 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:37:14.897 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:37:14.897 [main] DEBUG o.s.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+22:37:14.899 [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - Found explicit ContextLoader class [org.springframework.boot.test.SpringApplicationContextLoader] for context configuration attributes [ContextConfigurationAttributes@1f57539 declaringClass = 'com.github.reeda.springbootjbehave.TestRunnerJbehaveTest', classes = '{class com.github.reeda.springbootjbehave.ApplicationToTest}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.boot.test.SpringApplicationContextLoader']
+22:37:14.899 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]: class path resource [com/github/reeda/springbootjbehave/TestRunnerJbehaveTest-context.xml] does not exist
+22:37:14.900 [main] DEBUG o.s.t.c.s.AbstractContextLoader - Did not detect default resource location for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]: class path resource [com/github/reeda/springbootjbehave/TestRunnerJbehaveTestContext.groovy] does not exist
+22:37:14.900 [main] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:37:14.900 [main] DEBUG o.s.t.c.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.901 [main] DEBUG o.s.t.c.s.DefaultTestContextBootstrapper - @TestExecutionListeners is not present for class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]: using defaults.
+22:37:14.903 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+22:37:14.904 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+22:37:14.905 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [javax/servlet/ServletContext]
+22:37:14.905 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+22:37:14.906 [main] INFO  o.s.t.c.s.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7a1ebcd8, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5faeada1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@528931cf]
+22:37:14.906 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.906 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.907 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.907 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.909 [main] DEBUG o.s.t.c.s.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@76b0bfab testClass = TestRunnerJbehaveTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@17d677df testClass = TestRunnerJbehaveTest, locations = '{}', classes = '{class com.github.reeda.springbootjbehave.ApplicationToTest}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+22:37:14.911 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.911 [main] DEBUG o.s.t.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.github.reeda.springbootjbehave.TestRunnerJbehaveTest]
+22:37:14.975 [main] DEBUG o.s.t.c.s.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@76b0bfab testClass = TestRunnerJbehaveTest, testInstance = com.github.reeda.springbootjbehave.TestRunnerJbehaveTest@5fcd892a, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@17d677df testClass = TestRunnerJbehaveTest, locations = '{}', classes = '{class com.github.reeda.springbootjbehave.ApplicationToTest}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.boot.test.SpringApplicationContextLoader', parent = [null]]]].
+22:37:15.046 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+22:37:15.049 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+22:37:15.050 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+22:37:15.051 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [integrationTest] PropertySource with search precedence immediately lower than [systemEnvironment]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.0.RELEASE)
+
+2019-10-04 22:37:15.289  INFO 17256 --- [           main] c.g.r.s.TestRunnerJbehaveTest            : Starting TestRunnerJbehaveTest on TID056 with PID 17256 (C:\Users\Jithin.TID056\Downloads\Jbehave\Jbehave\target\test-classes started by Jithin in C:\Users\Jithin.TID056\Downloads\Jbehave\Jbehave)
+2019-10-04 22:37:15.289  INFO 17256 --- [           main] c.g.r.s.TestRunnerJbehaveTest            : No profiles are active
+2019-10-04 22:37:15.494  INFO 17256 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@73a1e9a9: startup date [Fri Oct 04 22:37:15 IST 2019]; root of context hierarchy
+2019-10-04 22:37:16.033  INFO 17256 --- [           main] c.g.r.s.TestRunnerJbehaveTest            : Started TestRunnerJbehaveTest in 0.978 seconds (JVM running for 1.692)
+Processing system properties {}
+Using controls EmbedderControls[batch=false,skip=false,generateViewAfterStories=true,ignoreFailureInStories=false,ignoreFailureInView=false,verboseFailures=false,verboseFiltering=false,storyTimeouts=300,threads=1,failOnStoryTimeout=false]
+
+MES
+
+
+Narrative:
+
+As a user
+I want to perform an action
+Scenario:1 Connect to process engine
+
+Given CAMUNDAIP url http://a7bd9cc0aa40611e99c2c06977891ed7-482763338.us-east-2.elb.amazonaws.com:8080
+When URL_DEPLYOED_TO_PROCESS_ENGINE processurl /engine-rest/process-definition/key/netsuite-bpm
+Then Status code should be equal to 200
+Then Expected Response {"id":"netsuite-bpm:13:55a01135-a972-11e9-ab27-a20e0492d91b","key":"netsuite-bpm","category":"http://bpmn.io/schema/bpmn","description":null,"name":"netsuite-bpm","version":13,"resource":"netsuitedailyuploadprocess.bpmn","deploymentId":"559ed8b3-a972-11e9-ab27-a20e0492d91b","diagram":null,"suspended":false,"tenantId":null,"versionTag":null,"historyTimeToLive":null,"startableInTasklist":true}
+
+Scenario:2 Trigger netsuite daily process
+
+Given CAMUNDAIP url http://a7bd9cc0aa40611e99c2c06977891ed7-482763338.us-east-2.elb.amazonaws.com:8080
+When URL_DEPLYOED_TO_PROCESS_ENGINE processurl /engine-rest/process-definition/key/netsuite-bpm/start
+Then Status code should be equal to 200
+Then Expected Response {"id":"invoice:1:d29bbf3e-a580-11e9-ab27-a20e0492d91b","key":"invoice","category":"http://www.omg.org/spec/BPMN/20100524/MODEL","description":null,"name":"Invoice Receipt","version":1,"resource":"invoice.v1.bpmn","deploymentId":"d284dbd6-a580-11e9-ab27-a20e0492d91b","diagram":null,"suspended":false,"tenantId":null,"versionTag":"V1.0","historyTimeToLive":30,"startableInTasklist":true}
+
+Scenario:3 History of process instance
+
+Given CAMUNDAIP url http://a7bd9cc0aa40611e99c2c06977891ed7-482763338.us-east-2.elb.amazonaws.com:8080
+When URL_DEPLYOED_TO_PROCESS_ENGINE /engine-rest/history/process-instance
+Then Status code should be equal to 200
+Then Expected Response {"id": "03d5096f-a731-11e9-ab27-a20e0492d91b","businessKey": "2","processDefinitionId": "netsuite-bpm:7:61f75b0e-a730-11e9-ab27-a20e0492d91b","processDefinitionKey": "netsuite-bpm","processDefinitionName": "netsuite-bpm","processDefinitionVersion": 7,"startTime": "2019-07-15T18:47:37.104+0000","endTime": "2019-07-15T18:47:37.619+0000","removalTime": null,"durationInMillis": 515,"startUserId": "demo","startActivityId": "StartEvent_1","deleteReason": null,"rootProcessInstanceId": "03d5096f-a731-11e9-ab27-a20e0492d91b","superProcessInstanceId": null,"superCaseInstanceId": null,"caseInstanceId": null,"tenantId": null,"state": "COMPLETED"}
+
+
+(BeforeStories)
+
+Running story stories/Test.story
+MES
+(stories/Test.story)
+Scenario: 1 Connect to process engine
+Using timeout for story Test.story of 300 secs.
+Given CAMUNDAIP url http://a7bd9cc0aa40611e99c2c06977891ed7-482763338.us-east-2.elb.amazonaws.com:8080
+When URL_DEPLYOED_TO_PROCESS_ENGINE processurl /engine-rest/process-definition/key/netsuite-bpm
+Then Status code should be equal to 200
+Then Expected Response {"id":"netsuite-bpm:13:55a01135-a972-11e9-ab27-a20e0492d91b","key":"netsuite-bpm","category":"http://bpmn.io/schema/bpmn","description":null,"name":"netsuite-bpm","version":13,"resource":"netsuitedailyuploadprocess.bpmn","deploymentId":"559ed8b3-a972-11e9-ab27-a20e0492d91b","diagram":null,"suspended":false,"tenantId":null,"versionTag":null,"historyTimeToLive":null,"startableInTasklist":true} (FAILED)
+(java.lang.NullPointerException)
+
+java.lang.NullPointerException
+	at com.github.reeda.springbootjbehave.steps.StepsTest.thenasstr(StepsTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)
+	at org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)
+	at org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)
+	at org.jbehave.core.embedder.PerformableTree$NormalPerformableScenario.perform(PerformableTree.java:955)
+	at org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:876)
+	at org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)
+	at org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)
+	at org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)
+	at org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Scenario: 2 Trigger netsuite daily process
+Given CAMUNDAIP url http://a7bd9cc0aa40611e99c2c06977891ed7-482763338.us-east-2.elb.amazonaws.com:8080
+When URL_DEPLYOED_TO_PROCESS_ENGINE processurl /engine-rest/process-definition/key/netsuite-bpm/start
+Then Status code should be equal to 200
+Then Expected Response {"id":"invoice:1:d29bbf3e-a580-11e9-ab27-a20e0492d91b","key":"invoice","category":"http://www.omg.org/spec/BPMN/20100524/MODEL","description":null,"name":"Invoice Receipt","version":1,"resource":"invoice.v1.bpmn","deploymentId":"d284dbd6-a580-11e9-ab27-a20e0492d91b","diagram":null,"suspended":false,"tenantId":null,"versionTag":"V1.0","historyTimeToLive":30,"startableInTasklist":true} (FAILED)
+(java.lang.NullPointerException)
+
+java.lang.NullPointerException
+	at com.github.reeda.springbootjbehave.steps.StepsTest.thenasstr(StepsTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)
+	at org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)
+	at org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)
+	at org.jbehave.core.embedder.PerformableTree$NormalPerformableScenario.perform(PerformableTree.java:955)
+	at org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:876)
+	at org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)
+	at org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)
+	at org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)
+	at org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+Scenario: 3 History of process instance
+Given CAMUNDAIP url http://a7bd9cc0aa40611e99c2c06977891ed7-482763338.us-east-2.elb.amazonaws.com:8080
+When URL_DEPLYOED_TO_PROCESS_ENGINE /engine-rest/history/process-instance
+Then Status code should be equal to 200
+Then Expected Response {"id": "03d5096f-a731-11e9-ab27-a20e0492d91b","businessKey": "2","processDefinitionId": "netsuite-bpm:7:61f75b0e-a730-11e9-ab27-a20e0492d91b","processDefinitionKey": "netsuite-bpm","processDefinitionName": "netsuite-bpm","processDefinitionVersion": 7,"startTime": "2019-07-15T18:47:37.104+0000","endTime": "2019-07-15T18:47:37.619+0000","removalTime": null,"durationInMillis": 515,"startUserId": "demo","startActivityId": "StartEvent_1","deleteReason": null,"rootProcessInstanceId": "03d5096f-a731-11e9-ab27-a20e0492d91b","superProcessInstanceId": null,"superCaseInstanceId": null,"caseInstanceId": null,"tenantId": null,"state": "COMPLETED"} (FAILED)
+(java.lang.NullPointerException)
+
+java.lang.NullPointerException
+	at com.github.reeda.springbootjbehave.steps.StepsTest.thenasstr(StepsTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:333)
+	at org.jbehave.core.embedder.PerformableTree$PerformableSteps.perform(PerformableTree.java:1042)
+	at org.jbehave.core.embedder.PerformableTree$AbstractPerformableScenario.performRestartableSteps(PerformableTree.java:926)
+	at org.jbehave.core.embedder.PerformableTree$NormalPerformableScenario.perform(PerformableTree.java:955)
+	at org.jbehave.core.embedder.PerformableTree$PerformableScenario.perform(PerformableTree.java:876)
+	at org.jbehave.core.embedder.PerformableTree$PerformableStory.performScenarios(PerformableTree.java:804)
+	at org.jbehave.core.embedder.PerformableTree$PerformableStory.perform(PerformableTree.java:777)
+	at org.jbehave.core.embedder.PerformableTree.performCancellable(PerformableTree.java:409)
+	at org.jbehave.core.embedder.PerformableTree.perform(PerformableTree.java:380)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:291)
+	at org.jbehave.core.embedder.StoryManager$EnqueuedStory.call(StoryManager.java:265)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+
+(AfterStories)
+
+Generating reports view to 'C:\Users\Jithin.TID056\Downloads\Jbehave\Jbehave\target\jbehave' using formats '[stats, console, txt, html, xml, stats]' and view properties '{navigator=ftl/jbehave-navigator.ftl, views=ftl/jbehave-views.ftl, reports=ftl/jbehave-reports.ftl, nonDecorated=ftl/jbehave-report-non-decorated.ftl, decorated=ftl/jbehave-report-decorated.ftl, maps=ftl/jbehave-maps.ftl}'
+Reports view generated with 2 stories (of which 0 pending) containing 3 scenarios (of which 0 pending)
+]]></system-out>
+  </testcase>
+</testsuite>

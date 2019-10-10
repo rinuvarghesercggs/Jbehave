@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>stories.Test</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+MES
+(stories/Test.story)
+Scenario: 1 Connect to process engine
+Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080
+When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch
+Then the process should successfully complete 200
+
+Scenario: 2 Connect start process check
+Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080
+When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start
+Then the process-start-new should successfully complete 200
+
+Scenario: 3 Validate batch file with status 'New' is being picked for execution
+Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080
+When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start
+Then the validate-new should successfully complete 200
+
+Scenario: 4 Validate batch file with status 'Rerun' is being picked for execution
+Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080
+When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start
+Then the validate-rerun should successfully complete 200
+
+Scenario: 5 Validate batch file with status 'Picked' is not picked for execution
+Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080
+When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start
+Then the validate-picked should successfully complete 200
+
+Scenario: 6 Validate if an execution instance has been created for a picked batch
+Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080
+When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start
+Then the instance-picked should successfully complete 200
+
+Scenario: 7 Connect process status change
+Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080
+When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance
+Then the batch-status should successfully complete 200
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

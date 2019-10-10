@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>stories.Test</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1>MES</h1>
+<div class="path">stories/Test.story</div>
+<div class="scenario">
+<h2>Scenario: 1 Connect to process engine</h2>
+<div class="step successful">Given that fulfilment process prepare-batch has been deployed into the process engine <span class="step parameter">http://192.168.7.147:8080</span></div>
+<div class="step successful">When a user triggers execution of the prepare-batch daily process processurl <span class="step parameter">/engine-rest/process-definition/key/prepare-batch</span></div>
+<div class="step successful">Then the process should successfully complete <span class="step parameter">200</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: 2 Connect start process check</h2>
+<div class="step successful">Given that  process batch-start-new has been deployed into the process engine <span class="step parameter">http://192.168.7.147:8080</span></div>
+<div class="step successful">When a user triggers execution of the batch-start-new daily process processurl <span class="step parameter">/engine-rest/process-definition/key/prepare-batch/start</span></div>
+<div class="step successful">Then the process-start-new should successfully complete <span class="step parameter">200</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: 3 Validate batch file with status 'New' is being picked for execution</h2>
+<div class="step successful">Given that  process validate-new has been deployed into the process engine <span class="step parameter">http://192.168.7.147:8080</span></div>
+<div class="step successful">When a user triggers execution of the validate-new daily process processurl <span class="step parameter">/engine-rest/process-definition/key/prepare-batch/start</span></div>
+<div class="step successful">Then the validate-new should successfully complete <span class="step parameter">200</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: 4 Validate batch file with status 'Rerun' is being picked for execution</h2>
+<div class="step successful">Given that  process validate-rerun has been deployed into the process engine <span class="step parameter">http://192.168.7.147:8080</span></div>
+<div class="step successful">When a user triggers execution of the validate-rerun daily process processurl <span class="step parameter">/engine-rest/process-definition/key/prepare-batch/start</span></div>
+<div class="step successful">Then the validate-rerun should successfully complete <span class="step parameter">200</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: 5 Validate batch file with status 'Picked' is not picked for execution</h2>
+<div class="step successful">Given that  process validate-picked has been deployed into the process engine <span class="step parameter">http://192.168.7.147:8080</span></div>
+<div class="step successful">When a user triggers execution of the validate-picked daily process processurl <span class="step parameter">/engine-rest/process-definition/key/prepare-batch/start</span></div>
+<div class="step successful">Then the validate-picked should successfully complete <span class="step parameter">200</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: 6 Validate if an execution instance has been created for a picked batch</h2>
+<div class="step successful">Given that  process instance-picked has been deployed into the process engine <span class="step parameter">http://192.168.7.147:8080</span></div>
+<div class="step successful">When a user triggers execution of the instance-picked daily process processurl <span class="step parameter">/engine-rest/process-definition/key/prepare-batch/start</span></div>
+<div class="step successful">Then the instance-picked should successfully complete <span class="step parameter">200</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: 7 Connect process status change</h2>
+<div class="step successful">Given that  process batch-status has been deployed into the process engine <span class="step parameter">http://192.168.7.147:8080</span></div>
+<div class="step successful">When a user triggers execution of the batch-status daily process processurl <span class="step parameter">/engine-rest/history/process-instance</span></div>
+<div class="step successful">Then the batch-status should successfully complete <span class="step parameter">200</span></div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
