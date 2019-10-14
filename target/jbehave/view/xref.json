@@ -161,8 +161,8 @@
               "trim": true
             },
             "steps": [
-              "Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch",
+              "Given that fulfilment process prepare-batch has been deployed into the process engine",
+              "When a user triggers execution of the prepare-batch daily process processurl",
               "Then the process should successfully complete 200"
             ]
           },
@@ -258,8 +258,8 @@
               "trim": true
             },
             "steps": [
-              "Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+              "Given that  process batch-start-new has been deployed into the process engine",
+              "When a user triggers execution of the batch-start-new daily process processurl",
               "Then the process-start-new should successfully complete 200"
             ]
           },
@@ -355,8 +355,8 @@
               "trim": true
             },
             "steps": [
-              "Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+              "Given that  process validate-new has been deployed into the process engine",
+              "When a user triggers execution of the validate-new daily process processurl",
               "Then the validate-new should successfully complete 200"
             ]
           },
@@ -452,300 +452,9 @@
               "trim": true
             },
             "steps": [
-              "Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+              "Given that  process validate-rerun has been deployed into the process engine",
+              "When a user triggers execution of the validate-rerun daily process processurl",
               "Then the validate-rerun should successfully complete 200"
-            ]
-          },
-          {
-            "title": "5 Validate batch file with status 'Picked' is not picked for execution",
-            "meta": {
-              "properties": []
-            },
-            "givenStories": {
-              "givenStories": [],
-              "givenStoriesAsString": "",
-              "examplesTable": {
-                "tableAsString": "",
-                "headerSeparator": "|",
-                "valueSeparator": "|",
-                "ignorableSeparator": "|--",
-                "tableTransformers": {
-                  "transformers": [
-                    [
-                      "FORMATTING",
-                      {}
-                    ],
-                    [
-                      "REPLACING",
-                      {}
-                    ],
-                    [
-                      "FROM_LANDSCAPE",
-                      {}
-                    ]
-                  ]
-                },
-                "headers": [],
-                "data": [],
-                "properties": [
-                  {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
-                  },
-                  {
-                    "@name": "valueSeparator",
-                    "@value": "|"
-                  },
-                  {
-                    "@name": "headerSeparator",
-                    "@value": "|"
-                  }
-                ],
-                "propertiesAsString": "",
-                "namedParameters": [],
-                "trim": true
-              }
-            },
-            "examplesTable": {
-              "tableAsString": "",
-              "headerSeparator": "|",
-              "valueSeparator": "|",
-              "ignorableSeparator": "|--",
-              "tableTransformers": {
-                "transformers": [
-                  [
-                    "FORMATTING",
-                    {}
-                  ],
-                  [
-                    "REPLACING",
-                    {}
-                  ],
-                  [
-                    "FROM_LANDSCAPE",
-                    {}
-                  ]
-                ]
-              },
-              "headers": [],
-              "data": [],
-              "properties": [
-                {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
-                },
-                {
-                  "@name": "valueSeparator",
-                  "@value": "|"
-                },
-                {
-                  "@name": "headerSeparator",
-                  "@value": "|"
-                }
-              ],
-              "propertiesAsString": "",
-              "namedParameters": [],
-              "trim": true
-            },
-            "steps": [
-              "Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-              "Then the validate-picked should successfully complete 200"
-            ]
-          },
-          {
-            "title": "6 Validate if an execution instance has been created for a picked batch",
-            "meta": {
-              "properties": []
-            },
-            "givenStories": {
-              "givenStories": [],
-              "givenStoriesAsString": "",
-              "examplesTable": {
-                "tableAsString": "",
-                "headerSeparator": "|",
-                "valueSeparator": "|",
-                "ignorableSeparator": "|--",
-                "tableTransformers": {
-                  "transformers": [
-                    [
-                      "FORMATTING",
-                      {}
-                    ],
-                    [
-                      "REPLACING",
-                      {}
-                    ],
-                    [
-                      "FROM_LANDSCAPE",
-                      {}
-                    ]
-                  ]
-                },
-                "headers": [],
-                "data": [],
-                "properties": [
-                  {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
-                  },
-                  {
-                    "@name": "valueSeparator",
-                    "@value": "|"
-                  },
-                  {
-                    "@name": "headerSeparator",
-                    "@value": "|"
-                  }
-                ],
-                "propertiesAsString": "",
-                "namedParameters": [],
-                "trim": true
-              }
-            },
-            "examplesTable": {
-              "tableAsString": "",
-              "headerSeparator": "|",
-              "valueSeparator": "|",
-              "ignorableSeparator": "|--",
-              "tableTransformers": {
-                "transformers": [
-                  [
-                    "FORMATTING",
-                    {}
-                  ],
-                  [
-                    "REPLACING",
-                    {}
-                  ],
-                  [
-                    "FROM_LANDSCAPE",
-                    {}
-                  ]
-                ]
-              },
-              "headers": [],
-              "data": [],
-              "properties": [
-                {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
-                },
-                {
-                  "@name": "valueSeparator",
-                  "@value": "|"
-                },
-                {
-                  "@name": "headerSeparator",
-                  "@value": "|"
-                }
-              ],
-              "propertiesAsString": "",
-              "namedParameters": [],
-              "trim": true
-            },
-            "steps": [
-              "Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-              "Then the instance-picked should successfully complete 200"
-            ]
-          },
-          {
-            "title": "7 Connect process status change",
-            "meta": {
-              "properties": []
-            },
-            "givenStories": {
-              "givenStories": [],
-              "givenStoriesAsString": "",
-              "examplesTable": {
-                "tableAsString": "",
-                "headerSeparator": "|",
-                "valueSeparator": "|",
-                "ignorableSeparator": "|--",
-                "tableTransformers": {
-                  "transformers": [
-                    [
-                      "FORMATTING",
-                      {}
-                    ],
-                    [
-                      "REPLACING",
-                      {}
-                    ],
-                    [
-                      "FROM_LANDSCAPE",
-                      {}
-                    ]
-                  ]
-                },
-                "headers": [],
-                "data": [],
-                "properties": [
-                  {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
-                  },
-                  {
-                    "@name": "valueSeparator",
-                    "@value": "|"
-                  },
-                  {
-                    "@name": "headerSeparator",
-                    "@value": "|"
-                  }
-                ],
-                "propertiesAsString": "",
-                "namedParameters": [],
-                "trim": true
-              }
-            },
-            "examplesTable": {
-              "tableAsString": "",
-              "headerSeparator": "|",
-              "valueSeparator": "|",
-              "ignorableSeparator": "|--",
-              "tableTransformers": {
-                "transformers": [
-                  [
-                    "FORMATTING",
-                    {}
-                  ],
-                  [
-                    "REPLACING",
-                    {}
-                  ],
-                  [
-                    "FROM_LANDSCAPE",
-                    {}
-                  ]
-                ]
-              },
-              "headers": [],
-              "data": [],
-              "properties": [
-                {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
-                },
-                {
-                  "@name": "valueSeparator",
-                  "@value": "|"
-                },
-                {
-                  "@name": "headerSeparator",
-                  "@value": "|"
-                }
-              ],
-              "propertiesAsString": "",
-              "namedParameters": [],
-              "trim": true
-            },
-            "steps": [
-              "Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance",
-              "Then the batch-status should successfully complete 200"
             ]
           }
         ],
@@ -849,8 +558,8 @@
               "trim": true
             },
             "steps": [
-              "Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch",
+              "Given that fulfilment process prepare-batch has been deployed into the process engine",
+              "When a user triggers execution of the prepare-batch daily process processurl",
               "Then the process should successfully complete 200"
             ]
           },
@@ -865,39 +574,39 @@
             "steps": {
               "matches": [
                 {
-                  "type": "GIVEN",
-                  "annotatedPattern": "that fulfilment process prepare-batch has been deployed into the process engine $value",
-                  "resolvedPattern": "that\\s+fulfilment\\s+process\\s+prepare-batch\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
-                },
-                {
                   "type": "WHEN",
-                  "annotatedPattern": "a user triggers execution of the prepare-batch daily process processurl $processurl",
-                  "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+prepare-batch\\s+daily\\s+process\\s+processurl\\s+(.*)"
+                  "annotatedPattern": "a user triggers execution of the prepare-batch daily process processurl",
+                  "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+prepare-batch\\s+daily\\s+process\\s+processurl"
                 },
                 {
                   "type": "THEN",
                   "annotatedPattern": "the process should successfully complete $value",
                   "resolvedPattern": "the\\s+process\\s+should\\s+successfully\\s+complete\\s+(.*)"
+                },
+                {
+                  "type": "GIVEN",
+                  "annotatedPattern": "that fulfilment process prepare-batch has been deployed into the process engine",
+                  "resolvedPattern": "that\\s+fulfilment\\s+process\\s+prepare-batch\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine"
                 }
               ],
               "results": [
                 {
-                  "step": "Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080",
+                  "step": "Given that fulfilment process prepare-batch has been deployed into the process engine",
                   "type": "SUCCESSFUL",
-                  "parametrisedStep": "Given that fulfilment process prepare-batch has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-                  "durationInMillis": 881
+                  "parametrisedStep": "Given that fulfilment process prepare-batch has been deployed into the process engine",
+                  "durationInMillis": 831
                 },
                 {
-                  "step": "When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch",
+                  "step": "When a user triggers execution of the prepare-batch daily process processurl",
                   "type": "SUCCESSFUL",
-                  "parametrisedStep": "When a user triggers execution of the prepare-batch daily process processurl ｟/engine-rest/process-definition/key/prepare-batch｠",
-                  "durationInMillis": 50
+                  "parametrisedStep": "When a user triggers execution of the prepare-batch daily process processurl",
+                  "durationInMillis": 53
                 },
                 {
                   "step": "Then the process should successfully complete 200",
                   "type": "SUCCESSFUL",
                   "parametrisedStep": "Then the process should successfully complete ｟200｠",
-                  "durationInMillis": 2
+                  "durationInMillis": 3
                 }
               ]
             },
@@ -996,8 +705,8 @@
                 "trim": true
               },
               "steps": [
-                "Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080",
-                "When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch",
+                "Given that fulfilment process prepare-batch has been deployed into the process engine",
+                "When a user triggers execution of the prepare-batch daily process processurl",
                 "Then the process should successfully complete 200"
               ]
             }
@@ -1098,8 +807,8 @@
               "trim": true
             },
             "steps": [
-              "Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+              "Given that  process batch-start-new has been deployed into the process engine",
+              "When a user triggers execution of the batch-start-new daily process processurl",
               "Then the process-start-new should successfully complete 200"
             ]
           },
@@ -1114,9 +823,9 @@
             "steps": {
               "matches": [
                 {
-                  "type": "WHEN",
-                  "annotatedPattern": "a user triggers execution of the batch-start-new daily process processurl $processurl",
-                  "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+batch-start-new\\s+daily\\s+process\\s+processurl\\s+(.*)"
+                  "type": "GIVEN",
+                  "annotatedPattern": "that  process batch-start-new has been deployed into the process engine",
+                  "resolvedPattern": "that\\s+process\\s+batch-start-new\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine"
                 },
                 {
                   "type": "THEN",
@@ -1124,23 +833,23 @@
                   "resolvedPattern": "the\\s+process-start-new\\s+should\\s+successfully\\s+complete\\s+(.*)"
                 },
                 {
-                  "type": "GIVEN",
-                  "annotatedPattern": "that  process batch-start-new has been deployed into the process engine $value",
-                  "resolvedPattern": "that\\s+process\\s+batch-start-new\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
+                  "type": "WHEN",
+                  "annotatedPattern": "a user triggers execution of the batch-start-new daily process processurl",
+                  "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+batch-start-new\\s+daily\\s+process\\s+processurl"
                 }
               ],
               "results": [
                 {
-                  "step": "Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080",
+                  "step": "Given that  process batch-start-new has been deployed into the process engine",
                   "type": "SUCCESSFUL",
-                  "parametrisedStep": "Given that  process batch-start-new has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-                  "durationInMillis": 12
+                  "parametrisedStep": "Given that  process batch-start-new has been deployed into the process engine",
+                  "durationInMillis": 0
                 },
                 {
-                  "step": "When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+                  "step": "When a user triggers execution of the batch-start-new daily process processurl",
                   "type": "SUCCESSFUL",
-                  "parametrisedStep": "When a user triggers execution of the batch-start-new daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠",
-                  "durationInMillis": 22
+                  "parametrisedStep": "When a user triggers execution of the batch-start-new daily process processurl",
+                  "durationInMillis": 1381
                 },
                 {
                   "step": "Then the process-start-new should successfully complete 200",
@@ -1245,8 +954,8 @@
                 "trim": true
               },
               "steps": [
-                "Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080",
-                "When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+                "Given that  process batch-start-new has been deployed into the process engine",
+                "When a user triggers execution of the batch-start-new daily process processurl",
                 "Then the process-start-new should successfully complete 200"
               ]
             }
@@ -1347,8 +1056,8 @@
               "trim": true
             },
             "steps": [
-              "Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+              "Given that  process validate-new has been deployed into the process engine",
+              "When a user triggers execution of the validate-new daily process processurl",
               "Then the validate-new should successfully complete 200"
             ]
           },
@@ -1364,38 +1073,38 @@
               "matches": [
                 {
                   "type": "WHEN",
-                  "annotatedPattern": "a user triggers execution of the validate-new daily process processurl $processurl",
-                  "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+validate-new\\s+daily\\s+process\\s+processurl\\s+(.*)"
-                },
-                {
-                  "type": "GIVEN",
-                  "annotatedPattern": "that  process validate-new has been deployed into the process engine $value",
-                  "resolvedPattern": "that\\s+process\\s+validate-new\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
+                  "annotatedPattern": "a user triggers execution of the validate-new daily process processurl",
+                  "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+validate-new\\s+daily\\s+process\\s+processurl"
                 },
                 {
                   "type": "THEN",
                   "annotatedPattern": "the validate-new should successfully complete $value",
                   "resolvedPattern": "the\\s+validate-new\\s+should\\s+successfully\\s+complete\\s+(.*)"
+                },
+                {
+                  "type": "GIVEN",
+                  "annotatedPattern": "that  process validate-new has been deployed into the process engine",
+                  "resolvedPattern": "that\\s+process\\s+validate-new\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine"
                 }
               ],
               "results": [
                 {
-                  "step": "Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080",
+                  "step": "Given that  process validate-new has been deployed into the process engine",
                   "type": "SUCCESSFUL",
-                  "parametrisedStep": "Given that  process validate-new has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-                  "durationInMillis": 8
+                  "parametrisedStep": "Given that  process validate-new has been deployed into the process engine",
+                  "durationInMillis": 0
                 },
                 {
-                  "step": "When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+                  "step": "When a user triggers execution of the validate-new daily process processurl",
                   "type": "SUCCESSFUL",
-                  "parametrisedStep": "When a user triggers execution of the validate-new daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠",
-                  "durationInMillis": 19
+                  "parametrisedStep": "When a user triggers execution of the validate-new daily process processurl",
+                  "durationInMillis": 0
                 },
                 {
                   "step": "Then the validate-new should successfully complete 200",
                   "type": "SUCCESSFUL",
                   "parametrisedStep": "Then the validate-new should successfully complete ｟200｠",
-                  "durationInMillis": 4008
+                  "durationInMillis": 19
                 }
               ]
             },
@@ -1494,8 +1203,8 @@
                 "trim": true
               },
               "steps": [
-                "Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080",
-                "When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+                "Given that  process validate-new has been deployed into the process engine",
+                "When a user triggers execution of the validate-new daily process processurl",
                 "Then the validate-new should successfully complete 200"
               ]
             }
@@ -1596,8 +1305,8 @@
               "trim": true
             },
             "steps": [
-              "Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+              "Given that  process validate-rerun has been deployed into the process engine",
+              "When a user triggers execution of the validate-rerun daily process processurl",
               "Then the validate-rerun should successfully complete 200"
             ]
           },
@@ -1613,13 +1322,13 @@
               "matches": [
                 {
                   "type": "WHEN",
-                  "annotatedPattern": "a user triggers execution of the validate-rerun daily process processurl $processurl",
-                  "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+validate-rerun\\s+daily\\s+process\\s+processurl\\s+(.*)"
+                  "annotatedPattern": "a user triggers execution of the validate-rerun daily process processurl",
+                  "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+validate-rerun\\s+daily\\s+process\\s+processurl"
                 },
                 {
                   "type": "GIVEN",
-                  "annotatedPattern": "that  process validate-rerun has been deployed into the process engine $value",
-                  "resolvedPattern": "that\\s+process\\s+validate-rerun\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
+                  "annotatedPattern": "that  process validate-rerun has been deployed into the process engine",
+                  "resolvedPattern": "that\\s+process\\s+validate-rerun\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine"
                 },
                 {
                   "type": "THEN",
@@ -1629,22 +1338,22 @@
               ],
               "results": [
                 {
-                  "step": "Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080",
+                  "step": "Given that  process validate-rerun has been deployed into the process engine",
                   "type": "SUCCESSFUL",
-                  "parametrisedStep": "Given that  process validate-rerun has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-                  "durationInMillis": 10
+                  "parametrisedStep": "Given that  process validate-rerun has been deployed into the process engine",
+                  "durationInMillis": 0
                 },
                 {
-                  "step": "When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+                  "step": "When a user triggers execution of the validate-rerun daily process processurl",
                   "type": "SUCCESSFUL",
-                  "parametrisedStep": "When a user triggers execution of the validate-rerun daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠",
-                  "durationInMillis": 21
+                  "parametrisedStep": "When a user triggers execution of the validate-rerun daily process processurl",
+                  "durationInMillis": 623
                 },
                 {
                   "step": "Then the validate-rerun should successfully complete 200",
                   "type": "SUCCESSFUL",
                   "parametrisedStep": "Then the validate-rerun should successfully complete ｟200｠",
-                  "durationInMillis": 3819
+                  "durationInMillis": 8
                 }
               ]
             },
@@ -1743,756 +1452,9 @@
                 "trim": true
               },
               "steps": [
-                "Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080",
-                "When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+                "Given that  process validate-rerun has been deployed into the process engine",
+                "When a user triggers execution of the validate-rerun daily process processurl",
                 "Then the validate-rerun should successfully complete 200"
-              ]
-            }
-          },
-          "examplePerformableScenarios": [],
-          "status": "SUCCESSFUL"
-        },
-        {
-          "scenario": {
-            "title": "5 Validate batch file with status 'Picked' is not picked for execution",
-            "meta": {
-              "properties": []
-            },
-            "givenStories": {
-              "givenStories": [],
-              "givenStoriesAsString": "",
-              "examplesTable": {
-                "tableAsString": "",
-                "headerSeparator": "|",
-                "valueSeparator": "|",
-                "ignorableSeparator": "|--",
-                "tableTransformers": {
-                  "transformers": [
-                    [
-                      "FORMATTING",
-                      {}
-                    ],
-                    [
-                      "REPLACING",
-                      {}
-                    ],
-                    [
-                      "FROM_LANDSCAPE",
-                      {}
-                    ]
-                  ]
-                },
-                "headers": [],
-                "data": [],
-                "properties": [
-                  {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
-                  },
-                  {
-                    "@name": "valueSeparator",
-                    "@value": "|"
-                  },
-                  {
-                    "@name": "headerSeparator",
-                    "@value": "|"
-                  }
-                ],
-                "propertiesAsString": "",
-                "namedParameters": [],
-                "trim": true
-              }
-            },
-            "examplesTable": {
-              "tableAsString": "",
-              "headerSeparator": "|",
-              "valueSeparator": "|",
-              "ignorableSeparator": "|--",
-              "tableTransformers": {
-                "transformers": [
-                  [
-                    "FORMATTING",
-                    {}
-                  ],
-                  [
-                    "REPLACING",
-                    {}
-                  ],
-                  [
-                    "FROM_LANDSCAPE",
-                    {}
-                  ]
-                ]
-              },
-              "headers": [],
-              "data": [],
-              "properties": [
-                {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
-                },
-                {
-                  "@name": "valueSeparator",
-                  "@value": "|"
-                },
-                {
-                  "@name": "headerSeparator",
-                  "@value": "|"
-                }
-              ],
-              "propertiesAsString": "",
-              "namedParameters": [],
-              "trim": true
-            },
-            "steps": [
-              "Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-              "Then the validate-picked should successfully complete 200"
-            ]
-          },
-          "storyPath": "stories/Test.story",
-          "allowed": true,
-          "normalPerformableScenario": {
-            "parameters": [],
-            "givenStories": [],
-            "beforeSteps": {
-              "matches": []
-            },
-            "steps": {
-              "matches": [
-                {
-                  "type": "WHEN",
-                  "annotatedPattern": "a user triggers execution of the validate-picked daily process processurl $processurl",
-                  "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+validate-picked\\s+daily\\s+process\\s+processurl\\s+(.*)"
-                },
-                {
-                  "type": "GIVEN",
-                  "annotatedPattern": "that  process validate-picked has been deployed into the process engine $value",
-                  "resolvedPattern": "that\\s+process\\s+validate-picked\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
-                },
-                {
-                  "type": "THEN",
-                  "annotatedPattern": "the validate-picked should successfully complete $value",
-                  "resolvedPattern": "the\\s+validate-picked\\s+should\\s+successfully\\s+complete\\s+(.*)"
-                }
-              ],
-              "results": [
-                {
-                  "step": "Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080",
-                  "type": "SUCCESSFUL",
-                  "parametrisedStep": "Given that  process validate-picked has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-                  "durationInMillis": 10
-                },
-                {
-                  "step": "When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-                  "type": "SUCCESSFUL",
-                  "parametrisedStep": "When a user triggers execution of the validate-picked daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠",
-                  "durationInMillis": 17
-                },
-                {
-                  "step": "Then the validate-picked should successfully complete 200",
-                  "type": "SUCCESSFUL",
-                  "parametrisedStep": "Then the validate-picked should successfully complete ｟200｠",
-                  "durationInMillis": 4265
-                }
-              ]
-            },
-            "afterSteps": {
-              "matches": []
-            },
-            "scenario": {
-              "title": "5 Validate batch file with status 'Picked' is not picked for execution",
-              "meta": {
-                "properties": []
-              },
-              "givenStories": {
-                "givenStories": [],
-                "givenStoriesAsString": "",
-                "examplesTable": {
-                  "tableAsString": "",
-                  "headerSeparator": "|",
-                  "valueSeparator": "|",
-                  "ignorableSeparator": "|--",
-                  "tableTransformers": {
-                    "transformers": [
-                      [
-                        "FORMATTING",
-                        {}
-                      ],
-                      [
-                        "REPLACING",
-                        {}
-                      ],
-                      [
-                        "FROM_LANDSCAPE",
-                        {}
-                      ]
-                    ]
-                  },
-                  "headers": [],
-                  "data": [],
-                  "properties": [
-                    {
-                      "@name": "ignorableSeparator",
-                      "@value": "|--"
-                    },
-                    {
-                      "@name": "valueSeparator",
-                      "@value": "|"
-                    },
-                    {
-                      "@name": "headerSeparator",
-                      "@value": "|"
-                    }
-                  ],
-                  "propertiesAsString": "",
-                  "namedParameters": [],
-                  "trim": true
-                }
-              },
-              "examplesTable": {
-                "tableAsString": "",
-                "headerSeparator": "|",
-                "valueSeparator": "|",
-                "ignorableSeparator": "|--",
-                "tableTransformers": {
-                  "transformers": [
-                    [
-                      "FORMATTING",
-                      {}
-                    ],
-                    [
-                      "REPLACING",
-                      {}
-                    ],
-                    [
-                      "FROM_LANDSCAPE",
-                      {}
-                    ]
-                  ]
-                },
-                "headers": [],
-                "data": [],
-                "properties": [
-                  {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
-                  },
-                  {
-                    "@name": "valueSeparator",
-                    "@value": "|"
-                  },
-                  {
-                    "@name": "headerSeparator",
-                    "@value": "|"
-                  }
-                ],
-                "propertiesAsString": "",
-                "namedParameters": [],
-                "trim": true
-              },
-              "steps": [
-                "Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080",
-                "When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-                "Then the validate-picked should successfully complete 200"
-              ]
-            }
-          },
-          "examplePerformableScenarios": [],
-          "status": "SUCCESSFUL"
-        },
-        {
-          "scenario": {
-            "title": "6 Validate if an execution instance has been created for a picked batch",
-            "meta": {
-              "properties": []
-            },
-            "givenStories": {
-              "givenStories": [],
-              "givenStoriesAsString": "",
-              "examplesTable": {
-                "tableAsString": "",
-                "headerSeparator": "|",
-                "valueSeparator": "|",
-                "ignorableSeparator": "|--",
-                "tableTransformers": {
-                  "transformers": [
-                    [
-                      "FORMATTING",
-                      {}
-                    ],
-                    [
-                      "REPLACING",
-                      {}
-                    ],
-                    [
-                      "FROM_LANDSCAPE",
-                      {}
-                    ]
-                  ]
-                },
-                "headers": [],
-                "data": [],
-                "properties": [
-                  {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
-                  },
-                  {
-                    "@name": "valueSeparator",
-                    "@value": "|"
-                  },
-                  {
-                    "@name": "headerSeparator",
-                    "@value": "|"
-                  }
-                ],
-                "propertiesAsString": "",
-                "namedParameters": [],
-                "trim": true
-              }
-            },
-            "examplesTable": {
-              "tableAsString": "",
-              "headerSeparator": "|",
-              "valueSeparator": "|",
-              "ignorableSeparator": "|--",
-              "tableTransformers": {
-                "transformers": [
-                  [
-                    "FORMATTING",
-                    {}
-                  ],
-                  [
-                    "REPLACING",
-                    {}
-                  ],
-                  [
-                    "FROM_LANDSCAPE",
-                    {}
-                  ]
-                ]
-              },
-              "headers": [],
-              "data": [],
-              "properties": [
-                {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
-                },
-                {
-                  "@name": "valueSeparator",
-                  "@value": "|"
-                },
-                {
-                  "@name": "headerSeparator",
-                  "@value": "|"
-                }
-              ],
-              "propertiesAsString": "",
-              "namedParameters": [],
-              "trim": true
-            },
-            "steps": [
-              "Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-              "Then the instance-picked should successfully complete 200"
-            ]
-          },
-          "storyPath": "stories/Test.story",
-          "allowed": true,
-          "normalPerformableScenario": {
-            "parameters": [],
-            "givenStories": [],
-            "beforeSteps": {
-              "matches": []
-            },
-            "steps": {
-              "matches": [
-                {
-                  "type": "WHEN",
-                  "annotatedPattern": "a user triggers execution of the instance-picked daily process processurl $processurl",
-                  "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+instance-picked\\s+daily\\s+process\\s+processurl\\s+(.*)"
-                },
-                {
-                  "type": "GIVEN",
-                  "annotatedPattern": "that  process instance-picked has been deployed into the process engine $value",
-                  "resolvedPattern": "that\\s+process\\s+instance-picked\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
-                },
-                {
-                  "type": "THEN",
-                  "annotatedPattern": "the instance-picked should successfully complete $value",
-                  "resolvedPattern": "the\\s+instance-picked\\s+should\\s+successfully\\s+complete\\s+(.*)"
-                }
-              ],
-              "results": [
-                {
-                  "step": "Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080",
-                  "type": "SUCCESSFUL",
-                  "parametrisedStep": "Given that  process instance-picked has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-                  "durationInMillis": 11
-                },
-                {
-                  "step": "When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-                  "type": "SUCCESSFUL",
-                  "parametrisedStep": "When a user triggers execution of the instance-picked daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠",
-                  "durationInMillis": 21
-                },
-                {
-                  "step": "Then the instance-picked should successfully complete 200",
-                  "type": "SUCCESSFUL",
-                  "parametrisedStep": "Then the instance-picked should successfully complete ｟200｠",
-                  "durationInMillis": 2066
-                }
-              ]
-            },
-            "afterSteps": {
-              "matches": []
-            },
-            "scenario": {
-              "title": "6 Validate if an execution instance has been created for a picked batch",
-              "meta": {
-                "properties": []
-              },
-              "givenStories": {
-                "givenStories": [],
-                "givenStoriesAsString": "",
-                "examplesTable": {
-                  "tableAsString": "",
-                  "headerSeparator": "|",
-                  "valueSeparator": "|",
-                  "ignorableSeparator": "|--",
-                  "tableTransformers": {
-                    "transformers": [
-                      [
-                        "FORMATTING",
-                        {}
-                      ],
-                      [
-                        "REPLACING",
-                        {}
-                      ],
-                      [
-                        "FROM_LANDSCAPE",
-                        {}
-                      ]
-                    ]
-                  },
-                  "headers": [],
-                  "data": [],
-                  "properties": [
-                    {
-                      "@name": "ignorableSeparator",
-                      "@value": "|--"
-                    },
-                    {
-                      "@name": "valueSeparator",
-                      "@value": "|"
-                    },
-                    {
-                      "@name": "headerSeparator",
-                      "@value": "|"
-                    }
-                  ],
-                  "propertiesAsString": "",
-                  "namedParameters": [],
-                  "trim": true
-                }
-              },
-              "examplesTable": {
-                "tableAsString": "",
-                "headerSeparator": "|",
-                "valueSeparator": "|",
-                "ignorableSeparator": "|--",
-                "tableTransformers": {
-                  "transformers": [
-                    [
-                      "FORMATTING",
-                      {}
-                    ],
-                    [
-                      "REPLACING",
-                      {}
-                    ],
-                    [
-                      "FROM_LANDSCAPE",
-                      {}
-                    ]
-                  ]
-                },
-                "headers": [],
-                "data": [],
-                "properties": [
-                  {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
-                  },
-                  {
-                    "@name": "valueSeparator",
-                    "@value": "|"
-                  },
-                  {
-                    "@name": "headerSeparator",
-                    "@value": "|"
-                  }
-                ],
-                "propertiesAsString": "",
-                "namedParameters": [],
-                "trim": true
-              },
-              "steps": [
-                "Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080",
-                "When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-                "Then the instance-picked should successfully complete 200"
-              ]
-            }
-          },
-          "examplePerformableScenarios": [],
-          "status": "SUCCESSFUL"
-        },
-        {
-          "scenario": {
-            "title": "7 Connect process status change",
-            "meta": {
-              "properties": []
-            },
-            "givenStories": {
-              "givenStories": [],
-              "givenStoriesAsString": "",
-              "examplesTable": {
-                "tableAsString": "",
-                "headerSeparator": "|",
-                "valueSeparator": "|",
-                "ignorableSeparator": "|--",
-                "tableTransformers": {
-                  "transformers": [
-                    [
-                      "FORMATTING",
-                      {}
-                    ],
-                    [
-                      "REPLACING",
-                      {}
-                    ],
-                    [
-                      "FROM_LANDSCAPE",
-                      {}
-                    ]
-                  ]
-                },
-                "headers": [],
-                "data": [],
-                "properties": [
-                  {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
-                  },
-                  {
-                    "@name": "valueSeparator",
-                    "@value": "|"
-                  },
-                  {
-                    "@name": "headerSeparator",
-                    "@value": "|"
-                  }
-                ],
-                "propertiesAsString": "",
-                "namedParameters": [],
-                "trim": true
-              }
-            },
-            "examplesTable": {
-              "tableAsString": "",
-              "headerSeparator": "|",
-              "valueSeparator": "|",
-              "ignorableSeparator": "|--",
-              "tableTransformers": {
-                "transformers": [
-                  [
-                    "FORMATTING",
-                    {}
-                  ],
-                  [
-                    "REPLACING",
-                    {}
-                  ],
-                  [
-                    "FROM_LANDSCAPE",
-                    {}
-                  ]
-                ]
-              },
-              "headers": [],
-              "data": [],
-              "properties": [
-                {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
-                },
-                {
-                  "@name": "valueSeparator",
-                  "@value": "|"
-                },
-                {
-                  "@name": "headerSeparator",
-                  "@value": "|"
-                }
-              ],
-              "propertiesAsString": "",
-              "namedParameters": [],
-              "trim": true
-            },
-            "steps": [
-              "Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080",
-              "When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance",
-              "Then the batch-status should successfully complete 200"
-            ]
-          },
-          "storyPath": "stories/Test.story",
-          "allowed": true,
-          "normalPerformableScenario": {
-            "parameters": [],
-            "givenStories": [],
-            "beforeSteps": {
-              "matches": []
-            },
-            "steps": {
-              "matches": [
-                {
-                  "type": "WHEN",
-                  "annotatedPattern": "a user triggers execution of the batch-status daily process processurl $processurl",
-                  "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+batch-status\\s+daily\\s+process\\s+processurl\\s+(.*)"
-                },
-                {
-                  "type": "GIVEN",
-                  "annotatedPattern": "that  process batch-status has been deployed into the process engine $value",
-                  "resolvedPattern": "that\\s+process\\s+batch-status\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
-                },
-                {
-                  "type": "THEN",
-                  "annotatedPattern": "the batch-status should successfully complete $value",
-                  "resolvedPattern": "the\\s+batch-status\\s+should\\s+successfully\\s+complete\\s+(.*)"
-                }
-              ],
-              "results": [
-                {
-                  "step": "Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080",
-                  "type": "SUCCESSFUL",
-                  "parametrisedStep": "Given that  process batch-status has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-                  "durationInMillis": 12
-                },
-                {
-                  "step": "When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance",
-                  "type": "SUCCESSFUL",
-                  "parametrisedStep": "When a user triggers execution of the batch-status daily process processurl ｟/engine-rest/history/process-instance｠",
-                  "durationInMillis": 9
-                },
-                {
-                  "step": "Then the batch-status should successfully complete 200",
-                  "type": "SUCCESSFUL",
-                  "parametrisedStep": "Then the batch-status should successfully complete ｟200｠",
-                  "durationInMillis": 1
-                }
-              ]
-            },
-            "afterSteps": {
-              "matches": []
-            },
-            "scenario": {
-              "title": "7 Connect process status change",
-              "meta": {
-                "properties": []
-              },
-              "givenStories": {
-                "givenStories": [],
-                "givenStoriesAsString": "",
-                "examplesTable": {
-                  "tableAsString": "",
-                  "headerSeparator": "|",
-                  "valueSeparator": "|",
-                  "ignorableSeparator": "|--",
-                  "tableTransformers": {
-                    "transformers": [
-                      [
-                        "FORMATTING",
-                        {}
-                      ],
-                      [
-                        "REPLACING",
-                        {}
-                      ],
-                      [
-                        "FROM_LANDSCAPE",
-                        {}
-                      ]
-                    ]
-                  },
-                  "headers": [],
-                  "data": [],
-                  "properties": [
-                    {
-                      "@name": "ignorableSeparator",
-                      "@value": "|--"
-                    },
-                    {
-                      "@name": "valueSeparator",
-                      "@value": "|"
-                    },
-                    {
-                      "@name": "headerSeparator",
-                      "@value": "|"
-                    }
-                  ],
-                  "propertiesAsString": "",
-                  "namedParameters": [],
-                  "trim": true
-                }
-              },
-              "examplesTable": {
-                "tableAsString": "",
-                "headerSeparator": "|",
-                "valueSeparator": "|",
-                "ignorableSeparator": "|--",
-                "tableTransformers": {
-                  "transformers": [
-                    [
-                      "FORMATTING",
-                      {}
-                    ],
-                    [
-                      "REPLACING",
-                      {}
-                    ],
-                    [
-                      "FROM_LANDSCAPE",
-                      {}
-                    ]
-                  ]
-                },
-                "headers": [],
-                "data": [],
-                "properties": [
-                  {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
-                  },
-                  {
-                    "@name": "valueSeparator",
-                    "@value": "|"
-                  },
-                  {
-                    "@name": "headerSeparator",
-                    "@value": "|"
-                  }
-                ],
-                "propertiesAsString": "",
-                "namedParameters": [],
-                "trim": true
-              },
-              "steps": [
-                "Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080",
-                "When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance",
-                "Then the batch-status should successfully complete 200"
               ]
             }
           },
@@ -2503,7 +1465,7 @@
       "beforeSteps": {},
       "afterSteps": {},
       "timing": {
-        "durationInMillis": 15281
+        "durationInMillis": 2934
       },
       "givenStory": false
     }
@@ -2602,8 +1564,8 @@
           "trim": true
         },
         "steps": [
-          "Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080",
-          "When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch",
+          "Given that fulfilment process prepare-batch has been deployed into the process engine",
+          "When a user triggers execution of the prepare-batch daily process processurl",
           "Then the process should successfully complete 200"
         ]
       },
@@ -2618,39 +1580,39 @@
         "steps": {
           "matches": [
             {
-              "type": "GIVEN",
-              "annotatedPattern": "that fulfilment process prepare-batch has been deployed into the process engine $value",
-              "resolvedPattern": "that\\s+fulfilment\\s+process\\s+prepare-batch\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
-            },
-            {
               "type": "WHEN",
-              "annotatedPattern": "a user triggers execution of the prepare-batch daily process processurl $processurl",
-              "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+prepare-batch\\s+daily\\s+process\\s+processurl\\s+(.*)"
+              "annotatedPattern": "a user triggers execution of the prepare-batch daily process processurl",
+              "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+prepare-batch\\s+daily\\s+process\\s+processurl"
             },
             {
               "type": "THEN",
               "annotatedPattern": "the process should successfully complete $value",
               "resolvedPattern": "the\\s+process\\s+should\\s+successfully\\s+complete\\s+(.*)"
+            },
+            {
+              "type": "GIVEN",
+              "annotatedPattern": "that fulfilment process prepare-batch has been deployed into the process engine",
+              "resolvedPattern": "that\\s+fulfilment\\s+process\\s+prepare-batch\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine"
             }
           ],
           "results": [
             {
-              "step": "Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080",
+              "step": "Given that fulfilment process prepare-batch has been deployed into the process engine",
               "type": "SUCCESSFUL",
-              "parametrisedStep": "Given that fulfilment process prepare-batch has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-              "durationInMillis": 881
+              "parametrisedStep": "Given that fulfilment process prepare-batch has been deployed into the process engine",
+              "durationInMillis": 831
             },
             {
-              "step": "When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch",
+              "step": "When a user triggers execution of the prepare-batch daily process processurl",
               "type": "SUCCESSFUL",
-              "parametrisedStep": "When a user triggers execution of the prepare-batch daily process processurl ｟/engine-rest/process-definition/key/prepare-batch｠",
-              "durationInMillis": 50
+              "parametrisedStep": "When a user triggers execution of the prepare-batch daily process processurl",
+              "durationInMillis": 53
             },
             {
               "step": "Then the process should successfully complete 200",
               "type": "SUCCESSFUL",
               "parametrisedStep": "Then the process should successfully complete ｟200｠",
-              "durationInMillis": 2
+              "durationInMillis": 3
             }
           ]
         },
@@ -2749,8 +1711,8 @@
             "trim": true
           },
           "steps": [
-            "Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080",
-            "When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch",
+            "Given that fulfilment process prepare-batch has been deployed into the process engine",
+            "When a user triggers execution of the prepare-batch daily process processurl",
             "Then the process should successfully complete 200"
           ]
         }
@@ -2851,8 +1813,8 @@
           "trim": true
         },
         "steps": [
-          "Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080",
-          "When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+          "Given that  process batch-start-new has been deployed into the process engine",
+          "When a user triggers execution of the batch-start-new daily process processurl",
           "Then the process-start-new should successfully complete 200"
         ]
       },
@@ -2867,9 +1829,9 @@
         "steps": {
           "matches": [
             {
-              "type": "WHEN",
-              "annotatedPattern": "a user triggers execution of the batch-start-new daily process processurl $processurl",
-              "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+batch-start-new\\s+daily\\s+process\\s+processurl\\s+(.*)"
+              "type": "GIVEN",
+              "annotatedPattern": "that  process batch-start-new has been deployed into the process engine",
+              "resolvedPattern": "that\\s+process\\s+batch-start-new\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine"
             },
             {
               "type": "THEN",
@@ -2877,23 +1839,23 @@
               "resolvedPattern": "the\\s+process-start-new\\s+should\\s+successfully\\s+complete\\s+(.*)"
             },
             {
-              "type": "GIVEN",
-              "annotatedPattern": "that  process batch-start-new has been deployed into the process engine $value",
-              "resolvedPattern": "that\\s+process\\s+batch-start-new\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
+              "type": "WHEN",
+              "annotatedPattern": "a user triggers execution of the batch-start-new daily process processurl",
+              "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+batch-start-new\\s+daily\\s+process\\s+processurl"
             }
           ],
           "results": [
             {
-              "step": "Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080",
+              "step": "Given that  process batch-start-new has been deployed into the process engine",
               "type": "SUCCESSFUL",
-              "parametrisedStep": "Given that  process batch-start-new has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-              "durationInMillis": 12
+              "parametrisedStep": "Given that  process batch-start-new has been deployed into the process engine",
+              "durationInMillis": 0
             },
             {
-              "step": "When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+              "step": "When a user triggers execution of the batch-start-new daily process processurl",
               "type": "SUCCESSFUL",
-              "parametrisedStep": "When a user triggers execution of the batch-start-new daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠",
-              "durationInMillis": 22
+              "parametrisedStep": "When a user triggers execution of the batch-start-new daily process processurl",
+              "durationInMillis": 1381
             },
             {
               "step": "Then the process-start-new should successfully complete 200",
@@ -2998,8 +1960,8 @@
             "trim": true
           },
           "steps": [
-            "Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080",
-            "When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+            "Given that  process batch-start-new has been deployed into the process engine",
+            "When a user triggers execution of the batch-start-new daily process processurl",
             "Then the process-start-new should successfully complete 200"
           ]
         }
@@ -3100,8 +2062,8 @@
           "trim": true
         },
         "steps": [
-          "Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080",
-          "When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+          "Given that  process validate-new has been deployed into the process engine",
+          "When a user triggers execution of the validate-new daily process processurl",
           "Then the validate-new should successfully complete 200"
         ]
       },
@@ -3117,38 +2079,38 @@
           "matches": [
             {
               "type": "WHEN",
-              "annotatedPattern": "a user triggers execution of the validate-new daily process processurl $processurl",
-              "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+validate-new\\s+daily\\s+process\\s+processurl\\s+(.*)"
-            },
-            {
-              "type": "GIVEN",
-              "annotatedPattern": "that  process validate-new has been deployed into the process engine $value",
-              "resolvedPattern": "that\\s+process\\s+validate-new\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
+              "annotatedPattern": "a user triggers execution of the validate-new daily process processurl",
+              "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+validate-new\\s+daily\\s+process\\s+processurl"
             },
             {
               "type": "THEN",
               "annotatedPattern": "the validate-new should successfully complete $value",
               "resolvedPattern": "the\\s+validate-new\\s+should\\s+successfully\\s+complete\\s+(.*)"
+            },
+            {
+              "type": "GIVEN",
+              "annotatedPattern": "that  process validate-new has been deployed into the process engine",
+              "resolvedPattern": "that\\s+process\\s+validate-new\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine"
             }
           ],
           "results": [
             {
-              "step": "Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080",
+              "step": "Given that  process validate-new has been deployed into the process engine",
               "type": "SUCCESSFUL",
-              "parametrisedStep": "Given that  process validate-new has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-              "durationInMillis": 8
+              "parametrisedStep": "Given that  process validate-new has been deployed into the process engine",
+              "durationInMillis": 0
             },
             {
-              "step": "When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+              "step": "When a user triggers execution of the validate-new daily process processurl",
               "type": "SUCCESSFUL",
-              "parametrisedStep": "When a user triggers execution of the validate-new daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠",
-              "durationInMillis": 19
+              "parametrisedStep": "When a user triggers execution of the validate-new daily process processurl",
+              "durationInMillis": 0
             },
             {
               "step": "Then the validate-new should successfully complete 200",
               "type": "SUCCESSFUL",
               "parametrisedStep": "Then the validate-new should successfully complete ｟200｠",
-              "durationInMillis": 4008
+              "durationInMillis": 19
             }
           ]
         },
@@ -3247,8 +2209,8 @@
             "trim": true
           },
           "steps": [
-            "Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080",
-            "When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+            "Given that  process validate-new has been deployed into the process engine",
+            "When a user triggers execution of the validate-new daily process processurl",
             "Then the validate-new should successfully complete 200"
           ]
         }
@@ -3349,8 +2311,8 @@
           "trim": true
         },
         "steps": [
-          "Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080",
-          "When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+          "Given that  process validate-rerun has been deployed into the process engine",
+          "When a user triggers execution of the validate-rerun daily process processurl",
           "Then the validate-rerun should successfully complete 200"
         ]
       },
@@ -3366,13 +2328,13 @@
           "matches": [
             {
               "type": "WHEN",
-              "annotatedPattern": "a user triggers execution of the validate-rerun daily process processurl $processurl",
-              "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+validate-rerun\\s+daily\\s+process\\s+processurl\\s+(.*)"
+              "annotatedPattern": "a user triggers execution of the validate-rerun daily process processurl",
+              "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+validate-rerun\\s+daily\\s+process\\s+processurl"
             },
             {
               "type": "GIVEN",
-              "annotatedPattern": "that  process validate-rerun has been deployed into the process engine $value",
-              "resolvedPattern": "that\\s+process\\s+validate-rerun\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
+              "annotatedPattern": "that  process validate-rerun has been deployed into the process engine",
+              "resolvedPattern": "that\\s+process\\s+validate-rerun\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine"
             },
             {
               "type": "THEN",
@@ -3382,22 +2344,22 @@
           ],
           "results": [
             {
-              "step": "Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080",
+              "step": "Given that  process validate-rerun has been deployed into the process engine",
               "type": "SUCCESSFUL",
-              "parametrisedStep": "Given that  process validate-rerun has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-              "durationInMillis": 10
+              "parametrisedStep": "Given that  process validate-rerun has been deployed into the process engine",
+              "durationInMillis": 0
             },
             {
-              "step": "When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+              "step": "When a user triggers execution of the validate-rerun daily process processurl",
               "type": "SUCCESSFUL",
-              "parametrisedStep": "When a user triggers execution of the validate-rerun daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠",
-              "durationInMillis": 21
+              "parametrisedStep": "When a user triggers execution of the validate-rerun daily process processurl",
+              "durationInMillis": 623
             },
             {
               "step": "Then the validate-rerun should successfully complete 200",
               "type": "SUCCESSFUL",
               "parametrisedStep": "Then the validate-rerun should successfully complete ｟200｠",
-              "durationInMillis": 3819
+              "durationInMillis": 8
             }
           ]
         },
@@ -3496,756 +2458,9 @@
             "trim": true
           },
           "steps": [
-            "Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080",
-            "When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
+            "Given that  process validate-rerun has been deployed into the process engine",
+            "When a user triggers execution of the validate-rerun daily process processurl",
             "Then the validate-rerun should successfully complete 200"
-          ]
-        }
-      },
-      "examplePerformableScenarios": [],
-      "status": "SUCCESSFUL"
-    },
-    {
-      "scenario": {
-        "title": "5 Validate batch file with status 'Picked' is not picked for execution",
-        "meta": {
-          "properties": []
-        },
-        "givenStories": {
-          "givenStories": [],
-          "givenStoriesAsString": "",
-          "examplesTable": {
-            "tableAsString": "",
-            "headerSeparator": "|",
-            "valueSeparator": "|",
-            "ignorableSeparator": "|--",
-            "tableTransformers": {
-              "transformers": [
-                [
-                  "FORMATTING",
-                  {}
-                ],
-                [
-                  "REPLACING",
-                  {}
-                ],
-                [
-                  "FROM_LANDSCAPE",
-                  {}
-                ]
-              ]
-            },
-            "headers": [],
-            "data": [],
-            "properties": [
-              {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
-              },
-              {
-                "@name": "valueSeparator",
-                "@value": "|"
-              },
-              {
-                "@name": "headerSeparator",
-                "@value": "|"
-              }
-            ],
-            "propertiesAsString": "",
-            "namedParameters": [],
-            "trim": true
-          }
-        },
-        "examplesTable": {
-          "tableAsString": "",
-          "headerSeparator": "|",
-          "valueSeparator": "|",
-          "ignorableSeparator": "|--",
-          "tableTransformers": {
-            "transformers": [
-              [
-                "FORMATTING",
-                {}
-              ],
-              [
-                "REPLACING",
-                {}
-              ],
-              [
-                "FROM_LANDSCAPE",
-                {}
-              ]
-            ]
-          },
-          "headers": [],
-          "data": [],
-          "properties": [
-            {
-              "@name": "ignorableSeparator",
-              "@value": "|--"
-            },
-            {
-              "@name": "valueSeparator",
-              "@value": "|"
-            },
-            {
-              "@name": "headerSeparator",
-              "@value": "|"
-            }
-          ],
-          "propertiesAsString": "",
-          "namedParameters": [],
-          "trim": true
-        },
-        "steps": [
-          "Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080",
-          "When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-          "Then the validate-picked should successfully complete 200"
-        ]
-      },
-      "storyPath": "stories/Test.story",
-      "allowed": true,
-      "normalPerformableScenario": {
-        "parameters": [],
-        "givenStories": [],
-        "beforeSteps": {
-          "matches": []
-        },
-        "steps": {
-          "matches": [
-            {
-              "type": "WHEN",
-              "annotatedPattern": "a user triggers execution of the validate-picked daily process processurl $processurl",
-              "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+validate-picked\\s+daily\\s+process\\s+processurl\\s+(.*)"
-            },
-            {
-              "type": "GIVEN",
-              "annotatedPattern": "that  process validate-picked has been deployed into the process engine $value",
-              "resolvedPattern": "that\\s+process\\s+validate-picked\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
-            },
-            {
-              "type": "THEN",
-              "annotatedPattern": "the validate-picked should successfully complete $value",
-              "resolvedPattern": "the\\s+validate-picked\\s+should\\s+successfully\\s+complete\\s+(.*)"
-            }
-          ],
-          "results": [
-            {
-              "step": "Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080",
-              "type": "SUCCESSFUL",
-              "parametrisedStep": "Given that  process validate-picked has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-              "durationInMillis": 10
-            },
-            {
-              "step": "When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-              "type": "SUCCESSFUL",
-              "parametrisedStep": "When a user triggers execution of the validate-picked daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠",
-              "durationInMillis": 17
-            },
-            {
-              "step": "Then the validate-picked should successfully complete 200",
-              "type": "SUCCESSFUL",
-              "parametrisedStep": "Then the validate-picked should successfully complete ｟200｠",
-              "durationInMillis": 4265
-            }
-          ]
-        },
-        "afterSteps": {
-          "matches": []
-        },
-        "scenario": {
-          "title": "5 Validate batch file with status 'Picked' is not picked for execution",
-          "meta": {
-            "properties": []
-          },
-          "givenStories": {
-            "givenStories": [],
-            "givenStoriesAsString": "",
-            "examplesTable": {
-              "tableAsString": "",
-              "headerSeparator": "|",
-              "valueSeparator": "|",
-              "ignorableSeparator": "|--",
-              "tableTransformers": {
-                "transformers": [
-                  [
-                    "FORMATTING",
-                    {}
-                  ],
-                  [
-                    "REPLACING",
-                    {}
-                  ],
-                  [
-                    "FROM_LANDSCAPE",
-                    {}
-                  ]
-                ]
-              },
-              "headers": [],
-              "data": [],
-              "properties": [
-                {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
-                },
-                {
-                  "@name": "valueSeparator",
-                  "@value": "|"
-                },
-                {
-                  "@name": "headerSeparator",
-                  "@value": "|"
-                }
-              ],
-              "propertiesAsString": "",
-              "namedParameters": [],
-              "trim": true
-            }
-          },
-          "examplesTable": {
-            "tableAsString": "",
-            "headerSeparator": "|",
-            "valueSeparator": "|",
-            "ignorableSeparator": "|--",
-            "tableTransformers": {
-              "transformers": [
-                [
-                  "FORMATTING",
-                  {}
-                ],
-                [
-                  "REPLACING",
-                  {}
-                ],
-                [
-                  "FROM_LANDSCAPE",
-                  {}
-                ]
-              ]
-            },
-            "headers": [],
-            "data": [],
-            "properties": [
-              {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
-              },
-              {
-                "@name": "valueSeparator",
-                "@value": "|"
-              },
-              {
-                "@name": "headerSeparator",
-                "@value": "|"
-              }
-            ],
-            "propertiesAsString": "",
-            "namedParameters": [],
-            "trim": true
-          },
-          "steps": [
-            "Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080",
-            "When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-            "Then the validate-picked should successfully complete 200"
-          ]
-        }
-      },
-      "examplePerformableScenarios": [],
-      "status": "SUCCESSFUL"
-    },
-    {
-      "scenario": {
-        "title": "6 Validate if an execution instance has been created for a picked batch",
-        "meta": {
-          "properties": []
-        },
-        "givenStories": {
-          "givenStories": [],
-          "givenStoriesAsString": "",
-          "examplesTable": {
-            "tableAsString": "",
-            "headerSeparator": "|",
-            "valueSeparator": "|",
-            "ignorableSeparator": "|--",
-            "tableTransformers": {
-              "transformers": [
-                [
-                  "FORMATTING",
-                  {}
-                ],
-                [
-                  "REPLACING",
-                  {}
-                ],
-                [
-                  "FROM_LANDSCAPE",
-                  {}
-                ]
-              ]
-            },
-            "headers": [],
-            "data": [],
-            "properties": [
-              {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
-              },
-              {
-                "@name": "valueSeparator",
-                "@value": "|"
-              },
-              {
-                "@name": "headerSeparator",
-                "@value": "|"
-              }
-            ],
-            "propertiesAsString": "",
-            "namedParameters": [],
-            "trim": true
-          }
-        },
-        "examplesTable": {
-          "tableAsString": "",
-          "headerSeparator": "|",
-          "valueSeparator": "|",
-          "ignorableSeparator": "|--",
-          "tableTransformers": {
-            "transformers": [
-              [
-                "FORMATTING",
-                {}
-              ],
-              [
-                "REPLACING",
-                {}
-              ],
-              [
-                "FROM_LANDSCAPE",
-                {}
-              ]
-            ]
-          },
-          "headers": [],
-          "data": [],
-          "properties": [
-            {
-              "@name": "ignorableSeparator",
-              "@value": "|--"
-            },
-            {
-              "@name": "valueSeparator",
-              "@value": "|"
-            },
-            {
-              "@name": "headerSeparator",
-              "@value": "|"
-            }
-          ],
-          "propertiesAsString": "",
-          "namedParameters": [],
-          "trim": true
-        },
-        "steps": [
-          "Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080",
-          "When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-          "Then the instance-picked should successfully complete 200"
-        ]
-      },
-      "storyPath": "stories/Test.story",
-      "allowed": true,
-      "normalPerformableScenario": {
-        "parameters": [],
-        "givenStories": [],
-        "beforeSteps": {
-          "matches": []
-        },
-        "steps": {
-          "matches": [
-            {
-              "type": "WHEN",
-              "annotatedPattern": "a user triggers execution of the instance-picked daily process processurl $processurl",
-              "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+instance-picked\\s+daily\\s+process\\s+processurl\\s+(.*)"
-            },
-            {
-              "type": "GIVEN",
-              "annotatedPattern": "that  process instance-picked has been deployed into the process engine $value",
-              "resolvedPattern": "that\\s+process\\s+instance-picked\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
-            },
-            {
-              "type": "THEN",
-              "annotatedPattern": "the instance-picked should successfully complete $value",
-              "resolvedPattern": "the\\s+instance-picked\\s+should\\s+successfully\\s+complete\\s+(.*)"
-            }
-          ],
-          "results": [
-            {
-              "step": "Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080",
-              "type": "SUCCESSFUL",
-              "parametrisedStep": "Given that  process instance-picked has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-              "durationInMillis": 11
-            },
-            {
-              "step": "When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-              "type": "SUCCESSFUL",
-              "parametrisedStep": "When a user triggers execution of the instance-picked daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠",
-              "durationInMillis": 21
-            },
-            {
-              "step": "Then the instance-picked should successfully complete 200",
-              "type": "SUCCESSFUL",
-              "parametrisedStep": "Then the instance-picked should successfully complete ｟200｠",
-              "durationInMillis": 2066
-            }
-          ]
-        },
-        "afterSteps": {
-          "matches": []
-        },
-        "scenario": {
-          "title": "6 Validate if an execution instance has been created for a picked batch",
-          "meta": {
-            "properties": []
-          },
-          "givenStories": {
-            "givenStories": [],
-            "givenStoriesAsString": "",
-            "examplesTable": {
-              "tableAsString": "",
-              "headerSeparator": "|",
-              "valueSeparator": "|",
-              "ignorableSeparator": "|--",
-              "tableTransformers": {
-                "transformers": [
-                  [
-                    "FORMATTING",
-                    {}
-                  ],
-                  [
-                    "REPLACING",
-                    {}
-                  ],
-                  [
-                    "FROM_LANDSCAPE",
-                    {}
-                  ]
-                ]
-              },
-              "headers": [],
-              "data": [],
-              "properties": [
-                {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
-                },
-                {
-                  "@name": "valueSeparator",
-                  "@value": "|"
-                },
-                {
-                  "@name": "headerSeparator",
-                  "@value": "|"
-                }
-              ],
-              "propertiesAsString": "",
-              "namedParameters": [],
-              "trim": true
-            }
-          },
-          "examplesTable": {
-            "tableAsString": "",
-            "headerSeparator": "|",
-            "valueSeparator": "|",
-            "ignorableSeparator": "|--",
-            "tableTransformers": {
-              "transformers": [
-                [
-                  "FORMATTING",
-                  {}
-                ],
-                [
-                  "REPLACING",
-                  {}
-                ],
-                [
-                  "FROM_LANDSCAPE",
-                  {}
-                ]
-              ]
-            },
-            "headers": [],
-            "data": [],
-            "properties": [
-              {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
-              },
-              {
-                "@name": "valueSeparator",
-                "@value": "|"
-              },
-              {
-                "@name": "headerSeparator",
-                "@value": "|"
-              }
-            ],
-            "propertiesAsString": "",
-            "namedParameters": [],
-            "trim": true
-          },
-          "steps": [
-            "Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080",
-            "When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start",
-            "Then the instance-picked should successfully complete 200"
-          ]
-        }
-      },
-      "examplePerformableScenarios": [],
-      "status": "SUCCESSFUL"
-    },
-    {
-      "scenario": {
-        "title": "7 Connect process status change",
-        "meta": {
-          "properties": []
-        },
-        "givenStories": {
-          "givenStories": [],
-          "givenStoriesAsString": "",
-          "examplesTable": {
-            "tableAsString": "",
-            "headerSeparator": "|",
-            "valueSeparator": "|",
-            "ignorableSeparator": "|--",
-            "tableTransformers": {
-              "transformers": [
-                [
-                  "FORMATTING",
-                  {}
-                ],
-                [
-                  "REPLACING",
-                  {}
-                ],
-                [
-                  "FROM_LANDSCAPE",
-                  {}
-                ]
-              ]
-            },
-            "headers": [],
-            "data": [],
-            "properties": [
-              {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
-              },
-              {
-                "@name": "valueSeparator",
-                "@value": "|"
-              },
-              {
-                "@name": "headerSeparator",
-                "@value": "|"
-              }
-            ],
-            "propertiesAsString": "",
-            "namedParameters": [],
-            "trim": true
-          }
-        },
-        "examplesTable": {
-          "tableAsString": "",
-          "headerSeparator": "|",
-          "valueSeparator": "|",
-          "ignorableSeparator": "|--",
-          "tableTransformers": {
-            "transformers": [
-              [
-                "FORMATTING",
-                {}
-              ],
-              [
-                "REPLACING",
-                {}
-              ],
-              [
-                "FROM_LANDSCAPE",
-                {}
-              ]
-            ]
-          },
-          "headers": [],
-          "data": [],
-          "properties": [
-            {
-              "@name": "ignorableSeparator",
-              "@value": "|--"
-            },
-            {
-              "@name": "valueSeparator",
-              "@value": "|"
-            },
-            {
-              "@name": "headerSeparator",
-              "@value": "|"
-            }
-          ],
-          "propertiesAsString": "",
-          "namedParameters": [],
-          "trim": true
-        },
-        "steps": [
-          "Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080",
-          "When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance",
-          "Then the batch-status should successfully complete 200"
-        ]
-      },
-      "storyPath": "stories/Test.story",
-      "allowed": true,
-      "normalPerformableScenario": {
-        "parameters": [],
-        "givenStories": [],
-        "beforeSteps": {
-          "matches": []
-        },
-        "steps": {
-          "matches": [
-            {
-              "type": "WHEN",
-              "annotatedPattern": "a user triggers execution of the batch-status daily process processurl $processurl",
-              "resolvedPattern": "a\\s+user\\s+triggers\\s+execution\\s+of\\s+the\\s+batch-status\\s+daily\\s+process\\s+processurl\\s+(.*)"
-            },
-            {
-              "type": "GIVEN",
-              "annotatedPattern": "that  process batch-status has been deployed into the process engine $value",
-              "resolvedPattern": "that\\s+process\\s+batch-status\\s+has\\s+been\\s+deployed\\s+into\\s+the\\s+process\\s+engine\\s+(.*)"
-            },
-            {
-              "type": "THEN",
-              "annotatedPattern": "the batch-status should successfully complete $value",
-              "resolvedPattern": "the\\s+batch-status\\s+should\\s+successfully\\s+complete\\s+(.*)"
-            }
-          ],
-          "results": [
-            {
-              "step": "Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080",
-              "type": "SUCCESSFUL",
-              "parametrisedStep": "Given that  process batch-status has been deployed into the process engine ｟http://192.168.7.147:8080｠",
-              "durationInMillis": 12
-            },
-            {
-              "step": "When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance",
-              "type": "SUCCESSFUL",
-              "parametrisedStep": "When a user triggers execution of the batch-status daily process processurl ｟/engine-rest/history/process-instance｠",
-              "durationInMillis": 9
-            },
-            {
-              "step": "Then the batch-status should successfully complete 200",
-              "type": "SUCCESSFUL",
-              "parametrisedStep": "Then the batch-status should successfully complete ｟200｠",
-              "durationInMillis": 1
-            }
-          ]
-        },
-        "afterSteps": {
-          "matches": []
-        },
-        "scenario": {
-          "title": "7 Connect process status change",
-          "meta": {
-            "properties": []
-          },
-          "givenStories": {
-            "givenStories": [],
-            "givenStoriesAsString": "",
-            "examplesTable": {
-              "tableAsString": "",
-              "headerSeparator": "|",
-              "valueSeparator": "|",
-              "ignorableSeparator": "|--",
-              "tableTransformers": {
-                "transformers": [
-                  [
-                    "FORMATTING",
-                    {}
-                  ],
-                  [
-                    "REPLACING",
-                    {}
-                  ],
-                  [
-                    "FROM_LANDSCAPE",
-                    {}
-                  ]
-                ]
-              },
-              "headers": [],
-              "data": [],
-              "properties": [
-                {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
-                },
-                {
-                  "@name": "valueSeparator",
-                  "@value": "|"
-                },
-                {
-                  "@name": "headerSeparator",
-                  "@value": "|"
-                }
-              ],
-              "propertiesAsString": "",
-              "namedParameters": [],
-              "trim": true
-            }
-          },
-          "examplesTable": {
-            "tableAsString": "",
-            "headerSeparator": "|",
-            "valueSeparator": "|",
-            "ignorableSeparator": "|--",
-            "tableTransformers": {
-              "transformers": [
-                [
-                  "FORMATTING",
-                  {}
-                ],
-                [
-                  "REPLACING",
-                  {}
-                ],
-                [
-                  "FROM_LANDSCAPE",
-                  {}
-                ]
-              ]
-            },
-            "headers": [],
-            "data": [],
-            "properties": [
-              {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
-              },
-              {
-                "@name": "valueSeparator",
-                "@value": "|"
-              },
-              {
-                "@name": "headerSeparator",
-                "@value": "|"
-              }
-            ],
-            "propertiesAsString": "",
-            "namedParameters": [],
-            "trim": true
-          },
-          "steps": [
-            "Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080",
-            "When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance",
-            "Then the batch-status should successfully complete 200"
           ]
         }
       },

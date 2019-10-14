@@ -63,10 +63,8 @@ public class TestRunnerJbehaveTest extends JUnitStories {
         return new SpringStepsFactory(configuration(), applicationContext);
     }
 
-    protected List<String> storyPaths() {
-    	
-    	
-    	//System.out.println("90909090909090909"+new StoryFinder().findPaths(CodeLocations.codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story"));
+    protected List<String> storyPaths() 
+    {
         return new StoryFinder().findPaths(CodeLocations.codeLocationFromClass(this.getClass()), "**/*.story", "**/excluded*.story");
     }
 

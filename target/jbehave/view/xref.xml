@@ -134,8 +134,8 @@
               <trim>true</trim>
             </examplesTable>
             <steps>
-              <string>Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch</string>
+              <string>Given that fulfilment process prepare-batch has been deployed into the process engine</string>
+              <string>When a user triggers execution of the prepare-batch daily process processurl</string>
               <string>Then the process should successfully complete 200</string>
             </steps>
           </scenario>
@@ -213,8 +213,8 @@
               <trim>true</trim>
             </examplesTable>
             <steps>
-              <string>Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+              <string>Given that  process batch-start-new has been deployed into the process engine</string>
+              <string>When a user triggers execution of the batch-start-new daily process processurl</string>
               <string>Then the process-start-new should successfully complete 200</string>
             </steps>
           </scenario>
@@ -292,8 +292,8 @@
               <trim>true</trim>
             </examplesTable>
             <steps>
-              <string>Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+              <string>Given that  process validate-new has been deployed into the process engine</string>
+              <string>When a user triggers execution of the validate-new daily process processurl</string>
               <string>Then the validate-new should successfully complete 200</string>
             </steps>
           </scenario>
@@ -371,246 +371,9 @@
               <trim>true</trim>
             </examplesTable>
             <steps>
-              <string>Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+              <string>Given that  process validate-rerun has been deployed into the process engine</string>
+              <string>When a user triggers execution of the validate-rerun daily process processurl</string>
               <string>Then the validate-rerun should successfully complete 200</string>
-            </steps>
-          </scenario>
-          <scenario>
-            <title>5 Validate batch file with status &apos;Picked&apos; is not picked for execution</title>
-            <meta>
-              <properties/>
-            </meta>
-            <givenStories>
-              <givenStories/>
-              <givenStoriesAsString></givenStoriesAsString>
-              <examplesTable>
-                <tableAsString></tableAsString>
-                <headerSeparator>|</headerSeparator>
-                <valueSeparator>|</valueSeparator>
-                <ignorableSeparator>|--</ignorableSeparator>
-                <tableTransformers>
-                  <transformers>
-                    <entry>
-                      <string>FORMATTING</string>
-                      <formatting/>
-                    </entry>
-                    <entry>
-                      <string>REPLACING</string>
-                      <replacing/>
-                    </entry>
-                    <entry>
-                      <string>FROM_LANDSCAPE</string>
-                      <fromLandscape/>
-                    </entry>
-                  </transformers>
-                </tableTransformers>
-                <headers/>
-                <data/>
-                <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
-                  <property name="headerSeparator" value="|"/>
-                </properties>
-                <propertiesAsString></propertiesAsString>
-                <namedParameters/>
-                <trim>true</trim>
-              </examplesTable>
-            </givenStories>
-            <examplesTable>
-              <tableAsString></tableAsString>
-              <headerSeparator>|</headerSeparator>
-              <valueSeparator>|</valueSeparator>
-              <ignorableSeparator>|--</ignorableSeparator>
-              <tableTransformers>
-                <transformers>
-                  <entry>
-                    <string>FORMATTING</string>
-                    <formatting/>
-                  </entry>
-                  <entry>
-                    <string>REPLACING</string>
-                    <replacing/>
-                  </entry>
-                  <entry>
-                    <string>FROM_LANDSCAPE</string>
-                    <fromLandscape/>
-                  </entry>
-                </transformers>
-              </tableTransformers>
-              <headers/>
-              <data/>
-              <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
-                <property name="headerSeparator" value="|"/>
-              </properties>
-              <propertiesAsString></propertiesAsString>
-              <namedParameters/>
-              <trim>true</trim>
-            </examplesTable>
-            <steps>
-              <string>Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
-              <string>Then the validate-picked should successfully complete 200</string>
-            </steps>
-          </scenario>
-          <scenario>
-            <title>6 Validate if an execution instance has been created for a picked batch</title>
-            <meta>
-              <properties/>
-            </meta>
-            <givenStories>
-              <givenStories/>
-              <givenStoriesAsString></givenStoriesAsString>
-              <examplesTable>
-                <tableAsString></tableAsString>
-                <headerSeparator>|</headerSeparator>
-                <valueSeparator>|</valueSeparator>
-                <ignorableSeparator>|--</ignorableSeparator>
-                <tableTransformers>
-                  <transformers>
-                    <entry>
-                      <string>FORMATTING</string>
-                      <formatting/>
-                    </entry>
-                    <entry>
-                      <string>REPLACING</string>
-                      <replacing/>
-                    </entry>
-                    <entry>
-                      <string>FROM_LANDSCAPE</string>
-                      <fromLandscape/>
-                    </entry>
-                  </transformers>
-                </tableTransformers>
-                <headers/>
-                <data/>
-                <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
-                  <property name="headerSeparator" value="|"/>
-                </properties>
-                <propertiesAsString></propertiesAsString>
-                <namedParameters/>
-                <trim>true</trim>
-              </examplesTable>
-            </givenStories>
-            <examplesTable>
-              <tableAsString></tableAsString>
-              <headerSeparator>|</headerSeparator>
-              <valueSeparator>|</valueSeparator>
-              <ignorableSeparator>|--</ignorableSeparator>
-              <tableTransformers>
-                <transformers>
-                  <entry>
-                    <string>FORMATTING</string>
-                    <formatting/>
-                  </entry>
-                  <entry>
-                    <string>REPLACING</string>
-                    <replacing/>
-                  </entry>
-                  <entry>
-                    <string>FROM_LANDSCAPE</string>
-                    <fromLandscape/>
-                  </entry>
-                </transformers>
-              </tableTransformers>
-              <headers/>
-              <data/>
-              <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
-                <property name="headerSeparator" value="|"/>
-              </properties>
-              <propertiesAsString></propertiesAsString>
-              <namedParameters/>
-              <trim>true</trim>
-            </examplesTable>
-            <steps>
-              <string>Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
-              <string>Then the instance-picked should successfully complete 200</string>
-            </steps>
-          </scenario>
-          <scenario>
-            <title>7 Connect process status change</title>
-            <meta>
-              <properties/>
-            </meta>
-            <givenStories>
-              <givenStories/>
-              <givenStoriesAsString></givenStoriesAsString>
-              <examplesTable>
-                <tableAsString></tableAsString>
-                <headerSeparator>|</headerSeparator>
-                <valueSeparator>|</valueSeparator>
-                <ignorableSeparator>|--</ignorableSeparator>
-                <tableTransformers>
-                  <transformers>
-                    <entry>
-                      <string>FORMATTING</string>
-                      <formatting/>
-                    </entry>
-                    <entry>
-                      <string>REPLACING</string>
-                      <replacing/>
-                    </entry>
-                    <entry>
-                      <string>FROM_LANDSCAPE</string>
-                      <fromLandscape/>
-                    </entry>
-                  </transformers>
-                </tableTransformers>
-                <headers/>
-                <data/>
-                <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
-                  <property name="headerSeparator" value="|"/>
-                </properties>
-                <propertiesAsString></propertiesAsString>
-                <namedParameters/>
-                <trim>true</trim>
-              </examplesTable>
-            </givenStories>
-            <examplesTable>
-              <tableAsString></tableAsString>
-              <headerSeparator>|</headerSeparator>
-              <valueSeparator>|</valueSeparator>
-              <ignorableSeparator>|--</ignorableSeparator>
-              <tableTransformers>
-                <transformers>
-                  <entry>
-                    <string>FORMATTING</string>
-                    <formatting/>
-                  </entry>
-                  <entry>
-                    <string>REPLACING</string>
-                    <replacing/>
-                  </entry>
-                  <entry>
-                    <string>FROM_LANDSCAPE</string>
-                    <fromLandscape/>
-                  </entry>
-                </transformers>
-              </tableTransformers>
-              <headers/>
-              <data/>
-              <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
-                <property name="headerSeparator" value="|"/>
-              </properties>
-              <propertiesAsString></propertiesAsString>
-              <namedParameters/>
-              <trim>true</trim>
-            </examplesTable>
-            <steps>
-              <string>Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance</string>
-              <string>Then the batch-status should successfully complete 200</string>
             </steps>
           </scenario>
         </scenarios>
@@ -698,8 +461,8 @@ So that </localizedNarrative>
               <trim>true</trim>
             </examplesTable>
             <steps>
-              <string>Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch</string>
+              <string>Given that fulfilment process prepare-batch has been deployed into the process engine</string>
+              <string>When a user triggers execution of the prepare-batch daily process processurl</string>
               <string>Then the process should successfully complete 200</string>
             </steps>
           </scenario>
@@ -714,39 +477,39 @@ So that </localizedNarrative>
             <steps>
               <matches>
                 <stepMatch>
-                  <type>GIVEN</type>
-                  <annotatedPattern>that fulfilment process prepare-batch has been deployed into the process engine $value</annotatedPattern>
-                  <resolvedPattern>that\s+fulfilment\s+process\s+prepare-batch\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
-                </stepMatch>
-                <stepMatch>
                   <type>WHEN</type>
-                  <annotatedPattern>a user triggers execution of the prepare-batch daily process processurl $processurl</annotatedPattern>
-                  <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+prepare-batch\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
+                  <annotatedPattern>a user triggers execution of the prepare-batch daily process processurl</annotatedPattern>
+                  <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+prepare-batch\s+daily\s+process\s+processurl</resolvedPattern>
                 </stepMatch>
                 <stepMatch>
                   <type>THEN</type>
                   <annotatedPattern>the process should successfully complete $value</annotatedPattern>
                   <resolvedPattern>the\s+process\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
                 </stepMatch>
+                <stepMatch>
+                  <type>GIVEN</type>
+                  <annotatedPattern>that fulfilment process prepare-batch has been deployed into the process engine</annotatedPattern>
+                  <resolvedPattern>that\s+fulfilment\s+process\s+prepare-batch\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine</resolvedPattern>
+                </stepMatch>
               </matches>
               <results>
                 <successful>
-                  <step>Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080</step>
+                  <step>Given that fulfilment process prepare-batch has been deployed into the process engine</step>
                   <type>SUCCESSFUL</type>
-                  <parametrisedStep>Given that fulfilment process prepare-batch has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-                  <durationInMillis>881</durationInMillis>
+                  <parametrisedStep>Given that fulfilment process prepare-batch has been deployed into the process engine</parametrisedStep>
+                  <durationInMillis>831</durationInMillis>
                 </successful>
                 <successful>
-                  <step>When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch</step>
+                  <step>When a user triggers execution of the prepare-batch daily process processurl</step>
                   <type>SUCCESSFUL</type>
-                  <parametrisedStep>When a user triggers execution of the prepare-batch daily process processurl ｟/engine-rest/process-definition/key/prepare-batch｠</parametrisedStep>
-                  <durationInMillis>50</durationInMillis>
+                  <parametrisedStep>When a user triggers execution of the prepare-batch daily process processurl</parametrisedStep>
+                  <durationInMillis>53</durationInMillis>
                 </successful>
                 <successful>
                   <step>Then the process should successfully complete 200</step>
                   <type>SUCCESSFUL</type>
                   <parametrisedStep>Then the process should successfully complete ｟200｠</parametrisedStep>
-                  <durationInMillis>2</durationInMillis>
+                  <durationInMillis>3</durationInMillis>
                 </successful>
               </results>
             </steps>
@@ -827,8 +590,8 @@ So that </localizedNarrative>
                 <trim>true</trim>
               </examplesTable>
               <steps>
-                <string>Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080</string>
-                <string>When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch</string>
+                <string>Given that fulfilment process prepare-batch has been deployed into the process engine</string>
+                <string>When a user triggers execution of the prepare-batch daily process processurl</string>
                 <string>Then the process should successfully complete 200</string>
               </steps>
             </scenario>
@@ -911,8 +674,8 @@ So that </localizedNarrative>
               <trim>true</trim>
             </examplesTable>
             <steps>
-              <string>Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+              <string>Given that  process batch-start-new has been deployed into the process engine</string>
+              <string>When a user triggers execution of the batch-start-new daily process processurl</string>
               <string>Then the process-start-new should successfully complete 200</string>
             </steps>
           </scenario>
@@ -927,9 +690,9 @@ So that </localizedNarrative>
             <steps>
               <matches>
                 <stepMatch>
-                  <type>WHEN</type>
-                  <annotatedPattern>a user triggers execution of the batch-start-new daily process processurl $processurl</annotatedPattern>
-                  <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+batch-start-new\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
+                  <type>GIVEN</type>
+                  <annotatedPattern>that  process batch-start-new has been deployed into the process engine</annotatedPattern>
+                  <resolvedPattern>that\s+process\s+batch-start-new\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine</resolvedPattern>
                 </stepMatch>
                 <stepMatch>
                   <type>THEN</type>
@@ -937,23 +700,23 @@ So that </localizedNarrative>
                   <resolvedPattern>the\s+process-start-new\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
                 </stepMatch>
                 <stepMatch>
-                  <type>GIVEN</type>
-                  <annotatedPattern>that  process batch-start-new has been deployed into the process engine $value</annotatedPattern>
-                  <resolvedPattern>that\s+process\s+batch-start-new\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
+                  <type>WHEN</type>
+                  <annotatedPattern>a user triggers execution of the batch-start-new daily process processurl</annotatedPattern>
+                  <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+batch-start-new\s+daily\s+process\s+processurl</resolvedPattern>
                 </stepMatch>
               </matches>
               <results>
                 <successful>
-                  <step>Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080</step>
+                  <step>Given that  process batch-start-new has been deployed into the process engine</step>
                   <type>SUCCESSFUL</type>
-                  <parametrisedStep>Given that  process batch-start-new has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-                  <durationInMillis>12</durationInMillis>
+                  <parametrisedStep>Given that  process batch-start-new has been deployed into the process engine</parametrisedStep>
+                  <durationInMillis>0</durationInMillis>
                 </successful>
                 <successful>
-                  <step>When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</step>
+                  <step>When a user triggers execution of the batch-start-new daily process processurl</step>
                   <type>SUCCESSFUL</type>
-                  <parametrisedStep>When a user triggers execution of the batch-start-new daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠</parametrisedStep>
-                  <durationInMillis>22</durationInMillis>
+                  <parametrisedStep>When a user triggers execution of the batch-start-new daily process processurl</parametrisedStep>
+                  <durationInMillis>1381</durationInMillis>
                 </successful>
                 <successful>
                   <step>Then the process-start-new should successfully complete 200</step>
@@ -1040,8 +803,8 @@ So that </localizedNarrative>
                 <trim>true</trim>
               </examplesTable>
               <steps>
-                <string>Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080</string>
-                <string>When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+                <string>Given that  process batch-start-new has been deployed into the process engine</string>
+                <string>When a user triggers execution of the batch-start-new daily process processurl</string>
                 <string>Then the process-start-new should successfully complete 200</string>
               </steps>
             </scenario>
@@ -1124,8 +887,8 @@ So that </localizedNarrative>
               <trim>true</trim>
             </examplesTable>
             <steps>
-              <string>Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+              <string>Given that  process validate-new has been deployed into the process engine</string>
+              <string>When a user triggers execution of the validate-new daily process processurl</string>
               <string>Then the validate-new should successfully complete 200</string>
             </steps>
           </scenario>
@@ -1141,38 +904,38 @@ So that </localizedNarrative>
               <matches>
                 <stepMatch>
                   <type>WHEN</type>
-                  <annotatedPattern>a user triggers execution of the validate-new daily process processurl $processurl</annotatedPattern>
-                  <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+validate-new\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
-                </stepMatch>
-                <stepMatch>
-                  <type>GIVEN</type>
-                  <annotatedPattern>that  process validate-new has been deployed into the process engine $value</annotatedPattern>
-                  <resolvedPattern>that\s+process\s+validate-new\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
+                  <annotatedPattern>a user triggers execution of the validate-new daily process processurl</annotatedPattern>
+                  <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+validate-new\s+daily\s+process\s+processurl</resolvedPattern>
                 </stepMatch>
                 <stepMatch>
                   <type>THEN</type>
                   <annotatedPattern>the validate-new should successfully complete $value</annotatedPattern>
                   <resolvedPattern>the\s+validate-new\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
                 </stepMatch>
+                <stepMatch>
+                  <type>GIVEN</type>
+                  <annotatedPattern>that  process validate-new has been deployed into the process engine</annotatedPattern>
+                  <resolvedPattern>that\s+process\s+validate-new\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine</resolvedPattern>
+                </stepMatch>
               </matches>
               <results>
                 <successful>
-                  <step>Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080</step>
+                  <step>Given that  process validate-new has been deployed into the process engine</step>
                   <type>SUCCESSFUL</type>
-                  <parametrisedStep>Given that  process validate-new has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-                  <durationInMillis>8</durationInMillis>
+                  <parametrisedStep>Given that  process validate-new has been deployed into the process engine</parametrisedStep>
+                  <durationInMillis>0</durationInMillis>
                 </successful>
                 <successful>
-                  <step>When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</step>
+                  <step>When a user triggers execution of the validate-new daily process processurl</step>
                   <type>SUCCESSFUL</type>
-                  <parametrisedStep>When a user triggers execution of the validate-new daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠</parametrisedStep>
-                  <durationInMillis>19</durationInMillis>
+                  <parametrisedStep>When a user triggers execution of the validate-new daily process processurl</parametrisedStep>
+                  <durationInMillis>0</durationInMillis>
                 </successful>
                 <successful>
                   <step>Then the validate-new should successfully complete 200</step>
                   <type>SUCCESSFUL</type>
                   <parametrisedStep>Then the validate-new should successfully complete ｟200｠</parametrisedStep>
-                  <durationInMillis>4008</durationInMillis>
+                  <durationInMillis>19</durationInMillis>
                 </successful>
               </results>
             </steps>
@@ -1253,8 +1016,8 @@ So that </localizedNarrative>
                 <trim>true</trim>
               </examplesTable>
               <steps>
-                <string>Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080</string>
-                <string>When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+                <string>Given that  process validate-new has been deployed into the process engine</string>
+                <string>When a user triggers execution of the validate-new daily process processurl</string>
                 <string>Then the validate-new should successfully complete 200</string>
               </steps>
             </scenario>
@@ -1337,8 +1100,8 @@ So that </localizedNarrative>
               <trim>true</trim>
             </examplesTable>
             <steps>
-              <string>Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+              <string>Given that  process validate-rerun has been deployed into the process engine</string>
+              <string>When a user triggers execution of the validate-rerun daily process processurl</string>
               <string>Then the validate-rerun should successfully complete 200</string>
             </steps>
           </scenario>
@@ -1354,13 +1117,13 @@ So that </localizedNarrative>
               <matches>
                 <stepMatch>
                   <type>WHEN</type>
-                  <annotatedPattern>a user triggers execution of the validate-rerun daily process processurl $processurl</annotatedPattern>
-                  <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+validate-rerun\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
+                  <annotatedPattern>a user triggers execution of the validate-rerun daily process processurl</annotatedPattern>
+                  <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+validate-rerun\s+daily\s+process\s+processurl</resolvedPattern>
                 </stepMatch>
                 <stepMatch>
                   <type>GIVEN</type>
-                  <annotatedPattern>that  process validate-rerun has been deployed into the process engine $value</annotatedPattern>
-                  <resolvedPattern>that\s+process\s+validate-rerun\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
+                  <annotatedPattern>that  process validate-rerun has been deployed into the process engine</annotatedPattern>
+                  <resolvedPattern>that\s+process\s+validate-rerun\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine</resolvedPattern>
                 </stepMatch>
                 <stepMatch>
                   <type>THEN</type>
@@ -1370,22 +1133,22 @@ So that </localizedNarrative>
               </matches>
               <results>
                 <successful>
-                  <step>Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080</step>
+                  <step>Given that  process validate-rerun has been deployed into the process engine</step>
                   <type>SUCCESSFUL</type>
-                  <parametrisedStep>Given that  process validate-rerun has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-                  <durationInMillis>10</durationInMillis>
+                  <parametrisedStep>Given that  process validate-rerun has been deployed into the process engine</parametrisedStep>
+                  <durationInMillis>0</durationInMillis>
                 </successful>
                 <successful>
-                  <step>When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start</step>
+                  <step>When a user triggers execution of the validate-rerun daily process processurl</step>
                   <type>SUCCESSFUL</type>
-                  <parametrisedStep>When a user triggers execution of the validate-rerun daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠</parametrisedStep>
-                  <durationInMillis>21</durationInMillis>
+                  <parametrisedStep>When a user triggers execution of the validate-rerun daily process processurl</parametrisedStep>
+                  <durationInMillis>623</durationInMillis>
                 </successful>
                 <successful>
                   <step>Then the validate-rerun should successfully complete 200</step>
                   <type>SUCCESSFUL</type>
                   <parametrisedStep>Then the validate-rerun should successfully complete ｟200｠</parametrisedStep>
-                  <durationInMillis>3819</durationInMillis>
+                  <durationInMillis>8</durationInMillis>
                 </successful>
               </results>
             </steps>
@@ -1466,648 +1229,9 @@ So that </localizedNarrative>
                 <trim>true</trim>
               </examplesTable>
               <steps>
-                <string>Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080</string>
-                <string>When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+                <string>Given that  process validate-rerun has been deployed into the process engine</string>
+                <string>When a user triggers execution of the validate-rerun daily process processurl</string>
                 <string>Then the validate-rerun should successfully complete 200</string>
-              </steps>
-            </scenario>
-          </normalPerformableScenario>
-          <examplePerformableScenarios/>
-          <status>SUCCESSFUL</status>
-        </performableScenario>
-        <performableScenario>
-          <scenario>
-            <title>5 Validate batch file with status &apos;Picked&apos; is not picked for execution</title>
-            <meta>
-              <properties/>
-            </meta>
-            <givenStories>
-              <givenStories/>
-              <givenStoriesAsString></givenStoriesAsString>
-              <examplesTable>
-                <tableAsString></tableAsString>
-                <headerSeparator>|</headerSeparator>
-                <valueSeparator>|</valueSeparator>
-                <ignorableSeparator>|--</ignorableSeparator>
-                <tableTransformers>
-                  <transformers>
-                    <entry>
-                      <string>FORMATTING</string>
-                      <formatting/>
-                    </entry>
-                    <entry>
-                      <string>REPLACING</string>
-                      <replacing/>
-                    </entry>
-                    <entry>
-                      <string>FROM_LANDSCAPE</string>
-                      <fromLandscape/>
-                    </entry>
-                  </transformers>
-                </tableTransformers>
-                <headers/>
-                <data/>
-                <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
-                  <property name="headerSeparator" value="|"/>
-                </properties>
-                <propertiesAsString></propertiesAsString>
-                <namedParameters/>
-                <trim>true</trim>
-              </examplesTable>
-            </givenStories>
-            <examplesTable>
-              <tableAsString></tableAsString>
-              <headerSeparator>|</headerSeparator>
-              <valueSeparator>|</valueSeparator>
-              <ignorableSeparator>|--</ignorableSeparator>
-              <tableTransformers>
-                <transformers>
-                  <entry>
-                    <string>FORMATTING</string>
-                    <formatting/>
-                  </entry>
-                  <entry>
-                    <string>REPLACING</string>
-                    <replacing/>
-                  </entry>
-                  <entry>
-                    <string>FROM_LANDSCAPE</string>
-                    <fromLandscape/>
-                  </entry>
-                </transformers>
-              </tableTransformers>
-              <headers/>
-              <data/>
-              <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
-                <property name="headerSeparator" value="|"/>
-              </properties>
-              <propertiesAsString></propertiesAsString>
-              <namedParameters/>
-              <trim>true</trim>
-            </examplesTable>
-            <steps>
-              <string>Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
-              <string>Then the validate-picked should successfully complete 200</string>
-            </steps>
-          </scenario>
-          <storyPath>stories/Test.story</storyPath>
-          <allowed>true</allowed>
-          <normalPerformableScenario>
-            <parameters/>
-            <givenStories/>
-            <beforeSteps>
-              <matches/>
-            </beforeSteps>
-            <steps>
-              <matches>
-                <stepMatch>
-                  <type>WHEN</type>
-                  <annotatedPattern>a user triggers execution of the validate-picked daily process processurl $processurl</annotatedPattern>
-                  <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+validate-picked\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
-                </stepMatch>
-                <stepMatch>
-                  <type>GIVEN</type>
-                  <annotatedPattern>that  process validate-picked has been deployed into the process engine $value</annotatedPattern>
-                  <resolvedPattern>that\s+process\s+validate-picked\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
-                </stepMatch>
-                <stepMatch>
-                  <type>THEN</type>
-                  <annotatedPattern>the validate-picked should successfully complete $value</annotatedPattern>
-                  <resolvedPattern>the\s+validate-picked\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
-                </stepMatch>
-              </matches>
-              <results>
-                <successful>
-                  <step>Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080</step>
-                  <type>SUCCESSFUL</type>
-                  <parametrisedStep>Given that  process validate-picked has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-                  <durationInMillis>10</durationInMillis>
-                </successful>
-                <successful>
-                  <step>When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</step>
-                  <type>SUCCESSFUL</type>
-                  <parametrisedStep>When a user triggers execution of the validate-picked daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠</parametrisedStep>
-                  <durationInMillis>17</durationInMillis>
-                </successful>
-                <successful>
-                  <step>Then the validate-picked should successfully complete 200</step>
-                  <type>SUCCESSFUL</type>
-                  <parametrisedStep>Then the validate-picked should successfully complete ｟200｠</parametrisedStep>
-                  <durationInMillis>4265</durationInMillis>
-                </successful>
-              </results>
-            </steps>
-            <afterSteps>
-              <matches/>
-            </afterSteps>
-            <scenario>
-              <title>5 Validate batch file with status &apos;Picked&apos; is not picked for execution</title>
-              <meta>
-                <properties/>
-              </meta>
-              <givenStories>
-                <givenStories/>
-                <givenStoriesAsString></givenStoriesAsString>
-                <examplesTable>
-                  <tableAsString></tableAsString>
-                  <headerSeparator>|</headerSeparator>
-                  <valueSeparator>|</valueSeparator>
-                  <ignorableSeparator>|--</ignorableSeparator>
-                  <tableTransformers>
-                    <transformers>
-                      <entry>
-                        <string>FORMATTING</string>
-                        <formatting/>
-                      </entry>
-                      <entry>
-                        <string>REPLACING</string>
-                        <replacing/>
-                      </entry>
-                      <entry>
-                        <string>FROM_LANDSCAPE</string>
-                        <fromLandscape/>
-                      </entry>
-                    </transformers>
-                  </tableTransformers>
-                  <headers/>
-                  <data/>
-                  <properties>
-                    <property name="ignorableSeparator" value="|--"/>
-                    <property name="valueSeparator" value="|"/>
-                    <property name="headerSeparator" value="|"/>
-                  </properties>
-                  <propertiesAsString></propertiesAsString>
-                  <namedParameters/>
-                  <trim>true</trim>
-                </examplesTable>
-              </givenStories>
-              <examplesTable>
-                <tableAsString></tableAsString>
-                <headerSeparator>|</headerSeparator>
-                <valueSeparator>|</valueSeparator>
-                <ignorableSeparator>|--</ignorableSeparator>
-                <tableTransformers>
-                  <transformers>
-                    <entry>
-                      <string>FORMATTING</string>
-                      <formatting/>
-                    </entry>
-                    <entry>
-                      <string>REPLACING</string>
-                      <replacing/>
-                    </entry>
-                    <entry>
-                      <string>FROM_LANDSCAPE</string>
-                      <fromLandscape/>
-                    </entry>
-                  </transformers>
-                </tableTransformers>
-                <headers/>
-                <data/>
-                <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
-                  <property name="headerSeparator" value="|"/>
-                </properties>
-                <propertiesAsString></propertiesAsString>
-                <namedParameters/>
-                <trim>true</trim>
-              </examplesTable>
-              <steps>
-                <string>Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080</string>
-                <string>When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
-                <string>Then the validate-picked should successfully complete 200</string>
-              </steps>
-            </scenario>
-          </normalPerformableScenario>
-          <examplePerformableScenarios/>
-          <status>SUCCESSFUL</status>
-        </performableScenario>
-        <performableScenario>
-          <scenario>
-            <title>6 Validate if an execution instance has been created for a picked batch</title>
-            <meta>
-              <properties/>
-            </meta>
-            <givenStories>
-              <givenStories/>
-              <givenStoriesAsString></givenStoriesAsString>
-              <examplesTable>
-                <tableAsString></tableAsString>
-                <headerSeparator>|</headerSeparator>
-                <valueSeparator>|</valueSeparator>
-                <ignorableSeparator>|--</ignorableSeparator>
-                <tableTransformers>
-                  <transformers>
-                    <entry>
-                      <string>FORMATTING</string>
-                      <formatting/>
-                    </entry>
-                    <entry>
-                      <string>REPLACING</string>
-                      <replacing/>
-                    </entry>
-                    <entry>
-                      <string>FROM_LANDSCAPE</string>
-                      <fromLandscape/>
-                    </entry>
-                  </transformers>
-                </tableTransformers>
-                <headers/>
-                <data/>
-                <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
-                  <property name="headerSeparator" value="|"/>
-                </properties>
-                <propertiesAsString></propertiesAsString>
-                <namedParameters/>
-                <trim>true</trim>
-              </examplesTable>
-            </givenStories>
-            <examplesTable>
-              <tableAsString></tableAsString>
-              <headerSeparator>|</headerSeparator>
-              <valueSeparator>|</valueSeparator>
-              <ignorableSeparator>|--</ignorableSeparator>
-              <tableTransformers>
-                <transformers>
-                  <entry>
-                    <string>FORMATTING</string>
-                    <formatting/>
-                  </entry>
-                  <entry>
-                    <string>REPLACING</string>
-                    <replacing/>
-                  </entry>
-                  <entry>
-                    <string>FROM_LANDSCAPE</string>
-                    <fromLandscape/>
-                  </entry>
-                </transformers>
-              </tableTransformers>
-              <headers/>
-              <data/>
-              <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
-                <property name="headerSeparator" value="|"/>
-              </properties>
-              <propertiesAsString></propertiesAsString>
-              <namedParameters/>
-              <trim>true</trim>
-            </examplesTable>
-            <steps>
-              <string>Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
-              <string>Then the instance-picked should successfully complete 200</string>
-            </steps>
-          </scenario>
-          <storyPath>stories/Test.story</storyPath>
-          <allowed>true</allowed>
-          <normalPerformableScenario>
-            <parameters/>
-            <givenStories/>
-            <beforeSteps>
-              <matches/>
-            </beforeSteps>
-            <steps>
-              <matches>
-                <stepMatch>
-                  <type>WHEN</type>
-                  <annotatedPattern>a user triggers execution of the instance-picked daily process processurl $processurl</annotatedPattern>
-                  <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+instance-picked\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
-                </stepMatch>
-                <stepMatch>
-                  <type>GIVEN</type>
-                  <annotatedPattern>that  process instance-picked has been deployed into the process engine $value</annotatedPattern>
-                  <resolvedPattern>that\s+process\s+instance-picked\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
-                </stepMatch>
-                <stepMatch>
-                  <type>THEN</type>
-                  <annotatedPattern>the instance-picked should successfully complete $value</annotatedPattern>
-                  <resolvedPattern>the\s+instance-picked\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
-                </stepMatch>
-              </matches>
-              <results>
-                <successful>
-                  <step>Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080</step>
-                  <type>SUCCESSFUL</type>
-                  <parametrisedStep>Given that  process instance-picked has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-                  <durationInMillis>11</durationInMillis>
-                </successful>
-                <successful>
-                  <step>When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</step>
-                  <type>SUCCESSFUL</type>
-                  <parametrisedStep>When a user triggers execution of the instance-picked daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠</parametrisedStep>
-                  <durationInMillis>21</durationInMillis>
-                </successful>
-                <successful>
-                  <step>Then the instance-picked should successfully complete 200</step>
-                  <type>SUCCESSFUL</type>
-                  <parametrisedStep>Then the instance-picked should successfully complete ｟200｠</parametrisedStep>
-                  <durationInMillis>2066</durationInMillis>
-                </successful>
-              </results>
-            </steps>
-            <afterSteps>
-              <matches/>
-            </afterSteps>
-            <scenario>
-              <title>6 Validate if an execution instance has been created for a picked batch</title>
-              <meta>
-                <properties/>
-              </meta>
-              <givenStories>
-                <givenStories/>
-                <givenStoriesAsString></givenStoriesAsString>
-                <examplesTable>
-                  <tableAsString></tableAsString>
-                  <headerSeparator>|</headerSeparator>
-                  <valueSeparator>|</valueSeparator>
-                  <ignorableSeparator>|--</ignorableSeparator>
-                  <tableTransformers>
-                    <transformers>
-                      <entry>
-                        <string>FORMATTING</string>
-                        <formatting/>
-                      </entry>
-                      <entry>
-                        <string>REPLACING</string>
-                        <replacing/>
-                      </entry>
-                      <entry>
-                        <string>FROM_LANDSCAPE</string>
-                        <fromLandscape/>
-                      </entry>
-                    </transformers>
-                  </tableTransformers>
-                  <headers/>
-                  <data/>
-                  <properties>
-                    <property name="ignorableSeparator" value="|--"/>
-                    <property name="valueSeparator" value="|"/>
-                    <property name="headerSeparator" value="|"/>
-                  </properties>
-                  <propertiesAsString></propertiesAsString>
-                  <namedParameters/>
-                  <trim>true</trim>
-                </examplesTable>
-              </givenStories>
-              <examplesTable>
-                <tableAsString></tableAsString>
-                <headerSeparator>|</headerSeparator>
-                <valueSeparator>|</valueSeparator>
-                <ignorableSeparator>|--</ignorableSeparator>
-                <tableTransformers>
-                  <transformers>
-                    <entry>
-                      <string>FORMATTING</string>
-                      <formatting/>
-                    </entry>
-                    <entry>
-                      <string>REPLACING</string>
-                      <replacing/>
-                    </entry>
-                    <entry>
-                      <string>FROM_LANDSCAPE</string>
-                      <fromLandscape/>
-                    </entry>
-                  </transformers>
-                </tableTransformers>
-                <headers/>
-                <data/>
-                <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
-                  <property name="headerSeparator" value="|"/>
-                </properties>
-                <propertiesAsString></propertiesAsString>
-                <namedParameters/>
-                <trim>true</trim>
-              </examplesTable>
-              <steps>
-                <string>Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080</string>
-                <string>When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
-                <string>Then the instance-picked should successfully complete 200</string>
-              </steps>
-            </scenario>
-          </normalPerformableScenario>
-          <examplePerformableScenarios/>
-          <status>SUCCESSFUL</status>
-        </performableScenario>
-        <performableScenario>
-          <scenario>
-            <title>7 Connect process status change</title>
-            <meta>
-              <properties/>
-            </meta>
-            <givenStories>
-              <givenStories/>
-              <givenStoriesAsString></givenStoriesAsString>
-              <examplesTable>
-                <tableAsString></tableAsString>
-                <headerSeparator>|</headerSeparator>
-                <valueSeparator>|</valueSeparator>
-                <ignorableSeparator>|--</ignorableSeparator>
-                <tableTransformers>
-                  <transformers>
-                    <entry>
-                      <string>FORMATTING</string>
-                      <formatting/>
-                    </entry>
-                    <entry>
-                      <string>REPLACING</string>
-                      <replacing/>
-                    </entry>
-                    <entry>
-                      <string>FROM_LANDSCAPE</string>
-                      <fromLandscape/>
-                    </entry>
-                  </transformers>
-                </tableTransformers>
-                <headers/>
-                <data/>
-                <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
-                  <property name="headerSeparator" value="|"/>
-                </properties>
-                <propertiesAsString></propertiesAsString>
-                <namedParameters/>
-                <trim>true</trim>
-              </examplesTable>
-            </givenStories>
-            <examplesTable>
-              <tableAsString></tableAsString>
-              <headerSeparator>|</headerSeparator>
-              <valueSeparator>|</valueSeparator>
-              <ignorableSeparator>|--</ignorableSeparator>
-              <tableTransformers>
-                <transformers>
-                  <entry>
-                    <string>FORMATTING</string>
-                    <formatting/>
-                  </entry>
-                  <entry>
-                    <string>REPLACING</string>
-                    <replacing/>
-                  </entry>
-                  <entry>
-                    <string>FROM_LANDSCAPE</string>
-                    <fromLandscape/>
-                  </entry>
-                </transformers>
-              </tableTransformers>
-              <headers/>
-              <data/>
-              <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
-                <property name="headerSeparator" value="|"/>
-              </properties>
-              <propertiesAsString></propertiesAsString>
-              <namedParameters/>
-              <trim>true</trim>
-            </examplesTable>
-            <steps>
-              <string>Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080</string>
-              <string>When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance</string>
-              <string>Then the batch-status should successfully complete 200</string>
-            </steps>
-          </scenario>
-          <storyPath>stories/Test.story</storyPath>
-          <allowed>true</allowed>
-          <normalPerformableScenario>
-            <parameters/>
-            <givenStories/>
-            <beforeSteps>
-              <matches/>
-            </beforeSteps>
-            <steps>
-              <matches>
-                <stepMatch>
-                  <type>WHEN</type>
-                  <annotatedPattern>a user triggers execution of the batch-status daily process processurl $processurl</annotatedPattern>
-                  <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+batch-status\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
-                </stepMatch>
-                <stepMatch>
-                  <type>GIVEN</type>
-                  <annotatedPattern>that  process batch-status has been deployed into the process engine $value</annotatedPattern>
-                  <resolvedPattern>that\s+process\s+batch-status\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
-                </stepMatch>
-                <stepMatch>
-                  <type>THEN</type>
-                  <annotatedPattern>the batch-status should successfully complete $value</annotatedPattern>
-                  <resolvedPattern>the\s+batch-status\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
-                </stepMatch>
-              </matches>
-              <results>
-                <successful>
-                  <step>Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080</step>
-                  <type>SUCCESSFUL</type>
-                  <parametrisedStep>Given that  process batch-status has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-                  <durationInMillis>12</durationInMillis>
-                </successful>
-                <successful>
-                  <step>When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance</step>
-                  <type>SUCCESSFUL</type>
-                  <parametrisedStep>When a user triggers execution of the batch-status daily process processurl ｟/engine-rest/history/process-instance｠</parametrisedStep>
-                  <durationInMillis>9</durationInMillis>
-                </successful>
-                <successful>
-                  <step>Then the batch-status should successfully complete 200</step>
-                  <type>SUCCESSFUL</type>
-                  <parametrisedStep>Then the batch-status should successfully complete ｟200｠</parametrisedStep>
-                  <durationInMillis>1</durationInMillis>
-                </successful>
-              </results>
-            </steps>
-            <afterSteps>
-              <matches/>
-            </afterSteps>
-            <scenario>
-              <title>7 Connect process status change</title>
-              <meta>
-                <properties/>
-              </meta>
-              <givenStories>
-                <givenStories/>
-                <givenStoriesAsString></givenStoriesAsString>
-                <examplesTable>
-                  <tableAsString></tableAsString>
-                  <headerSeparator>|</headerSeparator>
-                  <valueSeparator>|</valueSeparator>
-                  <ignorableSeparator>|--</ignorableSeparator>
-                  <tableTransformers>
-                    <transformers>
-                      <entry>
-                        <string>FORMATTING</string>
-                        <formatting/>
-                      </entry>
-                      <entry>
-                        <string>REPLACING</string>
-                        <replacing/>
-                      </entry>
-                      <entry>
-                        <string>FROM_LANDSCAPE</string>
-                        <fromLandscape/>
-                      </entry>
-                    </transformers>
-                  </tableTransformers>
-                  <headers/>
-                  <data/>
-                  <properties>
-                    <property name="ignorableSeparator" value="|--"/>
-                    <property name="valueSeparator" value="|"/>
-                    <property name="headerSeparator" value="|"/>
-                  </properties>
-                  <propertiesAsString></propertiesAsString>
-                  <namedParameters/>
-                  <trim>true</trim>
-                </examplesTable>
-              </givenStories>
-              <examplesTable>
-                <tableAsString></tableAsString>
-                <headerSeparator>|</headerSeparator>
-                <valueSeparator>|</valueSeparator>
-                <ignorableSeparator>|--</ignorableSeparator>
-                <tableTransformers>
-                  <transformers>
-                    <entry>
-                      <string>FORMATTING</string>
-                      <formatting/>
-                    </entry>
-                    <entry>
-                      <string>REPLACING</string>
-                      <replacing/>
-                    </entry>
-                    <entry>
-                      <string>FROM_LANDSCAPE</string>
-                      <fromLandscape/>
-                    </entry>
-                  </transformers>
-                </tableTransformers>
-                <headers/>
-                <data/>
-                <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
-                  <property name="headerSeparator" value="|"/>
-                </properties>
-                <propertiesAsString></propertiesAsString>
-                <namedParameters/>
-                <trim>true</trim>
-              </examplesTable>
-              <steps>
-                <string>Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080</string>
-                <string>When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance</string>
-                <string>Then the batch-status should successfully complete 200</string>
               </steps>
             </scenario>
           </normalPerformableScenario>
@@ -2118,7 +1242,7 @@ So that </localizedNarrative>
       <beforeSteps/>
       <afterSteps/>
       <timing>
-        <durationInMillis>15281</durationInMillis>
+        <durationInMillis>2934</durationInMillis>
       </timing>
       <givenStory>false</givenStory>
     </performableStory>
@@ -2199,8 +1323,8 @@ So that </localizedNarrative>
           <trim>true</trim>
         </examplesTable>
         <steps>
-          <string>Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080</string>
-          <string>When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch</string>
+          <string>Given that fulfilment process prepare-batch has been deployed into the process engine</string>
+          <string>When a user triggers execution of the prepare-batch daily process processurl</string>
           <string>Then the process should successfully complete 200</string>
         </steps>
       </scenario>
@@ -2215,39 +1339,39 @@ So that </localizedNarrative>
         <steps>
           <matches>
             <stepMatch>
-              <type>GIVEN</type>
-              <annotatedPattern>that fulfilment process prepare-batch has been deployed into the process engine $value</annotatedPattern>
-              <resolvedPattern>that\s+fulfilment\s+process\s+prepare-batch\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
-            </stepMatch>
-            <stepMatch>
               <type>WHEN</type>
-              <annotatedPattern>a user triggers execution of the prepare-batch daily process processurl $processurl</annotatedPattern>
-              <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+prepare-batch\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
+              <annotatedPattern>a user triggers execution of the prepare-batch daily process processurl</annotatedPattern>
+              <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+prepare-batch\s+daily\s+process\s+processurl</resolvedPattern>
             </stepMatch>
             <stepMatch>
               <type>THEN</type>
               <annotatedPattern>the process should successfully complete $value</annotatedPattern>
               <resolvedPattern>the\s+process\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
             </stepMatch>
+            <stepMatch>
+              <type>GIVEN</type>
+              <annotatedPattern>that fulfilment process prepare-batch has been deployed into the process engine</annotatedPattern>
+              <resolvedPattern>that\s+fulfilment\s+process\s+prepare-batch\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine</resolvedPattern>
+            </stepMatch>
           </matches>
           <results>
             <successful>
-              <step>Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080</step>
+              <step>Given that fulfilment process prepare-batch has been deployed into the process engine</step>
               <type>SUCCESSFUL</type>
-              <parametrisedStep>Given that fulfilment process prepare-batch has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-              <durationInMillis>881</durationInMillis>
+              <parametrisedStep>Given that fulfilment process prepare-batch has been deployed into the process engine</parametrisedStep>
+              <durationInMillis>831</durationInMillis>
             </successful>
             <successful>
-              <step>When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch</step>
+              <step>When a user triggers execution of the prepare-batch daily process processurl</step>
               <type>SUCCESSFUL</type>
-              <parametrisedStep>When a user triggers execution of the prepare-batch daily process processurl ｟/engine-rest/process-definition/key/prepare-batch｠</parametrisedStep>
-              <durationInMillis>50</durationInMillis>
+              <parametrisedStep>When a user triggers execution of the prepare-batch daily process processurl</parametrisedStep>
+              <durationInMillis>53</durationInMillis>
             </successful>
             <successful>
               <step>Then the process should successfully complete 200</step>
               <type>SUCCESSFUL</type>
               <parametrisedStep>Then the process should successfully complete ｟200｠</parametrisedStep>
-              <durationInMillis>2</durationInMillis>
+              <durationInMillis>3</durationInMillis>
             </successful>
           </results>
         </steps>
@@ -2328,8 +1452,8 @@ So that </localizedNarrative>
             <trim>true</trim>
           </examplesTable>
           <steps>
-            <string>Given that fulfilment process prepare-batch has been deployed into the process engine http://192.168.7.147:8080</string>
-            <string>When a user triggers execution of the prepare-batch daily process processurl /engine-rest/process-definition/key/prepare-batch</string>
+            <string>Given that fulfilment process prepare-batch has been deployed into the process engine</string>
+            <string>When a user triggers execution of the prepare-batch daily process processurl</string>
             <string>Then the process should successfully complete 200</string>
           </steps>
         </scenario>
@@ -2412,8 +1536,8 @@ So that </localizedNarrative>
           <trim>true</trim>
         </examplesTable>
         <steps>
-          <string>Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080</string>
-          <string>When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+          <string>Given that  process batch-start-new has been deployed into the process engine</string>
+          <string>When a user triggers execution of the batch-start-new daily process processurl</string>
           <string>Then the process-start-new should successfully complete 200</string>
         </steps>
       </scenario>
@@ -2428,9 +1552,9 @@ So that </localizedNarrative>
         <steps>
           <matches>
             <stepMatch>
-              <type>WHEN</type>
-              <annotatedPattern>a user triggers execution of the batch-start-new daily process processurl $processurl</annotatedPattern>
-              <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+batch-start-new\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
+              <type>GIVEN</type>
+              <annotatedPattern>that  process batch-start-new has been deployed into the process engine</annotatedPattern>
+              <resolvedPattern>that\s+process\s+batch-start-new\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine</resolvedPattern>
             </stepMatch>
             <stepMatch>
               <type>THEN</type>
@@ -2438,23 +1562,23 @@ So that </localizedNarrative>
               <resolvedPattern>the\s+process-start-new\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
             </stepMatch>
             <stepMatch>
-              <type>GIVEN</type>
-              <annotatedPattern>that  process batch-start-new has been deployed into the process engine $value</annotatedPattern>
-              <resolvedPattern>that\s+process\s+batch-start-new\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
+              <type>WHEN</type>
+              <annotatedPattern>a user triggers execution of the batch-start-new daily process processurl</annotatedPattern>
+              <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+batch-start-new\s+daily\s+process\s+processurl</resolvedPattern>
             </stepMatch>
           </matches>
           <results>
             <successful>
-              <step>Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080</step>
+              <step>Given that  process batch-start-new has been deployed into the process engine</step>
               <type>SUCCESSFUL</type>
-              <parametrisedStep>Given that  process batch-start-new has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-              <durationInMillis>12</durationInMillis>
+              <parametrisedStep>Given that  process batch-start-new has been deployed into the process engine</parametrisedStep>
+              <durationInMillis>0</durationInMillis>
             </successful>
             <successful>
-              <step>When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</step>
+              <step>When a user triggers execution of the batch-start-new daily process processurl</step>
               <type>SUCCESSFUL</type>
-              <parametrisedStep>When a user triggers execution of the batch-start-new daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠</parametrisedStep>
-              <durationInMillis>22</durationInMillis>
+              <parametrisedStep>When a user triggers execution of the batch-start-new daily process processurl</parametrisedStep>
+              <durationInMillis>1381</durationInMillis>
             </successful>
             <successful>
               <step>Then the process-start-new should successfully complete 200</step>
@@ -2541,8 +1665,8 @@ So that </localizedNarrative>
             <trim>true</trim>
           </examplesTable>
           <steps>
-            <string>Given that  process batch-start-new has been deployed into the process engine http://192.168.7.147:8080</string>
-            <string>When a user triggers execution of the batch-start-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+            <string>Given that  process batch-start-new has been deployed into the process engine</string>
+            <string>When a user triggers execution of the batch-start-new daily process processurl</string>
             <string>Then the process-start-new should successfully complete 200</string>
           </steps>
         </scenario>
@@ -2625,8 +1749,8 @@ So that </localizedNarrative>
           <trim>true</trim>
         </examplesTable>
         <steps>
-          <string>Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080</string>
-          <string>When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+          <string>Given that  process validate-new has been deployed into the process engine</string>
+          <string>When a user triggers execution of the validate-new daily process processurl</string>
           <string>Then the validate-new should successfully complete 200</string>
         </steps>
       </scenario>
@@ -2642,38 +1766,38 @@ So that </localizedNarrative>
           <matches>
             <stepMatch>
               <type>WHEN</type>
-              <annotatedPattern>a user triggers execution of the validate-new daily process processurl $processurl</annotatedPattern>
-              <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+validate-new\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
-            </stepMatch>
-            <stepMatch>
-              <type>GIVEN</type>
-              <annotatedPattern>that  process validate-new has been deployed into the process engine $value</annotatedPattern>
-              <resolvedPattern>that\s+process\s+validate-new\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
+              <annotatedPattern>a user triggers execution of the validate-new daily process processurl</annotatedPattern>
+              <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+validate-new\s+daily\s+process\s+processurl</resolvedPattern>
             </stepMatch>
             <stepMatch>
               <type>THEN</type>
               <annotatedPattern>the validate-new should successfully complete $value</annotatedPattern>
               <resolvedPattern>the\s+validate-new\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
             </stepMatch>
+            <stepMatch>
+              <type>GIVEN</type>
+              <annotatedPattern>that  process validate-new has been deployed into the process engine</annotatedPattern>
+              <resolvedPattern>that\s+process\s+validate-new\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine</resolvedPattern>
+            </stepMatch>
           </matches>
           <results>
             <successful>
-              <step>Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080</step>
+              <step>Given that  process validate-new has been deployed into the process engine</step>
               <type>SUCCESSFUL</type>
-              <parametrisedStep>Given that  process validate-new has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-              <durationInMillis>8</durationInMillis>
+              <parametrisedStep>Given that  process validate-new has been deployed into the process engine</parametrisedStep>
+              <durationInMillis>0</durationInMillis>
             </successful>
             <successful>
-              <step>When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</step>
+              <step>When a user triggers execution of the validate-new daily process processurl</step>
               <type>SUCCESSFUL</type>
-              <parametrisedStep>When a user triggers execution of the validate-new daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠</parametrisedStep>
-              <durationInMillis>19</durationInMillis>
+              <parametrisedStep>When a user triggers execution of the validate-new daily process processurl</parametrisedStep>
+              <durationInMillis>0</durationInMillis>
             </successful>
             <successful>
               <step>Then the validate-new should successfully complete 200</step>
               <type>SUCCESSFUL</type>
               <parametrisedStep>Then the validate-new should successfully complete ｟200｠</parametrisedStep>
-              <durationInMillis>4008</durationInMillis>
+              <durationInMillis>19</durationInMillis>
             </successful>
           </results>
         </steps>
@@ -2754,8 +1878,8 @@ So that </localizedNarrative>
             <trim>true</trim>
           </examplesTable>
           <steps>
-            <string>Given that  process validate-new has been deployed into the process engine http://192.168.7.147:8080</string>
-            <string>When a user triggers execution of the validate-new daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+            <string>Given that  process validate-new has been deployed into the process engine</string>
+            <string>When a user triggers execution of the validate-new daily process processurl</string>
             <string>Then the validate-new should successfully complete 200</string>
           </steps>
         </scenario>
@@ -2838,8 +1962,8 @@ So that </localizedNarrative>
           <trim>true</trim>
         </examplesTable>
         <steps>
-          <string>Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080</string>
-          <string>When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+          <string>Given that  process validate-rerun has been deployed into the process engine</string>
+          <string>When a user triggers execution of the validate-rerun daily process processurl</string>
           <string>Then the validate-rerun should successfully complete 200</string>
         </steps>
       </scenario>
@@ -2855,13 +1979,13 @@ So that </localizedNarrative>
           <matches>
             <stepMatch>
               <type>WHEN</type>
-              <annotatedPattern>a user triggers execution of the validate-rerun daily process processurl $processurl</annotatedPattern>
-              <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+validate-rerun\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
+              <annotatedPattern>a user triggers execution of the validate-rerun daily process processurl</annotatedPattern>
+              <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+validate-rerun\s+daily\s+process\s+processurl</resolvedPattern>
             </stepMatch>
             <stepMatch>
               <type>GIVEN</type>
-              <annotatedPattern>that  process validate-rerun has been deployed into the process engine $value</annotatedPattern>
-              <resolvedPattern>that\s+process\s+validate-rerun\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
+              <annotatedPattern>that  process validate-rerun has been deployed into the process engine</annotatedPattern>
+              <resolvedPattern>that\s+process\s+validate-rerun\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine</resolvedPattern>
             </stepMatch>
             <stepMatch>
               <type>THEN</type>
@@ -2871,22 +1995,22 @@ So that </localizedNarrative>
           </matches>
           <results>
             <successful>
-              <step>Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080</step>
+              <step>Given that  process validate-rerun has been deployed into the process engine</step>
               <type>SUCCESSFUL</type>
-              <parametrisedStep>Given that  process validate-rerun has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-              <durationInMillis>10</durationInMillis>
+              <parametrisedStep>Given that  process validate-rerun has been deployed into the process engine</parametrisedStep>
+              <durationInMillis>0</durationInMillis>
             </successful>
             <successful>
-              <step>When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start</step>
+              <step>When a user triggers execution of the validate-rerun daily process processurl</step>
               <type>SUCCESSFUL</type>
-              <parametrisedStep>When a user triggers execution of the validate-rerun daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠</parametrisedStep>
-              <durationInMillis>21</durationInMillis>
+              <parametrisedStep>When a user triggers execution of the validate-rerun daily process processurl</parametrisedStep>
+              <durationInMillis>623</durationInMillis>
             </successful>
             <successful>
               <step>Then the validate-rerun should successfully complete 200</step>
               <type>SUCCESSFUL</type>
               <parametrisedStep>Then the validate-rerun should successfully complete ｟200｠</parametrisedStep>
-              <durationInMillis>3819</durationInMillis>
+              <durationInMillis>8</durationInMillis>
             </successful>
           </results>
         </steps>
@@ -2967,648 +2091,9 @@ So that </localizedNarrative>
             <trim>true</trim>
           </examplesTable>
           <steps>
-            <string>Given that  process validate-rerun has been deployed into the process engine http://192.168.7.147:8080</string>
-            <string>When a user triggers execution of the validate-rerun daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
+            <string>Given that  process validate-rerun has been deployed into the process engine</string>
+            <string>When a user triggers execution of the validate-rerun daily process processurl</string>
             <string>Then the validate-rerun should successfully complete 200</string>
-          </steps>
-        </scenario>
-      </normalPerformableScenario>
-      <examplePerformableScenarios/>
-      <status>SUCCESSFUL</status>
-    </performableScenario>
-    <performableScenario>
-      <scenario>
-        <title>5 Validate batch file with status &apos;Picked&apos; is not picked for execution</title>
-        <meta>
-          <properties/>
-        </meta>
-        <givenStories>
-          <givenStories/>
-          <givenStoriesAsString></givenStoriesAsString>
-          <examplesTable>
-            <tableAsString></tableAsString>
-            <headerSeparator>|</headerSeparator>
-            <valueSeparator>|</valueSeparator>
-            <ignorableSeparator>|--</ignorableSeparator>
-            <tableTransformers>
-              <transformers>
-                <entry>
-                  <string>FORMATTING</string>
-                  <formatting/>
-                </entry>
-                <entry>
-                  <string>REPLACING</string>
-                  <replacing/>
-                </entry>
-                <entry>
-                  <string>FROM_LANDSCAPE</string>
-                  <fromLandscape/>
-                </entry>
-              </transformers>
-            </tableTransformers>
-            <headers/>
-            <data/>
-            <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
-              <property name="headerSeparator" value="|"/>
-            </properties>
-            <propertiesAsString></propertiesAsString>
-            <namedParameters/>
-            <trim>true</trim>
-          </examplesTable>
-        </givenStories>
-        <examplesTable>
-          <tableAsString></tableAsString>
-          <headerSeparator>|</headerSeparator>
-          <valueSeparator>|</valueSeparator>
-          <ignorableSeparator>|--</ignorableSeparator>
-          <tableTransformers>
-            <transformers>
-              <entry>
-                <string>FORMATTING</string>
-                <formatting/>
-              </entry>
-              <entry>
-                <string>REPLACING</string>
-                <replacing/>
-              </entry>
-              <entry>
-                <string>FROM_LANDSCAPE</string>
-                <fromLandscape/>
-              </entry>
-            </transformers>
-          </tableTransformers>
-          <headers/>
-          <data/>
-          <properties>
-            <property name="ignorableSeparator" value="|--"/>
-            <property name="valueSeparator" value="|"/>
-            <property name="headerSeparator" value="|"/>
-          </properties>
-          <propertiesAsString></propertiesAsString>
-          <namedParameters/>
-          <trim>true</trim>
-        </examplesTable>
-        <steps>
-          <string>Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080</string>
-          <string>When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
-          <string>Then the validate-picked should successfully complete 200</string>
-        </steps>
-      </scenario>
-      <storyPath>stories/Test.story</storyPath>
-      <allowed>true</allowed>
-      <normalPerformableScenario>
-        <parameters/>
-        <givenStories/>
-        <beforeSteps>
-          <matches/>
-        </beforeSteps>
-        <steps>
-          <matches>
-            <stepMatch>
-              <type>WHEN</type>
-              <annotatedPattern>a user triggers execution of the validate-picked daily process processurl $processurl</annotatedPattern>
-              <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+validate-picked\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
-            </stepMatch>
-            <stepMatch>
-              <type>GIVEN</type>
-              <annotatedPattern>that  process validate-picked has been deployed into the process engine $value</annotatedPattern>
-              <resolvedPattern>that\s+process\s+validate-picked\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
-            </stepMatch>
-            <stepMatch>
-              <type>THEN</type>
-              <annotatedPattern>the validate-picked should successfully complete $value</annotatedPattern>
-              <resolvedPattern>the\s+validate-picked\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
-            </stepMatch>
-          </matches>
-          <results>
-            <successful>
-              <step>Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080</step>
-              <type>SUCCESSFUL</type>
-              <parametrisedStep>Given that  process validate-picked has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-              <durationInMillis>10</durationInMillis>
-            </successful>
-            <successful>
-              <step>When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</step>
-              <type>SUCCESSFUL</type>
-              <parametrisedStep>When a user triggers execution of the validate-picked daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠</parametrisedStep>
-              <durationInMillis>17</durationInMillis>
-            </successful>
-            <successful>
-              <step>Then the validate-picked should successfully complete 200</step>
-              <type>SUCCESSFUL</type>
-              <parametrisedStep>Then the validate-picked should successfully complete ｟200｠</parametrisedStep>
-              <durationInMillis>4265</durationInMillis>
-            </successful>
-          </results>
-        </steps>
-        <afterSteps>
-          <matches/>
-        </afterSteps>
-        <scenario>
-          <title>5 Validate batch file with status &apos;Picked&apos; is not picked for execution</title>
-          <meta>
-            <properties/>
-          </meta>
-          <givenStories>
-            <givenStories/>
-            <givenStoriesAsString></givenStoriesAsString>
-            <examplesTable>
-              <tableAsString></tableAsString>
-              <headerSeparator>|</headerSeparator>
-              <valueSeparator>|</valueSeparator>
-              <ignorableSeparator>|--</ignorableSeparator>
-              <tableTransformers>
-                <transformers>
-                  <entry>
-                    <string>FORMATTING</string>
-                    <formatting/>
-                  </entry>
-                  <entry>
-                    <string>REPLACING</string>
-                    <replacing/>
-                  </entry>
-                  <entry>
-                    <string>FROM_LANDSCAPE</string>
-                    <fromLandscape/>
-                  </entry>
-                </transformers>
-              </tableTransformers>
-              <headers/>
-              <data/>
-              <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
-                <property name="headerSeparator" value="|"/>
-              </properties>
-              <propertiesAsString></propertiesAsString>
-              <namedParameters/>
-              <trim>true</trim>
-            </examplesTable>
-          </givenStories>
-          <examplesTable>
-            <tableAsString></tableAsString>
-            <headerSeparator>|</headerSeparator>
-            <valueSeparator>|</valueSeparator>
-            <ignorableSeparator>|--</ignorableSeparator>
-            <tableTransformers>
-              <transformers>
-                <entry>
-                  <string>FORMATTING</string>
-                  <formatting/>
-                </entry>
-                <entry>
-                  <string>REPLACING</string>
-                  <replacing/>
-                </entry>
-                <entry>
-                  <string>FROM_LANDSCAPE</string>
-                  <fromLandscape/>
-                </entry>
-              </transformers>
-            </tableTransformers>
-            <headers/>
-            <data/>
-            <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
-              <property name="headerSeparator" value="|"/>
-            </properties>
-            <propertiesAsString></propertiesAsString>
-            <namedParameters/>
-            <trim>true</trim>
-          </examplesTable>
-          <steps>
-            <string>Given that  process validate-picked has been deployed into the process engine http://192.168.7.147:8080</string>
-            <string>When a user triggers execution of the validate-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
-            <string>Then the validate-picked should successfully complete 200</string>
-          </steps>
-        </scenario>
-      </normalPerformableScenario>
-      <examplePerformableScenarios/>
-      <status>SUCCESSFUL</status>
-    </performableScenario>
-    <performableScenario>
-      <scenario>
-        <title>6 Validate if an execution instance has been created for a picked batch</title>
-        <meta>
-          <properties/>
-        </meta>
-        <givenStories>
-          <givenStories/>
-          <givenStoriesAsString></givenStoriesAsString>
-          <examplesTable>
-            <tableAsString></tableAsString>
-            <headerSeparator>|</headerSeparator>
-            <valueSeparator>|</valueSeparator>
-            <ignorableSeparator>|--</ignorableSeparator>
-            <tableTransformers>
-              <transformers>
-                <entry>
-                  <string>FORMATTING</string>
-                  <formatting/>
-                </entry>
-                <entry>
-                  <string>REPLACING</string>
-                  <replacing/>
-                </entry>
-                <entry>
-                  <string>FROM_LANDSCAPE</string>
-                  <fromLandscape/>
-                </entry>
-              </transformers>
-            </tableTransformers>
-            <headers/>
-            <data/>
-            <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
-              <property name="headerSeparator" value="|"/>
-            </properties>
-            <propertiesAsString></propertiesAsString>
-            <namedParameters/>
-            <trim>true</trim>
-          </examplesTable>
-        </givenStories>
-        <examplesTable>
-          <tableAsString></tableAsString>
-          <headerSeparator>|</headerSeparator>
-          <valueSeparator>|</valueSeparator>
-          <ignorableSeparator>|--</ignorableSeparator>
-          <tableTransformers>
-            <transformers>
-              <entry>
-                <string>FORMATTING</string>
-                <formatting/>
-              </entry>
-              <entry>
-                <string>REPLACING</string>
-                <replacing/>
-              </entry>
-              <entry>
-                <string>FROM_LANDSCAPE</string>
-                <fromLandscape/>
-              </entry>
-            </transformers>
-          </tableTransformers>
-          <headers/>
-          <data/>
-          <properties>
-            <property name="ignorableSeparator" value="|--"/>
-            <property name="valueSeparator" value="|"/>
-            <property name="headerSeparator" value="|"/>
-          </properties>
-          <propertiesAsString></propertiesAsString>
-          <namedParameters/>
-          <trim>true</trim>
-        </examplesTable>
-        <steps>
-          <string>Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080</string>
-          <string>When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
-          <string>Then the instance-picked should successfully complete 200</string>
-        </steps>
-      </scenario>
-      <storyPath>stories/Test.story</storyPath>
-      <allowed>true</allowed>
-      <normalPerformableScenario>
-        <parameters/>
-        <givenStories/>
-        <beforeSteps>
-          <matches/>
-        </beforeSteps>
-        <steps>
-          <matches>
-            <stepMatch>
-              <type>WHEN</type>
-              <annotatedPattern>a user triggers execution of the instance-picked daily process processurl $processurl</annotatedPattern>
-              <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+instance-picked\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
-            </stepMatch>
-            <stepMatch>
-              <type>GIVEN</type>
-              <annotatedPattern>that  process instance-picked has been deployed into the process engine $value</annotatedPattern>
-              <resolvedPattern>that\s+process\s+instance-picked\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
-            </stepMatch>
-            <stepMatch>
-              <type>THEN</type>
-              <annotatedPattern>the instance-picked should successfully complete $value</annotatedPattern>
-              <resolvedPattern>the\s+instance-picked\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
-            </stepMatch>
-          </matches>
-          <results>
-            <successful>
-              <step>Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080</step>
-              <type>SUCCESSFUL</type>
-              <parametrisedStep>Given that  process instance-picked has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-              <durationInMillis>11</durationInMillis>
-            </successful>
-            <successful>
-              <step>When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</step>
-              <type>SUCCESSFUL</type>
-              <parametrisedStep>When a user triggers execution of the instance-picked daily process processurl ｟/engine-rest/process-definition/key/prepare-batch/start｠</parametrisedStep>
-              <durationInMillis>21</durationInMillis>
-            </successful>
-            <successful>
-              <step>Then the instance-picked should successfully complete 200</step>
-              <type>SUCCESSFUL</type>
-              <parametrisedStep>Then the instance-picked should successfully complete ｟200｠</parametrisedStep>
-              <durationInMillis>2066</durationInMillis>
-            </successful>
-          </results>
-        </steps>
-        <afterSteps>
-          <matches/>
-        </afterSteps>
-        <scenario>
-          <title>6 Validate if an execution instance has been created for a picked batch</title>
-          <meta>
-            <properties/>
-          </meta>
-          <givenStories>
-            <givenStories/>
-            <givenStoriesAsString></givenStoriesAsString>
-            <examplesTable>
-              <tableAsString></tableAsString>
-              <headerSeparator>|</headerSeparator>
-              <valueSeparator>|</valueSeparator>
-              <ignorableSeparator>|--</ignorableSeparator>
-              <tableTransformers>
-                <transformers>
-                  <entry>
-                    <string>FORMATTING</string>
-                    <formatting/>
-                  </entry>
-                  <entry>
-                    <string>REPLACING</string>
-                    <replacing/>
-                  </entry>
-                  <entry>
-                    <string>FROM_LANDSCAPE</string>
-                    <fromLandscape/>
-                  </entry>
-                </transformers>
-              </tableTransformers>
-              <headers/>
-              <data/>
-              <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
-                <property name="headerSeparator" value="|"/>
-              </properties>
-              <propertiesAsString></propertiesAsString>
-              <namedParameters/>
-              <trim>true</trim>
-            </examplesTable>
-          </givenStories>
-          <examplesTable>
-            <tableAsString></tableAsString>
-            <headerSeparator>|</headerSeparator>
-            <valueSeparator>|</valueSeparator>
-            <ignorableSeparator>|--</ignorableSeparator>
-            <tableTransformers>
-              <transformers>
-                <entry>
-                  <string>FORMATTING</string>
-                  <formatting/>
-                </entry>
-                <entry>
-                  <string>REPLACING</string>
-                  <replacing/>
-                </entry>
-                <entry>
-                  <string>FROM_LANDSCAPE</string>
-                  <fromLandscape/>
-                </entry>
-              </transformers>
-            </tableTransformers>
-            <headers/>
-            <data/>
-            <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
-              <property name="headerSeparator" value="|"/>
-            </properties>
-            <propertiesAsString></propertiesAsString>
-            <namedParameters/>
-            <trim>true</trim>
-          </examplesTable>
-          <steps>
-            <string>Given that  process instance-picked has been deployed into the process engine http://192.168.7.147:8080</string>
-            <string>When a user triggers execution of the instance-picked daily process processurl /engine-rest/process-definition/key/prepare-batch/start</string>
-            <string>Then the instance-picked should successfully complete 200</string>
-          </steps>
-        </scenario>
-      </normalPerformableScenario>
-      <examplePerformableScenarios/>
-      <status>SUCCESSFUL</status>
-    </performableScenario>
-    <performableScenario>
-      <scenario>
-        <title>7 Connect process status change</title>
-        <meta>
-          <properties/>
-        </meta>
-        <givenStories>
-          <givenStories/>
-          <givenStoriesAsString></givenStoriesAsString>
-          <examplesTable>
-            <tableAsString></tableAsString>
-            <headerSeparator>|</headerSeparator>
-            <valueSeparator>|</valueSeparator>
-            <ignorableSeparator>|--</ignorableSeparator>
-            <tableTransformers>
-              <transformers>
-                <entry>
-                  <string>FORMATTING</string>
-                  <formatting/>
-                </entry>
-                <entry>
-                  <string>REPLACING</string>
-                  <replacing/>
-                </entry>
-                <entry>
-                  <string>FROM_LANDSCAPE</string>
-                  <fromLandscape/>
-                </entry>
-              </transformers>
-            </tableTransformers>
-            <headers/>
-            <data/>
-            <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
-              <property name="headerSeparator" value="|"/>
-            </properties>
-            <propertiesAsString></propertiesAsString>
-            <namedParameters/>
-            <trim>true</trim>
-          </examplesTable>
-        </givenStories>
-        <examplesTable>
-          <tableAsString></tableAsString>
-          <headerSeparator>|</headerSeparator>
-          <valueSeparator>|</valueSeparator>
-          <ignorableSeparator>|--</ignorableSeparator>
-          <tableTransformers>
-            <transformers>
-              <entry>
-                <string>FORMATTING</string>
-                <formatting/>
-              </entry>
-              <entry>
-                <string>REPLACING</string>
-                <replacing/>
-              </entry>
-              <entry>
-                <string>FROM_LANDSCAPE</string>
-                <fromLandscape/>
-              </entry>
-            </transformers>
-          </tableTransformers>
-          <headers/>
-          <data/>
-          <properties>
-            <property name="ignorableSeparator" value="|--"/>
-            <property name="valueSeparator" value="|"/>
-            <property name="headerSeparator" value="|"/>
-          </properties>
-          <propertiesAsString></propertiesAsString>
-          <namedParameters/>
-          <trim>true</trim>
-        </examplesTable>
-        <steps>
-          <string>Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080</string>
-          <string>When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance</string>
-          <string>Then the batch-status should successfully complete 200</string>
-        </steps>
-      </scenario>
-      <storyPath>stories/Test.story</storyPath>
-      <allowed>true</allowed>
-      <normalPerformableScenario>
-        <parameters/>
-        <givenStories/>
-        <beforeSteps>
-          <matches/>
-        </beforeSteps>
-        <steps>
-          <matches>
-            <stepMatch>
-              <type>WHEN</type>
-              <annotatedPattern>a user triggers execution of the batch-status daily process processurl $processurl</annotatedPattern>
-              <resolvedPattern>a\s+user\s+triggers\s+execution\s+of\s+the\s+batch-status\s+daily\s+process\s+processurl\s+(.*)</resolvedPattern>
-            </stepMatch>
-            <stepMatch>
-              <type>GIVEN</type>
-              <annotatedPattern>that  process batch-status has been deployed into the process engine $value</annotatedPattern>
-              <resolvedPattern>that\s+process\s+batch-status\s+has\s+been\s+deployed\s+into\s+the\s+process\s+engine\s+(.*)</resolvedPattern>
-            </stepMatch>
-            <stepMatch>
-              <type>THEN</type>
-              <annotatedPattern>the batch-status should successfully complete $value</annotatedPattern>
-              <resolvedPattern>the\s+batch-status\s+should\s+successfully\s+complete\s+(.*)</resolvedPattern>
-            </stepMatch>
-          </matches>
-          <results>
-            <successful>
-              <step>Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080</step>
-              <type>SUCCESSFUL</type>
-              <parametrisedStep>Given that  process batch-status has been deployed into the process engine ｟http://192.168.7.147:8080｠</parametrisedStep>
-              <durationInMillis>12</durationInMillis>
-            </successful>
-            <successful>
-              <step>When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance</step>
-              <type>SUCCESSFUL</type>
-              <parametrisedStep>When a user triggers execution of the batch-status daily process processurl ｟/engine-rest/history/process-instance｠</parametrisedStep>
-              <durationInMillis>9</durationInMillis>
-            </successful>
-            <successful>
-              <step>Then the batch-status should successfully complete 200</step>
-              <type>SUCCESSFUL</type>
-              <parametrisedStep>Then the batch-status should successfully complete ｟200｠</parametrisedStep>
-              <durationInMillis>1</durationInMillis>
-            </successful>
-          </results>
-        </steps>
-        <afterSteps>
-          <matches/>
-        </afterSteps>
-        <scenario>
-          <title>7 Connect process status change</title>
-          <meta>
-            <properties/>
-          </meta>
-          <givenStories>
-            <givenStories/>
-            <givenStoriesAsString></givenStoriesAsString>
-            <examplesTable>
-              <tableAsString></tableAsString>
-              <headerSeparator>|</headerSeparator>
-              <valueSeparator>|</valueSeparator>
-              <ignorableSeparator>|--</ignorableSeparator>
-              <tableTransformers>
-                <transformers>
-                  <entry>
-                    <string>FORMATTING</string>
-                    <formatting/>
-                  </entry>
-                  <entry>
-                    <string>REPLACING</string>
-                    <replacing/>
-                  </entry>
-                  <entry>
-                    <string>FROM_LANDSCAPE</string>
-                    <fromLandscape/>
-                  </entry>
-                </transformers>
-              </tableTransformers>
-              <headers/>
-              <data/>
-              <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
-                <property name="headerSeparator" value="|"/>
-              </properties>
-              <propertiesAsString></propertiesAsString>
-              <namedParameters/>
-              <trim>true</trim>
-            </examplesTable>
-          </givenStories>
-          <examplesTable>
-            <tableAsString></tableAsString>
-            <headerSeparator>|</headerSeparator>
-            <valueSeparator>|</valueSeparator>
-            <ignorableSeparator>|--</ignorableSeparator>
-            <tableTransformers>
-              <transformers>
-                <entry>
-                  <string>FORMATTING</string>
-                  <formatting/>
-                </entry>
-                <entry>
-                  <string>REPLACING</string>
-                  <replacing/>
-                </entry>
-                <entry>
-                  <string>FROM_LANDSCAPE</string>
-                  <fromLandscape/>
-                </entry>
-              </transformers>
-            </tableTransformers>
-            <headers/>
-            <data/>
-            <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
-              <property name="headerSeparator" value="|"/>
-            </properties>
-            <propertiesAsString></propertiesAsString>
-            <namedParameters/>
-            <trim>true</trim>
-          </examplesTable>
-          <steps>
-            <string>Given that  process batch-status has been deployed into the process engine http://192.168.7.147:8080</string>
-            <string>When a user triggers execution of the batch-status daily process processurl /engine-rest/history/process-instance</string>
-            <string>Then the batch-status should successfully complete 200</string>
           </steps>
         </scenario>
       </normalPerformableScenario>

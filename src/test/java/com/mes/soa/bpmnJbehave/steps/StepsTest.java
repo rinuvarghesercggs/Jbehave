@@ -2,14 +2,21 @@ package com.mes.soa.bpmnJbehave.steps;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.sql.DataSource;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Row.MissingCellPolicy;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -45,19 +52,19 @@ public class StepsTest {
     private IntegrationTest testSession;
     private int result;
     String url,url2,url3;
-    Response resp,resp2,resp3;
+    Response resp;
     String processID;
+    String processCode="FL03";
+    String SQL;
     
-    
-    String CAMUNDAIP ="";
-	String URL_DEPLYOED_TO_PROCESS_ENGINE="/engine-rest/process-definition/key/netsuite-bpm";
-	String URL_TRIGGER_EXECUTION_OF_NETSUITE_DAILY_PROCESS="/engine-rest/process-definition/invoice:1:d29bbf3e-a580-11e9-ab27-a20e0492d91b";
-	String URL_CHECK_HISTORY_OF_PROCESS_INSTANCE="/engine-rest/history/process-instance/03d5096f-a731-11e9-ab27-a20e0492d91b";
-	
-	String SQL;
+    String CAMUNDAIP ="http://192.168.7.147:8080";
+	String URL_DEPLYOED_TO_PROCESS_ENGINE_START="/engine-rest/process-definition/key/prepare-batch/start";
+	String URL_DEPLYOED_TO_PROCESS_ENGINE_PREPARE="/engine-rest/process-definition/key/prepare-batch";
+
 	
 	@BeforeStories
-	public void loadTestCase() throws IOException {
+	public void loadTestCase() throws IOException 
+	{
 		try {
 			System.out.println("Reading Excel file..");
 			workbook = new XSSFWorkbook(getClass().getResourceAsStream("/TestCase.xlsx"));
@@ -87,366 +94,342 @@ public class StepsTest {
 	}
 	
 	/*-------------FIRST SCENERIO------------*/
-	//URL_DEPLYOED_TO_PROCESS_ENGINE
-	@Given("that fulfilment process prepare-batch has been deployed into the process engine $value")
-    public void givenXValue1(String url) {
-		CAMUNDAIP=url;
+	@Given("that fulfilment process prepare-batch has been deployed into the process engine")
+    public void givenXValue1() 
+	{
 		resp = RestAssured.get(CAMUNDAIP);
-		//System.out.println(CAMUNDAIP);
 	 }
 	
-    @When("a user triggers execution of the prepare-batch daily process processurl $processurl")
-    public void deployprocessengine1(String processurl ) {
-    	processurl = URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	//System.out.println(URL_DEPLYOED_TO_PROCESS_ENGINE);
-    	url = CAMUNDAIP + URL_DEPLYOED_TO_PROCESS_ENGINE;
+    @When("a user triggers execution of the prepare-batch daily process processurl")
+    public void deployprocessengine1() 
+    {
+    	url = CAMUNDAIP + URL_DEPLYOED_TO_PROCESS_ENGINE_PREPARE;
     	resp = RestAssured.get(url);
      }
     
     @Then("the process should successfully complete $value")
-    public void thenXshouldBe1(@Named("value") int value) {
-    	//System.out.println(url);
-    	
+    public void thenXshouldBe1(@Named("value") int value) 
+    {
     	int statuscode = resp.getStatusCode();
     	value = statuscode;
     }
     
     
     /*-------------SECOND SCENERIO------------*/
-    //Connect start process
-	@Given("that  process batch-start-new has been deployed into the process engine $value")
-    public void givenXValue2(String url) {
-		CAMUNDAIP=url;
-		resp = RestAssured.get(CAMUNDAIP);
-		//System.out.println(CAMUNDAIP);
-	 }
+    @Given("that  process batch-start-new has been deployed into the process engine")
+    public void givenXValue2() 
+	{
+		resp=null;
+	}
 	
-    @When("a user triggers execution of the batch-start-new daily process processurl $processurl")
-    public void deployprocessengine2(String processurl ) {
-    	processurl = URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	//System.out.println(URL_DEPLYOED_TO_PROCESS_ENGINE);
-    	url = CAMUNDAIP + URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	resp = RestAssured.get(url);
-     }
+    @When("a user triggers execution of the batch-start-new daily process processurl")
+    public void deployprocessengine2() 
+    {
+    	resp=null;
+    	url = CAMUNDAIP + URL_DEPLYOED_TO_PROCESS_ENGINE_START;
+    	RequestSpecification request = RestAssured.given();
+		JSONObject requestParams = new JSONObject();
+	    request.header("Content-Type", "application/json");
+	    request.body(requestParams.toString());
+	    resp=request.post(url);
+    	writeFile();
+    }
     
     @Then("the process-start-new should successfully complete $value")
-    public void thenXshouldBe2(@Named("value") int value) {
-    	//System.out.println(url);
+    public void thenXshouldBe2(@Named("value") int value) 
+    {
     	int statuscode = resp.getStatusCode();
     	value = statuscode;
     }
+    
     
     /*-------------THIRD SCENERIO------------*/
-    //Connect start process
-	@Given("that  process validate-new has been deployed into the process engine $value")
-    public void givenXValue3(String url) {
-		CAMUNDAIP=url;
-		resp = RestAssured.get(CAMUNDAIP);
-		//System.out.println(CAMUNDAIP);
-	 }
+    @Given("that  process validate-new has been deployed into the process engine")
+    public void givenXValue3() 
+	{
+		System.out.println("--Validating New Status of a batch--");
+	}
 	
-    @When("a user triggers execution of the validate-new daily process processurl $processurl")
-    public void deployprocessengine3(String processurl ) {
-    	processurl = URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	//System.out.println(URL_DEPLYOED_TO_PROCESS_ENGINE);
-    	url = CAMUNDAIP + URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	resp = RestAssured.get(url);
-     }
+    @When("a user triggers execution of the validate-new daily process processurl")
+    public void deployprocessengine3() 
+    {
+    
+    	
+    }
     
     @Then("the validate-new should successfully complete $value")
-    public void thenXshouldBe3(@Named("value") int value) {
-    	//System.out.println(url);
-    	String pstatus=null;
-    	String processCODE = null;
-    	String expectedStatus = null;
-    	
-    	String[] response = getTestCase(1,processCODE,expectedStatus);
-    	processCODE = response[0];
-        //expectedStatus = response[1];
-    	expectedStatus = "PICKED";
-
+    public void thenXshouldBe3(@Named("value") int value) 
+    {
     	int statuscode = resp.getStatusCode();
-    	String str=resp.asString();
-    	JSONObject obj=new JSONObject();
-    	JSONParser parser= new JSONParser();
-    	try {
-    		obj=(JSONObject) parser.parse(str);
-    	}catch(Exception e) {e.printStackTrace();}
-    	//processID=(String)obj.get("deploymentId");
-    	
-    	
-    	SQL="select batch_status_cd as pStatus from mes.ref_batch_status_code status\n" + 
+    	String pstatus=null;
+		String expectedStatus = null;
+		try {
+			
+			
+			String batchID=getBatchCode("NEW");
+	    	
+	    	SQL="SELECT \n" + 
+					"	bpc.batch_process_cd,\n" + 
+					"	b.batch_id,\n" + 
+					"	batch_status_cd as pStatus,\n" + 
+					"	status.created_on\n" + 
+					"FROM\n" + 
+					"	mes.ref_batch_status_code status\n" + 
+					"JOIN\n" + 
+					"	mes.batch as b on status.batch_sid = b.batch_sid\n" + 
+					"JOIN\n" + 
+					"	mes.ref_batch_process_code  bpc on b.batch_process_sid=bpc.batch_process_sid   \n" + 
+					"LEFT JOIN\n" + 
+					"	mes.ref_batch_source_code bsc on bsc.batch_source_sid = b.batch_source_sid\n" + 
+					"WHERE\n" + 
+					"	bpc.batch_process_cd='"+processCode+"' AND b.batch_id IN("+batchID+")  AND  batch_status_cd ='NEW' "
+							+ "order by status.created_on desc ";
+			
+			expectedStatus="PICKED";
+		    Connection con=dataSource.getConnection();
+		    PreparedStatement ps=con.prepareStatement(SQL);
+		    ResultSet rs=ps.executeQuery();
+		    	while(rs.next())
+		    	{
+		    		if(rs.getString("pStatus").equals(expectedStatus))
+		    		{
+		    			System.out.println("");
+						System.out.println("######## Validation Test Result for Process Code : "+processCode+"--- Batch Code : "+rs.getString("batch_id")+" --- Expected Status After Test : "+expectedStatus+" --- Actual Status : "+rs.getString("pStatus")+" --- Test Status : SUCCESS ########");
+						System.out.println("");
+		    		}
+		    		else
+		    		{
+		    			System.out.println("");
+						System.out.println("######## Validation Test Result for Process Code : "+processCode+"--- Batch Code : "+rs.getString("batch_id")+" --- Expected Status After Test : "+expectedStatus+" --- Actual Status : "+rs.getString("pStatus")+" --- Test Status : FAILED ########");
+						System.out.println("");
+		    		}
+		    	}
+		    	
+		}catch(Exception e) {e.printStackTrace();}
+    	value = statuscode;
+    }
+    
+    /*-------------FOURTH SCENERIO------------*/
+    @Given("that  process validate-rerun has been deployed into the process engine")
+    public void givenXValue4() 
+	{
+		resp=null;
+	}
+	
+    @When("a user triggers execution of the validate-rerun daily process processurl")
+    public void deployprocessengine4() 
+    {
+    	resp=null;
+    	url = CAMUNDAIP + URL_DEPLYOED_TO_PROCESS_ENGINE_START;
+    	RequestSpecification request = RestAssured.given();
+		JSONObject requestParams = new JSONObject();
+	    request.header("Content-Type", "application/json");
+	    request.body(requestParams.toString());
+	    resp=request.post(url);
+    
+	    SQL="select batch_status_cd as pStatus from mes.ref_batch_status_code status\n" + 
 				"join mes.batch as b on status.batch_sid = b.batch_sid\n" + 
 				"join mes.ref_batch_process_code  bpc on b.batch_process_sid=bpc.batch_process_sid     \n" + 
 				"left join mes.ref_batch_source_code bsc on bsc.batch_source_sid = b.batch_source_sid\n" + 
-				"where bpc.batch_process_cd='"+processCODE+"' order by status.created_on desc LIMIT 1";
-    	try {
-    		Connection con=dataSource.getConnection();
-    		PreparedStatement ps=con.prepareStatement(SQL);
-    		ResultSet rs=ps.executeQuery();
-    		if(rs.next())
-    		{
-    			pstatus=rs.getString("pStatus");
-    		}
-    		
-    		if(pstatus.equals(expectedStatus))
-			{
-				System.out.println("########---Process Code : "+processCODE+"--- Expected Status After Test : "+expectedStatus+" --- Actual Status : "+pstatus+" --- Test Status : SUCCESS ---########");
-			}
-			else
-			{
-				System.out.println("########---Process Code : "+processCODE+"--- Expected Status After Test : "+expectedStatus+" --- Actual Status : "+pstatus+" --- Test Status : FAILED --- ########");
-			}
-    	
-    	}catch(Exception e) {e.printStackTrace();}
-    	
-    	value = statuscode;
-    	Assert.assertEquals(resp.getStatusCode(),statuscode);
+				"where bpc.batch_process_cd='"+processCode+"' order by status.created_on desc LIMIT 1";
     }
-    
-    
-
-    /*-------------FOURTH SCENERIO------------*/
-    //Connect start process
-	@Given("that  process validate-rerun has been deployed into the process engine $value")
-    public void givenXValue4(String url) {
-		CAMUNDAIP=url;
-		resp = RestAssured.get(CAMUNDAIP);
-		//System.out.println(CAMUNDAIP);
-	 }
-	
-    @When("a user triggers execution of the validate-rerun daily process processurl $processurl")
-    public void deployprocessengine4(String processurl ) {
-    	processurl = URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	//System.out.println(URL_DEPLYOED_TO_PROCESS_ENGINE);
-    	url = CAMUNDAIP + URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	resp = RestAssured.get(url);
-     }
     
     @Then("the validate-rerun should successfully complete $value")
-    public void thenXshouldBe4(@Named("value") int value) {
-    	//System.out.println(url);
-    	
-    	String pstatus = null;
-    	String processCODE = null;
-    	String expectedStatus = null;
-    	
-    	String[] response = getTestCase(2,processCODE,expectedStatus);
-    	processCODE = response[0];
-        //expectedStatus = response[1];
-    	expectedStatus = "PICKED";
-    	
+    public void thenXshouldBe4(@Named("value") int value) 
+    {
     	int statuscode = resp.getStatusCode();
-    	String str=resp.asString();
-    	JSONObject obj=new JSONObject();
-    	JSONParser parser= new JSONParser();
-    	try {
-    		obj=(JSONObject) parser.parse(str);
-    	}catch(Exception e) {e.printStackTrace();}
-    	//processID=(String)obj.get("deploymentId");
-    	
-    	
-    	SQL="select batch_status_cd as pStatus from mes.ref_batch_status_code status\n" + 
-				"join mes.batch as b on status.batch_sid = b.batch_sid\n" + 
-				"join mes.ref_batch_process_code  bpc on b.batch_process_sid=bpc.batch_process_sid     \n" + 
-				"left join mes.ref_batch_source_code bsc on bsc.batch_source_sid = b.batch_source_sid\n" + 
-				"where bpc.batch_process_cd='"+processCODE+"' order by status.created_on desc LIMIT 1";
-    	try {
-    		Connection con=dataSource.getConnection();
-    		PreparedStatement ps=con.prepareStatement(SQL);
-    		ResultSet rs=ps.executeQuery();
-    		if(rs.next())
-    		{
-    			pstatus=rs.getString("pStatus");
-    		}
-    		
-    		if(pstatus.equals(expectedStatus))
-			{
-				System.out.println("########---Process Code : "+processCODE+"--- Expected Status After Test : "+expectedStatus+" --- Actual Status : "+pstatus+" --- Test Status : SUCCESS ---########");
-			}
-			else
-			{
-				System.out.println("########---Process Code : "+processCODE+"--- Expected Status After Test : "+expectedStatus+" --- Actual Status : "+pstatus+" --- Test Status : FAILED --- ########");
-			}
-    	
-    	}catch(Exception e) {e.printStackTrace();}
-    	
-    	value = statuscode;
-    	Assert.assertEquals(resp.getStatusCode(),statuscode);
-    }
-    
-    
-    /*-------------FIFTH SCENERIO------------*/
-    //Connect start process
-	@Given("that  process validate-picked has been deployed into the process engine $value")
-    public void givenXValue5(String url) {
-		CAMUNDAIP=url;
-		resp = RestAssured.get(CAMUNDAIP);
-		//System.out.println(CAMUNDAIP);
-	 }
-	
-    @When("a user triggers execution of the validate-picked daily process processurl $processurl")
-    public void deployprocessengine5(String processurl ) {
-    	processurl = URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	//System.out.println(URL_DEPLYOED_TO_PROCESS_ENGINE);
-    	url = CAMUNDAIP + URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	resp = RestAssured.get(url);
-     }
-    
-    @Then("the validate-picked should successfully complete $value")
-    public void thenXshouldBe5(@Named("value") int value) {
-    	//System.out.println(url);
-    	
-    	String pstatus = null;
-    	String processCODE = null;
-    	String expectedStatus = null;
-    	
-    	String[] response = getTestCase(3,processCODE,expectedStatus);
-    	processCODE = response[0];
-       // expectedStatus = response[1];
-    	expectedStatus = "PICKED";
-
-    	
-    	int statuscode = resp.getStatusCode();
-    	String str=resp.asString();
-    	JSONObject obj=new JSONObject();
-    	JSONParser parser= new JSONParser();
-    	try {
-    		obj=(JSONObject) parser.parse(str);
-    	}catch(Exception e) {e.printStackTrace();}
-    	//processID=(String)obj.get("deploymentId");
-    	
-    	
-    	SQL="select batch_status_cd as pStatus from mes.ref_batch_status_code status\n" + 
-				"join mes.batch as b on status.batch_sid = b.batch_sid\n" + 
-				"join mes.ref_batch_process_code  bpc on b.batch_process_sid=bpc.batch_process_sid     \n" + 
-				"left join mes.ref_batch_source_code bsc on bsc.batch_source_sid = b.batch_source_sid\n" + 
-				"where bpc.batch_process_cd='"+processCODE+"' order by status.created_on desc LIMIT 1";
-    	try {
-    		Connection con=dataSource.getConnection();
-    		PreparedStatement ps=con.prepareStatement(SQL);
-    		ResultSet rs=ps.executeQuery();
-    		if(rs.next())
-    		{
-    			pstatus=rs.getString("pStatus");
-    		}
-    		
-    		if(pstatus.equals(expectedStatus))
-			{
-				System.out.println("########---Process Code : "+processCODE+"--- Expected Status After Test : "+expectedStatus+" --- Actual Status : "+pstatus+" --- Test Status : SUCCESS ---########");
-			}
-			else
-			{
-				System.out.println("########---Process Code : "+processCODE+"--- Expected Status After Test: "+expectedStatus+" --- Actual Status : "+pstatus+" --- Test Status : FAILED --- ########");
-			}
-    	
-    	}catch(Exception e) {e.printStackTrace();}
-    	
-    	value = statuscode;
-    	Assert.assertEquals(resp.getStatusCode(),statuscode);
-    }
-    
-    /*-------------SIXTH SCENERIO------------*/
-    //Connect start process
-	@Given("that  process instance-picked has been deployed into the process engine $value")
-    public void givenXValue6(String url) {
-		CAMUNDAIP=url;
-		resp = RestAssured.get(CAMUNDAIP);
-		//System.out.println(CAMUNDAIP);
-	 }
-	
-    @When("a user triggers execution of the instance-picked daily process processurl $processurl")
-    public void deployprocessengine6(String processurl ) {
-    	processurl = URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	//System.out.println(URL_DEPLYOED_TO_PROCESS_ENGINE);
-    	url = CAMUNDAIP + URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	resp = RestAssured.get(url);
-     }
-    
-    @Then("the instance-picked should successfully complete $value")
-    public void thenXshouldBe6(@Named("value") int value) {
-    	//System.out.println(url);
-    	
     	String pstatus=null;
-    	String expectedStatus="PICKED";
-    	String processCODE="1450";
-    	
-    	String[] response = getTestCase(4,processCODE,expectedStatus);
-    	processCODE = response[0];
-        expectedStatus = response[1];
-    	
-    	int statuscode = resp.getStatusCode();
-    	String str=resp.asString();
-    	JSONObject obj=new JSONObject();
-    	JSONParser parser= new JSONParser();
-    	try {
-    		obj=(JSONObject) parser.parse(str);
-    	}catch(Exception e) {e.printStackTrace();}
-    	//processID=(String)obj.get("deploymentId");
+		String expectedStatus = null;
+		try {
+			
+			
+			String batchID=getBatchCode("RE-RUN");
+	    	
+	    	SQL="SELECT \n" + 
+					"	bpc.batch_process_cd,\n" + 
+					"	b.batch_id,\n" + 
+					"	batch_status_cd as pStatus,\n" + 
+					"	status.created_on\n" + 
+					"FROM\n" + 
+					"	mes.ref_batch_status_code status\n" + 
+					"JOIN\n" + 
+					"	mes.batch as b on status.batch_sid = b.batch_sid\n" + 
+					"JOIN\n" + 
+					"	mes.ref_batch_process_code  bpc on b.batch_process_sid=bpc.batch_process_sid   \n" + 
+					"LEFT JOIN\n" + 
+					"	mes.ref_batch_source_code bsc on bsc.batch_source_sid = b.batch_source_sid\n" + 
+					"WHERE\n" + 
+					"	bpc.batch_process_cd='"+processCode+"' AND b.batch_id IN("+batchID+")  AND  batch_status_cd ='RE-RUN' "
+							+ "order by status.created_on desc ";
+			
+			expectedStatus="PICKED";
+		    Connection con=dataSource.getConnection();
+		    PreparedStatement ps=con.prepareStatement(SQL);
+		    ResultSet rs=ps.executeQuery();
+		    	while(rs.next())
+		    	{
+		    		if(rs.getString("pStatus").equals(expectedStatus))
+		    		{
+		    			System.out.println("");
+						System.out.println("######## Validation Test Result for Process Code : "+processCode+"--- Batch Code : "+rs.getString("batch_id")+" --- Expected Status After Test : "+expectedStatus+" --- Actual Status : "+rs.getString("pStatus")+" --- Test Status : SUCCESS ########");
+						System.out.println("");
+		    		}
+		    		else
+		    		{
+		    			System.out.println("");
+						System.out.println("######## Validation Test Result for Process Code : "+processCode+"--- Batch Code : "+rs.getString("batch_id")+" --- Expected Status After Test : "+expectedStatus+" --- Actual Status : "+rs.getString("pStatus")+" --- Test Status : FAILED ########");
+						System.out.println("");
+		    		}
+		    	}
+		    	
+		}catch(Exception e) {e.printStackTrace();}
+		value = statuscode;
+    }
 
-    	SQL="select count(*) from mes.ref_batch_execution rbe\n" + 
-    			"join mes.batch as b on rbe.batch_sid = b.batch_sid\n" + 
-    			"join mes.ref_batch_process_code  bpc on b.batch_process_sid=bpc.batch_process_sid     \n" + 
-    			"where bpc.batch_process_cd='"+processCODE+"'";
+    
+    private void writeFile()
+    {
     	
+    
+    	List<String> temp=new ArrayList<>();
+    	 
     	try {
-    		int k=0;
-    		Connection con=dataSource.getConnection();
-    		PreparedStatement ps=con.prepareStatement(SQL);
-    		ResultSet rs=ps.executeQuery();
-    		if(rs.next())
-    		{
-    			k=rs.getInt(1);
-    		}
     		
-    		if(k>0)
-			{
-				System.out.println(" --- Test Status : SUCCESS ---########");
-			}
-			else
-			{
-				System.out.println(" --- Test Status : FAILED --- ########");
-			}
-    	
-    	}catch(Exception e) {e.printStackTrace();}
-    	
-    	value = statuscode;
-    	Assert.assertEquals(resp.getStatusCode(),statuscode);
-    }
-    
-    
-     //-------------SEVENTH SCENERIO------------
-     
-    //Connect process status change
-	@Given("that  process batch-status has been deployed into the process engine $value")
-    public void givenXValue7(String url) {
-		CAMUNDAIP=url+"/"+processID;
-		resp = RestAssured.get(CAMUNDAIP);
-		//System.out.println(CAMUNDAIP);
-	 }
+    		 XSSFWorkbook workbook = new XSSFWorkbook();
+		     XSSFSheet sheet = workbook.createSheet("BatchData");
+			
+			SQL="SELECT \n" + 
+					"	bpc.batch_process_cd,\n" + 
+					"	b.batch_id,\n" + 
+					"	batch_status_cd as pStatus,\n" + 
+					"	status.created_on\n" + 
+					"FROM\n" + 
+					"	mes.ref_batch_status_code status\n" + 
+					"JOIN\n" + 
+					"	mes.batch as b on status.batch_sid = b.batch_sid\n" + 
+					"JOIN\n" + 
+					"	mes.ref_batch_process_code  bpc on b.batch_process_sid=bpc.batch_process_sid   \n" + 
+					"LEFT JOIN\n" + 
+					"	mes.ref_batch_source_code bsc on bsc.batch_source_sid = b.batch_source_sid\n" + 
+					"WHERE\n" + 
+					"	bpc.batch_process_cd='"+processCode+"' order by status.created_on desc ";
+	    	
+	    		int i=1;
+	    		//Header file
+
+    			Row row = sheet.createRow(0);
+    			Cell cell=row.createCell(0);
+    			cell.setCellValue("PROCESS_CODE");
+    			cell=row.createCell(1);
+    			cell.setCellValue("BATCH_ID");
+    			cell=row.createCell(2);
+    			cell.setCellValue("STATUS");
+    			cell=row.createCell(3);
+    			cell.setCellValue("CREATED_ON");
+    			
+   
+	    		
+	    		Connection con=dataSource.getConnection();
+	    		PreparedStatement ps=con.prepareStatement(SQL);
+	    		ResultSet rs=ps.executeQuery();
+	    		while(rs.next())
+	    		{
+	    			if(rs.getString("pStatus").equals("PICKED"))
+	    			{
+	    				temp.add(rs.getString(1));
+	    				temp.add(rs.getString(2));
+	    				temp.add(rs.getString(3));
+	    				temp.add(rs.getString(4));
+	    			}
+	    			else
+	    			{
+		    			row = sheet.createRow(i);
+		    			cell=row.createCell(0);
+		    			cell.setCellValue(rs.getString(1));
+		    			cell=row.createCell(1);
+		    			cell.setCellValue(rs.getString(2));
+		    			cell=row.createCell(2);
+		    			cell.setCellValue(rs.getString(3));
+		    			cell=row.createCell(3);
+		    			cell.setCellValue(rs.getString(4));
+		    			i++;
+	    			}
+	    		}
+	    		
+	    		if(temp.size()>0)
+	    		{	int k=0;
+		    		for(int j=0;j<(temp.size()/4);j++)
+			          {
+		    			row = sheet.createRow(i+j);
+		    			for(int jj=0;jj<4;jj++)
+		    			{
+			    			cell=row.createCell(jj);
+			    			cell.setCellValue(temp.get(jj+k).toString());
+			    			
+		    			}
+		    			k=k+4;
+			          }
+	    		}
+	    		
+	    		
+				File f=new File("");
+	    		String path=f.getAbsolutePath()+"/src/test/resources/TestCase.xlsx";
+	    		
+	    		FileOutputStream out = new FileOutputStream(new File(path));
+	    		workbook.write(out);
+	            out.close();
 	
-    @When("a user triggers execution of the batch-status daily process processurl $processurl")
-    public void deployprocessengine7(String processurl ) {
-    	processurl = URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	//System.out.println(URL_DEPLYOED_TO_PROCESS_ENGINE);
-    	url = CAMUNDAIP + URL_DEPLYOED_TO_PROCESS_ENGINE;
-    	resp = RestAssured.get(url);
-     }
-    
-    @Then("the batch-status should successfully complete $value")
-    public void thenXshouldBe7(@Named("value") int value) {
-    	//System.out.println(url);
-    	
-    	int statuscode = resp.getStatusCode();
-    	value = statuscode;
+			
+		} 
+		catch (Exception e) 
+    	{
+			if (workbook != null) {
+				System.out.println("Closing Excel file..");
+			}
+			System.out.println("Excel file not found.");
+		}
+    	finally 
+    	{
+    		try {
+    		workbook.close();
+    		}catch(Exception e) {e.printStackTrace();}
+    	}
     }
     
-    private String[] getTestCase(int rowNum, String processCode,String expectedStatus) {
+    private String getBatchCode(String initialStatus)
+    {
+    	String batchIds=null;
+    	 for (Row row : sheet) 
+    	 {
+    	        for (Cell cell : row) 
+    	        {
+    	            if (cell.getCellType() ==CellType.STRING) 
+    	            {
+    	                if (cell.getRichStringCellValue().getString().trim().equals(initialStatus)) 
+    	                {
+    	                	if(batchIds!=null)
+    	                	{
+        	                    batchIds=batchIds+",'"+row.getCell(1, MissingCellPolicy.RETURN_BLANK_AS_NULL).getStringCellValue()+"'";
+    	                	}
+    	                	else
+    	                	{
+        	                    batchIds="'"+row.getCell(1, MissingCellPolicy.RETURN_BLANK_AS_NULL).getStringCellValue()+"'";
+
+    	                	}
+    	                }
+    	            }
+    	        }
+    	  }
+    	return batchIds;
+    }
+    
+    private String[] getTestCase(int rowNum, String processCode,String expectedStatus) 
+    {
         String[] response = new String[2];
         Row row = sheet.getRow(rowNum);
          if(row != null) {
-             int processCd = (int)row.getCell(0, MissingCellPolicy.RETURN_BLANK_AS_NULL).getNumericCellValue();
-             if(processCd == 0) {
+             String processCd = row.getCell(0, MissingCellPolicy.RETURN_BLANK_AS_NULL).getStringCellValue();
+             if(processCd == null) {
                  System.out.println("Invalid 'Process Code'");
                  return null;
              }
