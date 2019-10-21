@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
-Built-By: rinu
-Build-Jdk: 11.0.4
 Implementation-Title: Jbehave
 Implementation-Version: 0.0.1
+Built-By: rinu
 Implementation-Vendor-Id: com.mes.soa.bpmn.test
-Implementation-Vendor: Pivotal Software, Inc.
+Build-Jdk: 1.8.0_222
 Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
 

@@ -6,6 +6,7 @@ import io.restassured.specification.RequestSpecification;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -36,6 +37,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
 import com.mes.soa.bpmn.IntegrationTest;
+import com.opencsv.CSVWriter;
 
 @Component
 public class StepsTest {
@@ -45,6 +47,7 @@ public class StepsTest {
     
     @Autowired
     private DataSource dataSource;
+
     
     static XSSFWorkbook workbook = null;
 	static XSSFSheet sheet = null;
@@ -133,6 +136,7 @@ public class StepsTest {
 	    request.body(requestParams.toString());
 	    resp=request.post(url);
     	writeFile();
+    	createInitialStatusFile();
     }
     
     @Then("the process-start-new should successfully complete $value")
@@ -206,6 +210,8 @@ public class StepsTest {
 		    	}
 		    	
 		}catch(Exception e) {e.printStackTrace();}
+		
+		resp.prettyPrint();
     	value = statuscode;
     }
     
@@ -283,6 +289,7 @@ public class StepsTest {
 		    	}
 		    	
 		}catch(Exception e) {e.printStackTrace();}
+		resp.prettyPrint();
 		value = statuscode;
     }
 
@@ -422,6 +429,48 @@ public class StepsTest {
     	  }
     	return batchIds;
     }
+    
+    private void createInitialStatusFile() 
+    {
+    	SQL="SELECT \n" + 
+				"	bpc.batch_process_cd,\n" + 
+				"	b.batch_id,\n" + 
+				"	batch_status_cd as pStatus,\n" + 
+				"	status.created_on\n" + 
+				"FROM\n" + 
+				"	mes.ref_batch_status_code status\n" + 
+				"JOIN\n" + 
+				"	mes.batch as b on status.batch_sid = b.batch_sid\n" + 
+				"JOIN\n" + 
+				"	mes.ref_batch_process_code  bpc on b.batch_process_sid=bpc.batch_process_sid   \n" + 
+				"LEFT JOIN\n" + 
+				"	mes.ref_batch_source_code bsc on bsc.batch_source_sid = b.batch_source_sid\n" + 
+				"WHERE\n" + 
+				"	bpc.batch_process_cd='"+processCode+"' and batch_status_cd !='PICKED' order by status.created_on desc ";
+    	
+    	
+    	try 
+    	{
+    		File f=new File("");
+    		String path=f.getAbsolutePath()+"/src/test/resources/TestCase.csv";
+    		CSVWriter writer = new CSVWriter(new FileWriter(path));
+    
+    		Connection con=dataSource.getConnection();
+    		PreparedStatement ps=con.prepareStatement(SQL);
+    		ResultSet rs=ps.executeQuery();
+    		while(rs.next())
+    		{
+    			writer.writeAll(rs,true);
+    		}
+    		 writer.close();
+    		
+    	}catch (Exception e) 
+    	{
+			e.printStackTrace();
+		}
+    }
+    
+    
     
     private String[] getTestCase(int rowNum, String processCode,String expectedStatus) 
     {

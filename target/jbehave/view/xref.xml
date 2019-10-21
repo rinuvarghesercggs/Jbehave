@@ -42,9 +42,9 @@
             <headers/>
             <data/>
             <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
               <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
             </properties>
             <propertiesAsString></propertiesAsString>
             <namedParameters/>
@@ -92,9 +92,9 @@
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -125,9 +125,9 @@
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -171,9 +171,9 @@
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -204,9 +204,9 @@
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -250,9 +250,9 @@
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -283,9 +283,9 @@
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -329,9 +329,9 @@
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -362,9 +362,9 @@
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -419,9 +419,9 @@ So that </localizedNarrative>
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -452,9 +452,9 @@ So that </localizedNarrative>
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -497,19 +497,19 @@ So that </localizedNarrative>
                   <step>Given that fulfilment process prepare-batch has been deployed into the process engine</step>
                   <type>SUCCESSFUL</type>
                   <parametrisedStep>Given that fulfilment process prepare-batch has been deployed into the process engine</parametrisedStep>
-                  <durationInMillis>831</durationInMillis>
+                  <durationInMillis>1251</durationInMillis>
                 </successful>
                 <successful>
                   <step>When a user triggers execution of the prepare-batch daily process processurl</step>
                   <type>SUCCESSFUL</type>
                   <parametrisedStep>When a user triggers execution of the prepare-batch daily process processurl</parametrisedStep>
-                  <durationInMillis>53</durationInMillis>
+                  <durationInMillis>82</durationInMillis>
                 </successful>
                 <successful>
                   <step>Then the process should successfully complete 200</step>
                   <type>SUCCESSFUL</type>
                   <parametrisedStep>Then the process should successfully complete ｟200｠</parametrisedStep>
-                  <durationInMillis>3</durationInMillis>
+                  <durationInMillis>4</durationInMillis>
                 </successful>
               </results>
             </steps>
@@ -548,9 +548,9 @@ So that </localizedNarrative>
                   <headers/>
                   <data/>
                   <properties>
-                    <property name="ignorableSeparator" value="|--"/>
-                    <property name="valueSeparator" value="|"/>
                     <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
                   </properties>
                   <propertiesAsString></propertiesAsString>
                   <namedParameters/>
@@ -581,9 +581,9 @@ So that </localizedNarrative>
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -632,9 +632,9 @@ So that </localizedNarrative>
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -665,9 +665,9 @@ So that </localizedNarrative>
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -716,7 +716,7 @@ So that </localizedNarrative>
                   <step>When a user triggers execution of the batch-start-new daily process processurl</step>
                   <type>SUCCESSFUL</type>
                   <parametrisedStep>When a user triggers execution of the batch-start-new daily process processurl</parametrisedStep>
-                  <durationInMillis>1381</durationInMillis>
+                  <durationInMillis>992</durationInMillis>
                 </successful>
                 <successful>
                   <step>Then the process-start-new should successfully complete 200</step>
@@ -761,9 +761,9 @@ So that </localizedNarrative>
                   <headers/>
                   <data/>
                   <properties>
-                    <property name="ignorableSeparator" value="|--"/>
-                    <property name="valueSeparator" value="|"/>
                     <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
                   </properties>
                   <propertiesAsString></propertiesAsString>
                   <namedParameters/>
@@ -794,9 +794,9 @@ So that </localizedNarrative>
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -845,9 +845,9 @@ So that </localizedNarrative>
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -878,9 +878,9 @@ So that </localizedNarrative>
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -935,7 +935,7 @@ So that </localizedNarrative>
                   <step>Then the validate-new should successfully complete 200</step>
                   <type>SUCCESSFUL</type>
                   <parametrisedStep>Then the validate-new should successfully complete ｟200｠</parametrisedStep>
-                  <durationInMillis>19</durationInMillis>
+                  <durationInMillis>148</durationInMillis>
                 </successful>
               </results>
             </steps>
@@ -974,9 +974,9 @@ So that </localizedNarrative>
                   <headers/>
                   <data/>
                   <properties>
-                    <property name="ignorableSeparator" value="|--"/>
-                    <property name="valueSeparator" value="|"/>
                     <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
                   </properties>
                   <propertiesAsString></propertiesAsString>
                   <namedParameters/>
@@ -1007,9 +1007,9 @@ So that </localizedNarrative>
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -1058,9 +1058,9 @@ So that </localizedNarrative>
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -1091,9 +1091,9 @@ So that </localizedNarrative>
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -1142,13 +1142,13 @@ So that </localizedNarrative>
                   <step>When a user triggers execution of the validate-rerun daily process processurl</step>
                   <type>SUCCESSFUL</type>
                   <parametrisedStep>When a user triggers execution of the validate-rerun daily process processurl</parametrisedStep>
-                  <durationInMillis>623</durationInMillis>
+                  <durationInMillis>295</durationInMillis>
                 </successful>
                 <successful>
                   <step>Then the validate-rerun should successfully complete 200</step>
                   <type>SUCCESSFUL</type>
                   <parametrisedStep>Then the validate-rerun should successfully complete ｟200｠</parametrisedStep>
-                  <durationInMillis>8</durationInMillis>
+                  <durationInMillis>11</durationInMillis>
                 </successful>
               </results>
             </steps>
@@ -1187,9 +1187,9 @@ So that </localizedNarrative>
                   <headers/>
                   <data/>
                   <properties>
-                    <property name="ignorableSeparator" value="|--"/>
-                    <property name="valueSeparator" value="|"/>
                     <property name="headerSeparator" value="|"/>
+                    <property name="valueSeparator" value="|"/>
+                    <property name="ignorableSeparator" value="|--"/>
                   </properties>
                   <propertiesAsString></propertiesAsString>
                   <namedParameters/>
@@ -1220,9 +1220,9 @@ So that </localizedNarrative>
                 <headers/>
                 <data/>
                 <properties>
-                  <property name="ignorableSeparator" value="|--"/>
-                  <property name="valueSeparator" value="|"/>
                   <property name="headerSeparator" value="|"/>
+                  <property name="valueSeparator" value="|"/>
+                  <property name="ignorableSeparator" value="|--"/>
                 </properties>
                 <propertiesAsString></propertiesAsString>
                 <namedParameters/>
@@ -1242,7 +1242,7 @@ So that </localizedNarrative>
       <beforeSteps/>
       <afterSteps/>
       <timing>
-        <durationInMillis>2934</durationInMillis>
+        <durationInMillis>2945</durationInMillis>
       </timing>
       <givenStory>false</givenStory>
     </performableStory>
@@ -1281,9 +1281,9 @@ So that </localizedNarrative>
             <headers/>
             <data/>
             <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
               <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
             </properties>
             <propertiesAsString></propertiesAsString>
             <namedParameters/>
@@ -1314,9 +1314,9 @@ So that </localizedNarrative>
           <headers/>
           <data/>
           <properties>
-            <property name="ignorableSeparator" value="|--"/>
-            <property name="valueSeparator" value="|"/>
             <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
           </properties>
           <propertiesAsString></propertiesAsString>
           <namedParameters/>
@@ -1359,19 +1359,19 @@ So that </localizedNarrative>
               <step>Given that fulfilment process prepare-batch has been deployed into the process engine</step>
               <type>SUCCESSFUL</type>
               <parametrisedStep>Given that fulfilment process prepare-batch has been deployed into the process engine</parametrisedStep>
-              <durationInMillis>831</durationInMillis>
+              <durationInMillis>1251</durationInMillis>
             </successful>
             <successful>
               <step>When a user triggers execution of the prepare-batch daily process processurl</step>
               <type>SUCCESSFUL</type>
               <parametrisedStep>When a user triggers execution of the prepare-batch daily process processurl</parametrisedStep>
-              <durationInMillis>53</durationInMillis>
+              <durationInMillis>82</durationInMillis>
             </successful>
             <successful>
               <step>Then the process should successfully complete 200</step>
               <type>SUCCESSFUL</type>
               <parametrisedStep>Then the process should successfully complete ｟200｠</parametrisedStep>
-              <durationInMillis>3</durationInMillis>
+              <durationInMillis>4</durationInMillis>
             </successful>
           </results>
         </steps>
@@ -1410,9 +1410,9 @@ So that </localizedNarrative>
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -1443,9 +1443,9 @@ So that </localizedNarrative>
             <headers/>
             <data/>
             <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
               <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
             </properties>
             <propertiesAsString></propertiesAsString>
             <namedParameters/>
@@ -1494,9 +1494,9 @@ So that </localizedNarrative>
             <headers/>
             <data/>
             <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
               <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
             </properties>
             <propertiesAsString></propertiesAsString>
             <namedParameters/>
@@ -1527,9 +1527,9 @@ So that </localizedNarrative>
           <headers/>
           <data/>
           <properties>
-            <property name="ignorableSeparator" value="|--"/>
-            <property name="valueSeparator" value="|"/>
             <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
           </properties>
           <propertiesAsString></propertiesAsString>
           <namedParameters/>
@@ -1578,7 +1578,7 @@ So that </localizedNarrative>
               <step>When a user triggers execution of the batch-start-new daily process processurl</step>
               <type>SUCCESSFUL</type>
               <parametrisedStep>When a user triggers execution of the batch-start-new daily process processurl</parametrisedStep>
-              <durationInMillis>1381</durationInMillis>
+              <durationInMillis>992</durationInMillis>
             </successful>
             <successful>
               <step>Then the process-start-new should successfully complete 200</step>
@@ -1623,9 +1623,9 @@ So that </localizedNarrative>
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -1656,9 +1656,9 @@ So that </localizedNarrative>
             <headers/>
             <data/>
             <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
               <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
             </properties>
             <propertiesAsString></propertiesAsString>
             <namedParameters/>
@@ -1707,9 +1707,9 @@ So that </localizedNarrative>
             <headers/>
             <data/>
             <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
               <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
             </properties>
             <propertiesAsString></propertiesAsString>
             <namedParameters/>
@@ -1740,9 +1740,9 @@ So that </localizedNarrative>
           <headers/>
           <data/>
           <properties>
-            <property name="ignorableSeparator" value="|--"/>
-            <property name="valueSeparator" value="|"/>
             <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
           </properties>
           <propertiesAsString></propertiesAsString>
           <namedParameters/>
@@ -1797,7 +1797,7 @@ So that </localizedNarrative>
               <step>Then the validate-new should successfully complete 200</step>
               <type>SUCCESSFUL</type>
               <parametrisedStep>Then the validate-new should successfully complete ｟200｠</parametrisedStep>
-              <durationInMillis>19</durationInMillis>
+              <durationInMillis>148</durationInMillis>
             </successful>
           </results>
         </steps>
@@ -1836,9 +1836,9 @@ So that </localizedNarrative>
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -1869,9 +1869,9 @@ So that </localizedNarrative>
             <headers/>
             <data/>
             <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
               <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
             </properties>
             <propertiesAsString></propertiesAsString>
             <namedParameters/>
@@ -1920,9 +1920,9 @@ So that </localizedNarrative>
             <headers/>
             <data/>
             <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
               <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
             </properties>
             <propertiesAsString></propertiesAsString>
             <namedParameters/>
@@ -1953,9 +1953,9 @@ So that </localizedNarrative>
           <headers/>
           <data/>
           <properties>
-            <property name="ignorableSeparator" value="|--"/>
-            <property name="valueSeparator" value="|"/>
             <property name="headerSeparator" value="|"/>
+            <property name="valueSeparator" value="|"/>
+            <property name="ignorableSeparator" value="|--"/>
           </properties>
           <propertiesAsString></propertiesAsString>
           <namedParameters/>
@@ -2004,13 +2004,13 @@ So that </localizedNarrative>
               <step>When a user triggers execution of the validate-rerun daily process processurl</step>
               <type>SUCCESSFUL</type>
               <parametrisedStep>When a user triggers execution of the validate-rerun daily process processurl</parametrisedStep>
-              <durationInMillis>623</durationInMillis>
+              <durationInMillis>295</durationInMillis>
             </successful>
             <successful>
               <step>Then the validate-rerun should successfully complete 200</step>
               <type>SUCCESSFUL</type>
               <parametrisedStep>Then the validate-rerun should successfully complete ｟200｠</parametrisedStep>
-              <durationInMillis>8</durationInMillis>
+              <durationInMillis>11</durationInMillis>
             </successful>
           </results>
         </steps>
@@ -2049,9 +2049,9 @@ So that </localizedNarrative>
               <headers/>
               <data/>
               <properties>
-                <property name="ignorableSeparator" value="|--"/>
-                <property name="valueSeparator" value="|"/>
                 <property name="headerSeparator" value="|"/>
+                <property name="valueSeparator" value="|"/>
+                <property name="ignorableSeparator" value="|--"/>
               </properties>
               <propertiesAsString></propertiesAsString>
               <namedParameters/>
@@ -2082,9 +2082,9 @@ So that </localizedNarrative>
             <headers/>
             <data/>
             <properties>
-              <property name="ignorableSeparator" value="|--"/>
-              <property name="valueSeparator" value="|"/>
               <property name="headerSeparator" value="|"/>
+              <property name="valueSeparator" value="|"/>
+              <property name="ignorableSeparator" value="|--"/>
             </properties>
             <propertiesAsString></propertiesAsString>
             <namedParameters/>

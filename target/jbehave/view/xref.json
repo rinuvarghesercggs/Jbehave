@@ -43,16 +43,16 @@
             "data": [],
             "properties": [
               {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
+                "@name": "headerSeparator",
+                "@value": "|"
               },
               {
                 "@name": "valueSeparator",
                 "@value": "|"
               },
               {
-                "@name": "headerSeparator",
-                "@value": "|"
+                "@name": "ignorableSeparator",
+                "@value": "|--"
               }
             ],
             "propertiesAsString": "",
@@ -102,16 +102,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -144,16 +144,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -199,16 +199,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -241,16 +241,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -296,16 +296,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -338,16 +338,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -393,16 +393,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -435,16 +435,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -499,16 +499,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -541,16 +541,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -594,19 +594,19 @@
                   "step": "Given that fulfilment process prepare-batch has been deployed into the process engine",
                   "type": "SUCCESSFUL",
                   "parametrisedStep": "Given that fulfilment process prepare-batch has been deployed into the process engine",
-                  "durationInMillis": 831
+                  "durationInMillis": 1251
                 },
                 {
                   "step": "When a user triggers execution of the prepare-batch daily process processurl",
                   "type": "SUCCESSFUL",
                   "parametrisedStep": "When a user triggers execution of the prepare-batch daily process processurl",
-                  "durationInMillis": 53
+                  "durationInMillis": 82
                 },
                 {
                   "step": "Then the process should successfully complete 200",
                   "type": "SUCCESSFUL",
                   "parametrisedStep": "Then the process should successfully complete ｟200｠",
-                  "durationInMillis": 3
+                  "durationInMillis": 4
                 }
               ]
             },
@@ -646,16 +646,16 @@
                   "data": [],
                   "properties": [
                     {
-                      "@name": "ignorableSeparator",
-                      "@value": "|--"
+                      "@name": "headerSeparator",
+                      "@value": "|"
                     },
                     {
                       "@name": "valueSeparator",
                       "@value": "|"
                     },
                     {
-                      "@name": "headerSeparator",
-                      "@value": "|"
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
                     }
                   ],
                   "propertiesAsString": "",
@@ -688,16 +688,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -748,16 +748,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -790,16 +790,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -849,7 +849,7 @@
                   "step": "When a user triggers execution of the batch-start-new daily process processurl",
                   "type": "SUCCESSFUL",
                   "parametrisedStep": "When a user triggers execution of the batch-start-new daily process processurl",
-                  "durationInMillis": 1381
+                  "durationInMillis": 992
                 },
                 {
                   "step": "Then the process-start-new should successfully complete 200",
@@ -895,16 +895,16 @@
                   "data": [],
                   "properties": [
                     {
-                      "@name": "ignorableSeparator",
-                      "@value": "|--"
+                      "@name": "headerSeparator",
+                      "@value": "|"
                     },
                     {
                       "@name": "valueSeparator",
                       "@value": "|"
                     },
                     {
-                      "@name": "headerSeparator",
-                      "@value": "|"
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
                     }
                   ],
                   "propertiesAsString": "",
@@ -937,16 +937,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -997,16 +997,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -1039,16 +1039,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -1104,7 +1104,7 @@
                   "step": "Then the validate-new should successfully complete 200",
                   "type": "SUCCESSFUL",
                   "parametrisedStep": "Then the validate-new should successfully complete ｟200｠",
-                  "durationInMillis": 19
+                  "durationInMillis": 148
                 }
               ]
             },
@@ -1144,16 +1144,16 @@
                   "data": [],
                   "properties": [
                     {
-                      "@name": "ignorableSeparator",
-                      "@value": "|--"
+                      "@name": "headerSeparator",
+                      "@value": "|"
                     },
                     {
                       "@name": "valueSeparator",
                       "@value": "|"
                     },
                     {
-                      "@name": "headerSeparator",
-                      "@value": "|"
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
                     }
                   ],
                   "propertiesAsString": "",
@@ -1186,16 +1186,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -1246,16 +1246,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -1288,16 +1288,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -1347,13 +1347,13 @@
                   "step": "When a user triggers execution of the validate-rerun daily process processurl",
                   "type": "SUCCESSFUL",
                   "parametrisedStep": "When a user triggers execution of the validate-rerun daily process processurl",
-                  "durationInMillis": 623
+                  "durationInMillis": 295
                 },
                 {
                   "step": "Then the validate-rerun should successfully complete 200",
                   "type": "SUCCESSFUL",
                   "parametrisedStep": "Then the validate-rerun should successfully complete ｟200｠",
-                  "durationInMillis": 8
+                  "durationInMillis": 11
                 }
               ]
             },
@@ -1393,16 +1393,16 @@
                   "data": [],
                   "properties": [
                     {
-                      "@name": "ignorableSeparator",
-                      "@value": "|--"
+                      "@name": "headerSeparator",
+                      "@value": "|"
                     },
                     {
                       "@name": "valueSeparator",
                       "@value": "|"
                     },
                     {
-                      "@name": "headerSeparator",
-                      "@value": "|"
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
                     }
                   ],
                   "propertiesAsString": "",
@@ -1435,16 +1435,16 @@
                 "data": [],
                 "properties": [
                   {
-                    "@name": "ignorableSeparator",
-                    "@value": "|--"
+                    "@name": "headerSeparator",
+                    "@value": "|"
                   },
                   {
                     "@name": "valueSeparator",
                     "@value": "|"
                   },
                   {
-                    "@name": "headerSeparator",
-                    "@value": "|"
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
                   }
                 ],
                 "propertiesAsString": "",
@@ -1465,7 +1465,7 @@
       "beforeSteps": {},
       "afterSteps": {},
       "timing": {
-        "durationInMillis": 2934
+        "durationInMillis": 2945
       },
       "givenStory": false
     }
@@ -1505,16 +1505,16 @@
             "data": [],
             "properties": [
               {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
+                "@name": "headerSeparator",
+                "@value": "|"
               },
               {
                 "@name": "valueSeparator",
                 "@value": "|"
               },
               {
-                "@name": "headerSeparator",
-                "@value": "|"
+                "@name": "ignorableSeparator",
+                "@value": "|--"
               }
             ],
             "propertiesAsString": "",
@@ -1547,16 +1547,16 @@
           "data": [],
           "properties": [
             {
-              "@name": "ignorableSeparator",
-              "@value": "|--"
+              "@name": "headerSeparator",
+              "@value": "|"
             },
             {
               "@name": "valueSeparator",
               "@value": "|"
             },
             {
-              "@name": "headerSeparator",
-              "@value": "|"
+              "@name": "ignorableSeparator",
+              "@value": "|--"
             }
           ],
           "propertiesAsString": "",
@@ -1600,19 +1600,19 @@
               "step": "Given that fulfilment process prepare-batch has been deployed into the process engine",
               "type": "SUCCESSFUL",
               "parametrisedStep": "Given that fulfilment process prepare-batch has been deployed into the process engine",
-              "durationInMillis": 831
+              "durationInMillis": 1251
             },
             {
               "step": "When a user triggers execution of the prepare-batch daily process processurl",
               "type": "SUCCESSFUL",
               "parametrisedStep": "When a user triggers execution of the prepare-batch daily process processurl",
-              "durationInMillis": 53
+              "durationInMillis": 82
             },
             {
               "step": "Then the process should successfully complete 200",
               "type": "SUCCESSFUL",
               "parametrisedStep": "Then the process should successfully complete ｟200｠",
-              "durationInMillis": 3
+              "durationInMillis": 4
             }
           ]
         },
@@ -1652,16 +1652,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -1694,16 +1694,16 @@
             "data": [],
             "properties": [
               {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
+                "@name": "headerSeparator",
+                "@value": "|"
               },
               {
                 "@name": "valueSeparator",
                 "@value": "|"
               },
               {
-                "@name": "headerSeparator",
-                "@value": "|"
+                "@name": "ignorableSeparator",
+                "@value": "|--"
               }
             ],
             "propertiesAsString": "",
@@ -1754,16 +1754,16 @@
             "data": [],
             "properties": [
               {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
+                "@name": "headerSeparator",
+                "@value": "|"
               },
               {
                 "@name": "valueSeparator",
                 "@value": "|"
               },
               {
-                "@name": "headerSeparator",
-                "@value": "|"
+                "@name": "ignorableSeparator",
+                "@value": "|--"
               }
             ],
             "propertiesAsString": "",
@@ -1796,16 +1796,16 @@
           "data": [],
           "properties": [
             {
-              "@name": "ignorableSeparator",
-              "@value": "|--"
+              "@name": "headerSeparator",
+              "@value": "|"
             },
             {
               "@name": "valueSeparator",
               "@value": "|"
             },
             {
-              "@name": "headerSeparator",
-              "@value": "|"
+              "@name": "ignorableSeparator",
+              "@value": "|--"
             }
           ],
           "propertiesAsString": "",
@@ -1855,7 +1855,7 @@
               "step": "When a user triggers execution of the batch-start-new daily process processurl",
               "type": "SUCCESSFUL",
               "parametrisedStep": "When a user triggers execution of the batch-start-new daily process processurl",
-              "durationInMillis": 1381
+              "durationInMillis": 992
             },
             {
               "step": "Then the process-start-new should successfully complete 200",
@@ -1901,16 +1901,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -1943,16 +1943,16 @@
             "data": [],
             "properties": [
               {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
+                "@name": "headerSeparator",
+                "@value": "|"
               },
               {
                 "@name": "valueSeparator",
                 "@value": "|"
               },
               {
-                "@name": "headerSeparator",
-                "@value": "|"
+                "@name": "ignorableSeparator",
+                "@value": "|--"
               }
             ],
             "propertiesAsString": "",
@@ -2003,16 +2003,16 @@
             "data": [],
             "properties": [
               {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
+                "@name": "headerSeparator",
+                "@value": "|"
               },
               {
                 "@name": "valueSeparator",
                 "@value": "|"
               },
               {
-                "@name": "headerSeparator",
-                "@value": "|"
+                "@name": "ignorableSeparator",
+                "@value": "|--"
               }
             ],
             "propertiesAsString": "",
@@ -2045,16 +2045,16 @@
           "data": [],
           "properties": [
             {
-              "@name": "ignorableSeparator",
-              "@value": "|--"
+              "@name": "headerSeparator",
+              "@value": "|"
             },
             {
               "@name": "valueSeparator",
               "@value": "|"
             },
             {
-              "@name": "headerSeparator",
-              "@value": "|"
+              "@name": "ignorableSeparator",
+              "@value": "|--"
             }
           ],
           "propertiesAsString": "",
@@ -2110,7 +2110,7 @@
               "step": "Then the validate-new should successfully complete 200",
               "type": "SUCCESSFUL",
               "parametrisedStep": "Then the validate-new should successfully complete ｟200｠",
-              "durationInMillis": 19
+              "durationInMillis": 148
             }
           ]
         },
@@ -2150,16 +2150,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -2192,16 +2192,16 @@
             "data": [],
             "properties": [
               {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
+                "@name": "headerSeparator",
+                "@value": "|"
               },
               {
                 "@name": "valueSeparator",
                 "@value": "|"
               },
               {
-                "@name": "headerSeparator",
-                "@value": "|"
+                "@name": "ignorableSeparator",
+                "@value": "|--"
               }
             ],
             "propertiesAsString": "",
@@ -2252,16 +2252,16 @@
             "data": [],
             "properties": [
               {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
+                "@name": "headerSeparator",
+                "@value": "|"
               },
               {
                 "@name": "valueSeparator",
                 "@value": "|"
               },
               {
-                "@name": "headerSeparator",
-                "@value": "|"
+                "@name": "ignorableSeparator",
+                "@value": "|--"
               }
             ],
             "propertiesAsString": "",
@@ -2294,16 +2294,16 @@
           "data": [],
           "properties": [
             {
-              "@name": "ignorableSeparator",
-              "@value": "|--"
+              "@name": "headerSeparator",
+              "@value": "|"
             },
             {
               "@name": "valueSeparator",
               "@value": "|"
             },
             {
-              "@name": "headerSeparator",
-              "@value": "|"
+              "@name": "ignorableSeparator",
+              "@value": "|--"
             }
           ],
           "propertiesAsString": "",
@@ -2353,13 +2353,13 @@
               "step": "When a user triggers execution of the validate-rerun daily process processurl",
               "type": "SUCCESSFUL",
               "parametrisedStep": "When a user triggers execution of the validate-rerun daily process processurl",
-              "durationInMillis": 623
+              "durationInMillis": 295
             },
             {
               "step": "Then the validate-rerun should successfully complete 200",
               "type": "SUCCESSFUL",
               "parametrisedStep": "Then the validate-rerun should successfully complete ｟200｠",
-              "durationInMillis": 8
+              "durationInMillis": 11
             }
           ]
         },
@@ -2399,16 +2399,16 @@
               "data": [],
               "properties": [
                 {
-                  "@name": "ignorableSeparator",
-                  "@value": "|--"
+                  "@name": "headerSeparator",
+                  "@value": "|"
                 },
                 {
                   "@name": "valueSeparator",
                   "@value": "|"
                 },
                 {
-                  "@name": "headerSeparator",
-                  "@value": "|"
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
                 }
               ],
               "propertiesAsString": "",
@@ -2441,16 +2441,16 @@
             "data": [],
             "properties": [
               {
-                "@name": "ignorableSeparator",
-                "@value": "|--"
+                "@name": "headerSeparator",
+                "@value": "|"
               },
               {
                 "@name": "valueSeparator",
                 "@value": "|"
               },
               {
-                "@name": "headerSeparator",
-                "@value": "|"
+                "@name": "ignorableSeparator",
+                "@value": "|--"
               }
             ],
             "propertiesAsString": "",
